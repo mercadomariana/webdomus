@@ -1,0 +1,815 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: #f9f9f9;
+    scroll-behavior: smooth;
+}
+
+body{
+    cursor: url(../assets/img/cursor.png), auto;
+}
+a{
+    cursor: url(../assets/img/cursorMano.png), auto;
+}
+
+/*----------------------- HEADER ---------------------------------------------------------------------------*/
+/* PROPIEDADES PARA EL HEADER*/
+header{
+    height: 8vh;
+    margin-left: 5%;
+    a{
+        img{
+            width: 80%;
+        }
+    }
+
+    img{
+        width: 9vh;
+    }
+    
+}
+
+header{
+    height: 15vh;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+
+    /*--Navegacion del header (opciones)--*/
+    nav{
+        display: flex;
+        flex-direction: row;
+        gap: 10vh;
+        white-space: nowrap;
+        justify-content: flex-end;
+        margin-right: 5%;
+        align-items: center;
+
+        /*Asigno de estilo del botón de contáctame en el header*/
+        #contactameBoton{
+            background-color: #955AB1;
+            padding: 2vh;
+        }
+        #contactameBoton a{
+            color: #f9f9f9;
+            background-color: #955AB1;
+            font-weight: 650;
+        }
+
+        /*Convertir lista en display flex*/
+        ul{
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+            gap: 15%;
+            justify-content: flex-end;
+        }
+    }
+
+    /*Links dentro de la navegación (listas)*/
+    nav a{
+        text-decoration: none;
+        color: #955AB1;
+        font-weight: 650;
+        font-size: 1.2rem;
+    }
+}
+
+/*----------------- BOTONES ------------------------*/
+
+.boton{
+   padding-left: 3%; padding-right: 3%; padding-top: 2%; padding-bottom: 2%;
+   background-color: #955AB1;
+   
+}
+
+.boton a{
+    font-size: 1.2rem;
+    color: #f9f9f9;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    gap: 20%;
+}
+
+.botonSolo a{
+   white-space: nowrap;
+   background-color: #955AB1;
+   padding-left: 3%; padding-right: 3%; padding-top: 2%; padding-bottom: 2%;
+   font-size: 1.2rem;
+    color: #f9f9f9;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/*-------------------- EL PROCESO IMAGENES ---------------------------------------*/
+
+.seccionElProceso{
+    margin-top: 5%; margin-right: 5%; margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.procesoImagenes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3vh;
+}
+
+.procesoImagenes img{
+    margin-top: 3vh;
+}
+
+/*-------------------- SEPARADOR----------------------------*/
+
+hr{
+    margin-top: 10%; margin-bottom: 10%;
+    background-color: #301F36;
+    width: 100%; height: 1vh;
+}
+
+/*------------------------ PONER CIERTAS PALABRAS EN BOLD ----------------------------------*/
+
+.bold{
+    font-weight: bold;
+}
+
+/*----------------- PARRAFOS ------------------------ */
+
+.parrafos{
+    margin-top: 10vh;
+}
+p{
+    font-weight: 400 !important;
+}
+
+/*--------------------------- ITALICA --------------------- */
+
+.italic{
+    font-style: italic;
+    font-weight: 300 !important;
+    font-size: 1rem;
+}
+
+/* ------------------------------------------------- FOOTER ------------------------------------------------------*/
+
+footer{
+    background-color: #955AB1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #f9f9f9;
+    padding-top: 2%; padding-bottom: 2%;
+}
+
+.whatsapp, .gmail, .redesfooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #955AB1;
+    gap: 2vh;
+}
+footer h3{
+    background-color: #955AB1;
+    margin-left: 5%;
+}
+.redesfooter{
+    gap: 15vh;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+
+
+/* ------------------------------------------------------ INDEX --------------------------------------------------------------------- */
+.opcionesIndex{
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 4vh;
+        margin-left: 5%; margin-top: 10vh;
+        list-style-type: none;
+    }
+
+    a{
+        color: #240A30;
+        font-weight: 500;
+        font-size: 2rem;
+        text-decoration: none;
+    }
+}
+
+/*MARQUEE 1*/
+.seccionMarquee{
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    margin-top: 20vh;
+}
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-30%); }
+}
+.contenidoMarquee img{
+    height: 5vh;
+    background-color: #301F36;
+}
+.contenidoMarquee{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+    min-width: 200%;
+    background-color: #301F36;
+    animation: marquee 20s linear infinite;
+    padding-top: 2vh; padding-bottom: 2vh;
+}
+.contenidoMarquee h1{
+    color: #f9f9f9;
+    background-color: #301F36;
+    font-size: 4rem;
+}
+
+/*MARQUEE 2*/
+.seccionMarquee2{
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    margin-top: 8vh;
+    padding-bottom: 10vh;
+}
+@keyframes marquee2 {
+    from { transform: translateX(-30%); }
+    to { transform: translateX(0%); }
+}
+.contenidoMarquee2 img{
+    height: 5vh;
+    background-color: #301F36;
+}
+.contenidoMarquee2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+    min-width: 200%;
+    background-color: #301F36;
+    animation: marquee2 20s linear infinite;
+    padding-top: 2vh; padding-bottom: 2vh;
+}
+.contenidoMarquee2 h1{
+    color: #f9f9f9;
+    background-color: #301F36;
+    font-size: 4rem;
+}
+.seccionMarqueesYSilueta{
+    position: relative;
+}
+
+/*SILUETA*/
+.silueta{
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: 5%;
+    width: 80vh;
+}
+
+/* -------------------------------- MIS PROYECTOS --------------------------------- */
+.tituloProyectos{
+    color: #E9C8FF;
+    font-size: 7rem;
+    background-color: #301F36;
+    padding-top: 5vh; padding-bottom: 5vh;
+    justify-content: center; align-items: center;
+    text-align: center;
+}
+.opcionesProyectos{
+    margin-top: 10vh; margin-bottom: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10vh;
+
+    img{
+        height: 60vh;
+    }
+}
+
+/*------------------------------ NAVEGACIÓN DENTRO DE CADA PROYECTO ----------------------*/
+
+.barraEstatica{
+    background-color: #f9f9f9;
+    border-width: 10%;
+    border-style: solid;
+    border-color: #301F36;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    ul{
+        list-style-type: none;
+        display: flex;
+        gap: 15vh;
+        align-items: center;
+        justify-content: center;
+        padding: 2vh;
+
+        a{
+            text-decoration: none;
+            color: #250335;
+        }
+    }
+}
+
+.margenfooterabajo{
+    margin-bottom: 8vh;
+}
+
+/* ------------------------------------ CONÓCEME ---------------------------------------------------- */
+
+/*Titulo + descripcion */
+.seccionDescripcion-Conoceme{
+    background-color: #301F36;
+    color: #f9f9f9;
+    padding-left: 5%; padding-top: 5%;
+    position: relative;
+
+    h1{
+        font-size: 5rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+        font-weight: 350;
+    }
+
+    img{
+        position: absolute;
+        bottom: 0%; right: 0;
+    }
+}
+
+/*subrayado de mariana-----------------*/
+.subrayado{
+    position: relative;
+    display: inline-block;
+
+    img{
+        position: absolute;
+        bottom: 0%;
+        width: 100%;
+        right: 0%;
+    }
+}
+.separacionDeTexto{
+    margin-top: 8vh;
+    width: 50%;
+}
+
+/*listas de las habilidades*/
+.habilidadesContenedor{
+    display: flex;
+    white-space: nowrap;
+    gap: 10%;
+    margin-top: 5%; padding-bottom: 5%;
+
+    p{
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    
+    ul{
+        margin-left: 15%; margin-top: 1.5vh;
+        font-size: 1.2rem;
+    }
+}
+
+/*PROGRAMAS E IDIOMAS QUE HABLO*/
+.programas-idiomas{
+    display: flex;
+    margin-right: 5%; margin-left: 5%; margin-top: 5%; margin-bottom: 5%;
+    white-space: nowrap;
+    gap: 10%;
+    justify-content: space-between;
+
+    ul{
+        margin-top: 1.5vh;
+        list-style-type: none;
+
+        li{
+            font-size: 1.2rem;
+        }
+    }
+
+    h2{
+        font-size: 2.5rem;
+    }
+}
+
+/*Alinear idiomas a la izquierda*/
+.idiomas ul{
+    text-align: left;
+}
+
+/*SECCIÓN DE MI TRAYECTORIA*/
+.seccion-MiTrayectoria{
+    margin-left: 5%; margin-right: 5%; margin-bottom: 10%;
+
+    h2{
+        font-size: 2.5rem;
+    }
+}
+
+.imagenesTrayectoria{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20%;
+    justify-content:safe;
+
+    img{
+        margin-top: 5%;
+        height: 50vh;
+    }
+}
+
+/*SECCIÓN DE UN POCO MAS DE MI*/
+.textoUnPocoMas{
+    display: flex;
+    flex-direction: column;
+
+}
+.contenedorUnPocoMas{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+
+    img{
+        height: 8vh;
+    }
+}
+.seccionUnPocoMas{
+    margin-left: 5%; margin-right: 5%; margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 8%;
+}
+
+
+/*----------------------------- CONTACTAME ----------------------------------- */ 
+.redesContactame{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+.redYNombre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+
+    img{
+        height: 8vh;
+    }
+}
+
+/*Numero y correo electronico*/
+.numero-Correo{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+
+    p{
+        color: #250335;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+}
+
+/*Div de Texto + contacto + redes en contactame */
+.descripcionFormulario{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    width: 45%;
+    margin-left: 5%; margin-top: 5%;
+}
+#parrafoDescripcionFormulario{
+    font-size: 1.5rem;
+}
+
+/*Todo el estilo del fomrulario*/
+.formulario input[type="text"], input[type="email"]{
+    background-color: #ffff;
+    padding-right: 10%; padding-top: .5%; padding-bottom: .5%;
+    font-size: 1.2rem;
+    stroke: #250335 ;
+}
+
+
+/* --------------------------- JETSMART -------------------------------------------*/
+/*Sección del inicio*/
+.seccionInicioJetSMART{
+    padding-top: 5%;
+}
+.divDescripcionProyecto{
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+    width: 50%;
+    margin-top: 10vh;
+}
+.seccionInicioJetSMART{
+    background-color: #301F36;
+    padding-left: 5%; padding-right: 5%; padding-bottom: 5%;
+
+    h1{
+        color: #E9C8FF;
+    font-size: 15rem;
+    }
+}
+ 
+.tituloDeCadaProyecto {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-direction: column;  
+    text-align: center; 
+}
+.descipcionGeneral{
+    color: #E9C8FF;
+    font-size: 2.5rem;
+}
+.tipoRolHerramientas{
+    color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    font-size: 1.5rem;
+
+    span{
+        font-weight: bold;
+    }
+}
+.nota{
+    color: #f9f9f9;
+    font-style:italic;
+    opacity: 60%;
+    font-size: 1rem;
+}
+.descripcion-imagen{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Sección de por que rediseñar*/
+.porQueYQueLograr{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    margin-top: 5%;
+
+    p{
+        font-size: 1.5rem;
+    }
+}
+.separacion{
+    margin-left: 5%; margin-right: 5%; 
+}
+
+/*Sección rosada*/
+.parteRosada{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    align-items: center;background-color: #EBBFF0;
+    width: 100%;
+    padding-left: 5%; padding-right: 5%; padding-top: 2%; padding-bottom: 2%;
+}
+
+/*----------------------------- ALMA -----------------------*/
+.mockupCel{
+    margin-top: 8%;
+}
+
+.separacionCel{
+    margin-left: 5%; margin-right: 5%; margin-top: 5%;
+}
+
+.contextualizacion{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    margin-left: 5%;
+    width: 45%;
+
+    p{
+        font-size: 1.5rem;
+    }
+}
+.parteRosadaCel{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    align-items: center; background-color: #EBBFF0;
+    padding-left: 5%; padding-right: 5%; padding-top: 2%; padding-bottom: 2%;
+    width: 45%;
+
+    p{
+        font-size: 1.5rem;
+    }
+}
+.contextualizacionYProblema{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*----------------- SECCIÓN DE EMPATIZAR ------------------------------------------*/
+.empatizar p, ul{
+    font-size: 1.5rem;
+}
+.empatizar ul{
+    margin-left: 5%;
+}
+.empatizar h2{
+    margin-bottom: 5vh;
+    font-size: 2rem;
+}
+.empatizar{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    margin-right: 10%; margin-left: 10%;
+}
+/*Hallazgos encuesta de jetsmart*/
+.mini-seccion{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    margin-top: 10vh; margin-bottom: 10vh;
+
+    p{
+        font-weight: 500;
+    }
+
+    img{
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+/*----------------------CIRCULO DE ORO---------------------------*/
+.textoCirculoDeOro{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2vh;
+
+    p{
+        font-weight: 400;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+}
+.textosCirculoDeOro{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    margin-top: 10vh;
+}
+.circulodeoro{
+    display: flex;
+    gap: 10%;
+    align-items: center; justify-content: center;
+
+    /*NOTA: Para el diseño responsive hay que agregar la propiedad de flex wrap a la clase .circulodeoro*/
+}
+
+
+/*---------------------------- WIREFRAME JETSMART -----------------------------------*/
+
+.wireframe{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.wireframeContenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5%;
+    border-width: 10%;
+    border-style: solid;
+    border-color: #301F36;
+}
+
+/*--------------------GUIA DE ESTILOS---------------------------------------*/
+.estilosContenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+    row-gap: 5vh;
+    margin-top: 5vh;
+}
+
+/*------------------ TABLA ------------------------------------*/
+
+table{
+    border-collapse: collapse;
+    table-layout: fixed;
+    border: 3px solid purple;
+    td, th{
+        padding: 2%;
+        width: 10%;
+        border: 3px solid purple;
+    }
+    
+}
+
+.imagen-agrandada {
+    width: 100% !important;
+  }
+
+
+/*---------------------- GRILLA DEL CARD SORTING LA COSA CINE ------------------------------------------ */
+
+.grilla-CardSorting{
+    display: grid;
+    grid-template-areas: 
+    "tipo usuariosTesteados"
+    "cartas categorias"
+    "cartas analisis"
+    ;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    column-gap: 20vh; row-gap: 4vw;
+    h2{
+        color:#955AB1;
+    }
+}
+
+#tipo{
+    grid-area: tipo;
+}
+#usuariosTesteados{
+    grid-area: usuariosTesteados;
+}
+#cartas{
+    grid-area: cartas;
+}
+#categorias{
+    grid-area: categorias;
+    height: 10vh; margin-bottom: 10vh;
+}
+#analisis{
+    grid-area: analisis;
+}
+#resultado1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .grilla-CardSorting {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #analisis{
+        margin-top: 20vh;
+    }
+}
+
+

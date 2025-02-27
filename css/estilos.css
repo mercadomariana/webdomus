@@ -1,0 +1,199 @@
+*{
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: #f9f9f9;
+    scroll-behavior: smooth;
+    cursor: url(../assets/img/cursor.png), auto;
+}
+body{
+    cursor: url(../assets/img/cursor.png), auto;
+}
+a{
+    cursor: url(../assets/img/cursorMano.png), auto;
+}
+
+/*ESTILO DEL BOTÓN CONTÁCTAME DEL HEADER------------------------------------------------------------------------*/
+#contactameBoton{
+    background-color: #955AB1;
+    padding: 2vh;
+    color: #f9f9f9;
+    font-weight: 550;
+    &:hover{
+        background-color: #301F36;
+    }
+}
+
+/*IMAGEN LOGO DEL HEADER CON EL TAMAÑO AJUSTADO-------------------------------------------------------*/
+.navbar-brand{
+    img{
+        height: 8vh;
+    }
+}
+
+/*DARLE COLOR MORADO A LAS LETRAS EN CASO DE NECESITARSE-------------------------------------------------------*/
+.colorMorado{
+    color: #955AB1;
+}
+
+/*LAS LETRAS DE LAS OPCIONES DEL HEADER CAMBIAN SU GROSOR----------------------------------------------------*/
+.nav-link{
+    font-weight: 550;
+    &:hover{
+        color: #301F36;
+    }
+}
+
+/*ESTILO PERSONALIZADO DEL MENÚ DE HAMBURGUESA DEL HEADER (RESPONSIVE)----------------------------------------------*/
+.navbar-toggler {
+    border: none;
+  }
+.navbar-toggler-icon{
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../assets/img/menuHamburguesa.svg);
+}
+.navbar-toggler {
+    border: none;
+}
+.estiloMenuHamburguesa{
+    background-color: #955AB1;
+    width: 100%;
+   
+    li{
+        a{
+            color: #f9f9f9;
+            
+        }
+    }
+}
+
+/* ------------------------------------------------- FOOTER ------------------------------------------------------*/
+
+footer{
+    background-color: #955AB1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #f9f9f9;
+    padding-top: 2%; padding-bottom: 2%; 
+    margin-top: 20vh;
+    h3{
+        font-weight: 600;
+        font-family: 'Montserrat';
+    }
+}
+
+.redesFooter{
+    gap: 15vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 5%;
+    flex-wrap: wrap;
+}
+
+/*IMAGENES DE LA SECCIÓN DE MIS PROYECTOS--------------------------------------------------------------*/
+.imgProyectos{ 
+    background-size: cover; background-position: center; 
+    background-repeat: no-repeat; 
+    height: 60vh; width: 85vh;
+}
+
+@media screen and (max-width: 768px) {
+    .imgProyectos{
+        height: 55vh; width: 80vh;
+    }
+}
+@media screen and (max-width: 576px) {
+    .imgProyectos{
+        height: 47vh; width: 72vh;
+    }
+}
+@media screen and (max-width: 481px) {
+    .imgProyectos{
+        height: 30vh; width: 55vh;
+    }
+}
+
+#jetsmart-img{
+    background-image: url(../assets/img/jetsmartProyectos.svg);
+    &:hover{
+        background-image: url(../assets/img/jetsmartProyectosHover.svg);
+        cursor: url(../assets/img/cursorMano.png), auto;
+    }
+}
+#alma-img{
+    background-image: url(../assets/img/almaProyectos.svg);
+    &:hover{
+        background-image: url(../assets/img/almaProyectosHover.svg);
+        cursor: url(../assets/img/cursorMano.png), auto;
+    }
+}
+#panu-img{
+    background-image: url(../assets/img/panuProyectos.svg);
+    &:hover{
+        background-image: url(../assets/img/panuProyectosHover.svg);
+        cursor: url(../assets/img/cursorMano.png), auto;
+    }
+}
+#gelatina-img{
+    background-image: url(../assets/img/gelatinaProyectos.svg);
+    &:hover{
+        background-image: url(../assets/img/gelatinaProyectosHover.svg);
+        cursor: url(../assets/img/cursorMano.png), auto;
+    }
+}
+#lacosacine-img{
+    background-image: url(../assets/img/lacosacineProyectos.svg);
+    &:hover{
+        background-image: url(../assets/img/lacosacineProyectosHover.svg);
+        cursor: url(../assets/img/cursorMano.png), auto;
+    }
+}
+#proximamente-img{
+    background-image: url(../assets/img/proximamenteProyectos.svg);
+}
+
+/*TITULO DE PAGINA DE MIS PROYECTOS JUNTO CON EL AJUSTE RESPONSIVE EN LAS PANTALLAS----------------------------------------------*/
+.tituloProyectos{
+    background-color: #301F36;
+    padding-top: 5vh; padding-bottom: 5vh;
+    justify-content: center; align-items: center;
+    text-align: center;
+    display: flex; flex-wrap: wrap;
+    gap: 6vh;
+    h1{
+        color: #E9C8FF;
+        font-size: 7rem;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width: 955px) {
+    .tituloProyectos{
+        align-content: center;
+        gap: 2vh;
+        h1{
+            font-size: 5rem;
+        }
+    }
+}
+@media screen and (max-width: 675px) {
+    .tituloProyectos{
+        h1{
+            font-size: 3.5  rem;
+        }
+    }
+}
+@media screen and (max-width: 481px) {
+    .tituloProyectos{
+        padding-top: 3.5vh; padding-bottom: 3.5vh;
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+}
