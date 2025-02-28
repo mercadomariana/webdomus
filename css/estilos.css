@@ -30,7 +30,7 @@ a{
 /*IMAGEN LOGO DEL HEADER CON EL TAMAÑO AJUSTADO-------------------------------------------------------*/
 .navbar-brand{
     img{
-        height: 8vh;
+        height: 7vh;
     }
 }
 
@@ -52,8 +52,8 @@ a{
     border: none;
   }
 .navbar-toggler-icon{
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     background-image: url(../assets/img/menuHamburguesa.svg);
 }
 .navbar-toggler {
@@ -81,32 +81,26 @@ footer{
     align-items: center;
     color: #f9f9f9;
     padding-top: 2%; padding-bottom: 2%; 
-    margin-top: 20vh;
+    margin-top: 15vh;
     h3{
         font-weight: 600;
         font-family: 'Montserrat';
     }
 }
 
-.redesFooter{
-    gap: 15vh;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    margin-right: 5%;
-    flex-wrap: wrap;
-}
 
 /*IMAGENES DE LA SECCIÓN DE MIS PROYECTOS--------------------------------------------------------------*/
 .imgProyectos{ 
     background-size: cover; background-position: center; 
     background-repeat: no-repeat; 
     height: 60vh; width: 85vh;
+    margin-top: 15vh;
 }
 
 @media screen and (max-width: 768px) {
     .imgProyectos{
         height: 55vh; width: 80vh;
+        margin-right: 2vh; margin-left: 2vh;
     }
 }
 @media screen and (max-width: 576px) {
@@ -117,6 +111,8 @@ footer{
 @media screen and (max-width: 481px) {
     .imgProyectos{
         height: 30vh; width: 55vh;
+        margin-right: 2vh; margin-left: 2vh;
+        margin-top: 5vh;
     }
 }
 
@@ -197,3 +193,135 @@ footer{
         }
     }
 }
+
+/*SECCIÓN MARQUEE Y SILUETA EN EL INDEX ---------------------------------------*/
+/* Contenedor principal */
+.contenedor {
+    position: relative; /* Permite posicionar elementos internos con absolute */
+    width: 100%;
+    height: 100vh; /* Para ocupar toda la pantalla */
+    overflow: hidden; /* Evita cortes en los marquees */
+}
+
+/* MARQUEE 1 */
+.seccionMarquee {
+    position: absolute; /* Se superpone sobre la silueta */
+    top: 50%; /* Ajusta la altura del primer marquee */
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 2; /* Asegura que esté sobre la silueta */
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-30%); }
+}
+
+.contenidoMarquee {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+    min-width: 200%;
+    background-color: #301F36;
+    animation: marquee 20s linear infinite;
+    padding-top: 3vh; padding-bottom: 3vh;
+}
+
+.contenidoMarquee h1 {
+    color: #f9f9f9;
+    font-size: 4rem;
+    background-color: #301F36;
+    font-weight: 650;
+}
+.contenidoMarquee2 h2 {
+    color: #f9f9f9;
+    font-size: 4rem;
+    background-color: #301F36;
+    font-weight: 650;
+}
+
+.contenidoMarquee img {
+    height: 5vh;
+    background-color: #301F36;
+}
+
+/* MARQUEE 2 */
+.seccionMarquee2 {
+    position: absolute;
+    top: 75%; /* Ajusta la altura del segundo marquee */
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+@keyframes marquee2 {
+    from { transform: translateX(-30%); }
+    to { transform: translateX(0%); }
+}
+
+.contenidoMarquee2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+    min-width: 200%;
+    background-color: #301F36;
+    animation: marquee2 20s linear infinite;
+    padding-top: 3vh; padding-bottom: 3vh;
+}
+
+.contenidoMarquee2 h1 {
+    color: #f9f9f9;
+    font-size: 4rem;
+    background-color: #301F36;
+}
+
+.contenidoMarquee2 img {
+    height: 5vh;
+    background-color: #301F36;
+}
+
+/* SILUETA */
+.silueta {
+    position: absolute; /* Se superpone en el fondo */
+    right: 0;
+    bottom: 0;
+    width: 70vh;
+    z-index: 1; /* Debajo de los marquees */
+}
+
+/*OPCIONES DE NAVEGACIÓN DEL INDEX --------------------------------------- */
+.seccionOpcionesIndex{
+    width: auto;
+    position: absolute;
+    z-index: 5;
+    ul{
+        list-style-type: none; 
+        width: auto;
+        li:nth-child(1) a, li:nth-child(2) a{
+            text-decoration: none;
+            color: inherit;
+            font-size: 2rem;
+            font-weight: 450;
+        }
+    }
+}
+
+/*BOTONES ------------------------------------*/
+ 
+ .boton a{
+     font-size: 2rem;
+     color: #f9f9f9;
+     font-weight: 600;
+     text-decoration: none;
+     background-color: #955AB1;
+     padding-left: 6%; padding-right: 6%; padding-top: 4%; padding-bottom: 4%;
+     &:hover{
+        background-color: #301F36;
+     }
+ }
