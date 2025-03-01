@@ -16,6 +16,22 @@ a{
     cursor: url(../assets/img/cursorMano.png), auto;
 }
 
+/*-------------------- SEPARADOR----------------------------*/
+
+hr{
+    margin-top: 10%; margin-bottom: 10%;
+    background-color: #301F36 !important;
+    width: 100%; height: 1vh;
+}
+
+/*SEPARADOR DE LOS USER PERSONA EN LAS PANTALLAS PEQUEÑAS-------------------------------------*/
+.separadorUser{
+    hr{
+    background-color: #83847A;
+    width: 100%; height: .5vh;
+    }
+}
+
 /*ESTILO DEL BOTÓN CONTÁCTAME DEL HEADER------------------------------------------------------------------------*/
 #contactameBoton{
     background-color: #955AB1;
@@ -25,6 +41,24 @@ a{
     &:hover{
         background-color: #301F36;
     }
+}
+
+/*ESTILO DEL BOTON DEL PROTOTIPO ------------------------------------------------------------*/
+
+.botonPrototipo{
+    background-color: #955AB1;
+    width: fit-content;
+    padding-left: 3vh; padding-right: 3vh; padding-top: 2vh; padding-bottom: 2vh;
+    margin: 0 auto;
+    margin-top: 15vh;
+    cursor: pointer;
+    a{
+        color: #f9f9f9;
+        cursor: pointer;
+    }
+}
+.botonPrototipo:hover{
+    background-color: #301F36;
 }
 
 /*IMAGEN LOGO DEL HEADER CON EL TAMAÑO AJUSTADO-------------------------------------------------------*/
@@ -90,12 +124,6 @@ footer{
 
 
 /*IMAGENES DE LA SECCIÓN DE MIS PROYECTOS--------------------------------------------------------------*/
-.imgProyectos{ 
-    background-size: cover; background-position: center; 
-    background-repeat: no-repeat; 
-    height: 60vh; width: 85vh;
-    margin-top: 15vh;
-}
 
 @media screen and (max-width: 768px) {
     .imgProyectos{
@@ -115,46 +143,77 @@ footer{
         margin-top: 5vh;
     }
 }
-
-#jetsmart-img{
+.imgProyectos {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    width: 85vh;
+    margin-top: 15vh;
+    position: relative; /* Para poder colocar el pseudo-elemento correctamente */
+  }
+  
+  .imgProyectos a {
+    display: block; /* Asegura que el enlace ocupe todo el espacio del div */
+    position: absolute; /* Posiciona el enlace sobre el div */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Asegura que el enlace esté por encima del fondo */
+  }
+  
+  .imgProyectos a::after {
+    content: ''; /* Necesario para crear el pseudo-elemento */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; /* El pseudo-elemento será invisible */
+    pointer-events: none; /* Permite que el enlace sea clickeable pero sin afectar el área visible */
+  }
+  
+  #jetsmart-img {
     background-image: url(../assets/img/jetsmartProyectos.svg);
     &:hover{
         background-image: url(../assets/img/jetsmartProyectosHover.svg);
-        cursor: url(../assets/img/cursorMano.png), auto;
     }
-}
-#alma-img{
+  }
+  
+  #alma-img {
     background-image: url(../assets/img/almaProyectos.svg);
     &:hover{
         background-image: url(../assets/img/almaProyectosHover.svg);
-        cursor: url(../assets/img/cursorMano.png), auto;
     }
-}
-#panu-img{
+  }
+
+  #panu-img {
     background-image: url(../assets/img/panuProyectos.svg);
     &:hover{
         background-image: url(../assets/img/panuProyectosHover.svg);
-        cursor: url(../assets/img/cursorMano.png), auto;
     }
-}
-#gelatina-img{
+  }
+
+  #gelatina-img {
     background-image: url(../assets/img/gelatinaProyectos.svg);
     &:hover{
         background-image: url(../assets/img/gelatinaProyectosHover.svg);
-        cursor: url(../assets/img/cursorMano.png), auto;
     }
-}
-#lacosacine-img{
+  }
+  
+  #lacosacine-img {
     background-image: url(../assets/img/lacosacineProyectos.svg);
     &:hover{
         background-image: url(../assets/img/lacosacineProyectosHover.svg);
-        cursor: url(../assets/img/cursorMano.png), auto;
     }
-}
-#proximamente-img{
+  }
+  
+  #proximamente-img {
     background-image: url(../assets/img/proximamenteProyectos.svg);
-}
-
+  }
+  
 /*TITULO DE PAGINA DE MIS PROYECTOS JUNTO CON EL AJUSTE RESPONSIVE EN LAS PANTALLAS----------------------------------------------*/
 .tituloProyectos{
     background-color: #301F36;
@@ -325,3 +384,471 @@ footer{
         background-color: #301F36;
      }
  }
+
+/*SUBRAYADO DE PALABRAS ---------------------- */
+.subrayado{
+    position: relative;
+    display: inline-block;
+
+    img{
+        position: absolute;
+        bottom: 0%;
+        width: 100%;
+        right: 0%;
+    }
+}
+
+/*TITULO DE CADA UNO DE LOS PROYECTOS ---------------------------------*/
+.titulosProyectos{
+        color: #E9C8FF;
+        font-weight: 700;
+        font-size: 11rem;
+}
+
+/*ESTILOS DE TEXTO DE RESUMEN DE CADA PROYECTO--------------------------*/
+.descipcionGeneral{
+    color: #E9C8FF;
+    font-size: 1.7rem;
+    padding-top: 15vh;
+}
+.tipoRolHerramientas{
+    color: #f9f9f9;
+    font-size: 1.2rem;
+    span{
+        font-weight: bold;
+    }
+}
+
+/*FLEX DEL CONTENEDOR MOCKUP + DESCRIPCION EN CADA PROYECTO--------------------*/
+.contenedorResumen{
+display: flex;
+flex-direction: row-reverse;
+padding-bottom: 10vh;
+img{
+    width: 50%;
+}
+}
+
+@media screen and (max-width: 955px) {
+    .contenedorResumen{
+        flex-direction: column-reverse;
+        align-items: center;
+        img{
+            width: 80%;
+        }
+    }
+    .titulosProyectos{
+        font-size: 9rem;
+        padding-top: 5vh;
+    }
+}
+@media screen and (max-width: 675px) {
+    .titulosProyectos{
+        font-size: 7rem;
+        padding-top: 5vh;
+    }
+}
+@media screen and (max-width: 481px) {
+    .titulosProyectos{
+        font-size: 5rem;
+        padding-top: 5vh;
+    }
+}
+@media screen and (max-width: 432px) {
+    .titulosProyectos{
+        font-size: 4.2rem;
+        padding-top: 5vh;
+    }
+    .descipcionGeneral{
+        padding-top: 5vh;
+    }
+}
+
+/*BOTON QUE ESTÁ EN EL RESUMEN DE CADA PROYECTO Y LLEVA A LOS PROTOTIPOS---------------------------*/
+.botonSolo a{
+    white-space: nowrap;
+    background-color: #955AB1;
+    padding-left: 3%; padding-right: 3%; padding-top: 2%; padding-bottom: 2%;
+    font-size: 1.2rem;
+     color: #f9f9f9;
+     font-weight: 600;
+     text-decoration: none;
+
+     &:hover{
+        background-color: #C9B3E2;
+        color: #301F36;
+     }
+ }
+
+ /*NOTA PEQUEÑA QUE TIENE EL RESUMEN DE CADA UNO DE LOS PROYECTOS-----------------------------------*/
+ .nota{
+    color: #f9f9f9;
+    font-style:italic;
+    opacity: 60%;
+    font-size: 1rem;
+}
+
+/* FLEX DE SECCIONES POR QUE REDISEÑAR Y QUE SE QUIERE LOGRAR PARA PROYECTOS WEB ---------------------------------------- */
+.porQueYQueLograr{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    margin-top: 15vh;
+
+    p{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-weight: 600;
+    }
+}
+
+/*PARTE ROSADA DE LA SECCIÓN DE QUE SE QUIERE LOGRAR-------------------------------*/
+.parteRosada{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    align-items: center;background-color: #EBBFF0;
+    width: 100%;
+    padding-left: 5%; padding-right: 5%; padding-top: 2%; padding-bottom: 2%;
+}
+
+/*IMAGENES DE EL PROCESO DE CADA PROYECTO -----------------------------*/
+#empatizar-img {
+    background-image: url(../assets/img/empatizar.svg);
+    &:hover{
+        background-image: url(../assets/img/empatizarHover.svg);
+    }
+}
+#idear-img {
+    background-image: url(../assets/img/idear.svg);
+    &:hover{
+        background-image: url(../assets/img/idearHover.svg);
+    }
+}
+#definir-img {
+    background-image: url(../assets/img/definir.svg);
+    &:hover{
+        background-image: url(../assets/img/definirHover.svg);
+    }
+}
+#prototipar-img {
+    background-image: url(../assets/img/prototipar.svg);
+    &:hover{
+        background-image: url(../assets/img/prototiparHover.svg);
+    }
+}
+
+.imgProceso {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 213px;
+    width: 200px;
+    margin-top: 5vh;
+    position: relative; /* Para poder colocar el pseudo-elemento correctamente */
+  }
+  
+  .imgProceso a {
+    display: block; /* Asegura que el enlace ocupe todo el espacio del div */
+    position: absolute; /* Posiciona el enlace sobre el div */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Asegura que el enlace esté por encima del fondo */
+  }
+  
+  .imgProceso a::after {
+    content: ''; /* Necesario para crear el pseudo-elemento */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; /* El pseudo-elemento será invisible */
+    pointer-events: none; /* Permite que el enlace sea clickeable pero sin afectar el área visible */
+  }
+ 
+  /*SECCIONES DE EMPATIZAR, DEFINIR, IDEAR Y PROTOTIPAR -------------------------*/
+
+.empatizar{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    
+    p{
+        font-size: 1.5rem;
+    }
+    ul{
+        margin-left: 5%;
+        font-size: 1.5rem;
+    }
+    h2{
+        margin-bottom: 5vh;
+        font-size: 2rem;
+    }
+}
+
+/*MEDIA QUERIES DE USER PERSONA Y UX CANVAS PARA TAMAÑOS DE PANTALLA MAS PEQUEÑOS --------------------------------------*/
+.userPersona, .userPersonaPeque{
+    display: inline-flex;
+    flex-direction: column;
+}
+.userPersonaPeque{
+    margin-top: 6vh;
+    background-color: #F7F7F7;
+    padding: 5vh;
+    img{
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover;
+    }
+    h3{
+        font-weight: 600;
+        color: #FBB12E;
+        margin-top: 5vh;
+    }
+    ul{
+        padding-top: 2%;
+        margin-left: 0%;
+    }
+}
+.containerUXCanvaPeque{
+    img{
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 850px) {
+    .userPersonaContainer{
+        display: none !important;
+    }
+    .containerUXCanva{
+        display: none !important;
+    }
+}
+@media screen and (min-width: 850px) {
+    .userPersonaPequeContainer{
+        display: none !important;
+    }
+    .containerUXCanvaPeque{
+        display: none !important;
+    }
+}
+
+/*BARRA ESTATICA DE NAVEGACION EN CADA PROYECTO ------------------------------------------------- */
+.barraEstatica{
+    background-color: #f9f9f9;
+    border-width: 10%;
+    border-style: solid;
+    border-color: #301F36;
+    width: 100%;
+    ul{
+        list-style-type: none;
+        gap: 15vh;
+        align-items: center;
+        justify-content: center;
+        padding: 2vh;
+        display: flex;
+        a{
+            text-decoration: none;
+            color: #250335;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.barraEstatica nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #f9f9f9;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+  }
+  .menu-btn{
+    display: flex;
+    align-items: center; justify-content: center; align-content: center;
+    justify-items: center;
+    cursor: pointer;
+    margin: 0 auto;
+    gap: 3vh;
+    p{
+        text-decoration: underline;
+        font-size: 1.5rem;
+    }
+    img{
+        width: 4vh;
+    }
+    display: none;
+  }
+  .barraEstatica nav ul{
+    display: flex;
+    list-style: none;
+    white-space: nowrap;
+  }
+  .barraEstatica nav ul li{
+    margin: 0 auto;
+  }
+  .barraEstatica nav ul li a{
+    color: #250335;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0px 0px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat';
+    transition: all 0.3s ease;
+  }
+  .barraEstatica nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+  }
+  input[type="checkbox"]{
+    display: none;
+  }
+  @media (max-width: 1000px){
+    .barraEstatica nav{
+      padding: 0 40px 0 50px;
+    }
+  }
+  /*AL TENER UN TAMAÑO MENOS EL ESPACIO ENTRE CADA ELEMENTO DE LAS LISTAS SE DISMINUYE ---------------------------*/
+  @media (max-width: 1635px) {
+    .barraEstatica ul {
+        gap: 20% !important;
+    }
+  }
+  @media (max-width: 1395px) {
+    .barraEstatica ul {
+        gap: 15% !important;
+    }
+  }
+  @media (max-width: 1184px) {
+    .barraEstatica ul {
+        gap: 10% !important;
+    }
+  }
+  /*CONVERSIÓN DE LISTA A MENU DESPLEGABLE --------------------------------*/
+  @media (max-width: 920px) {
+    .menu-btn{
+        display: flex;
+    }
+    .barraEstatica nav .menu-btn i{
+      display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+      content: "\f00d";
+    }
+    .barraEstatica nav ul{
+      position: fixed;
+      bottom: 0px;
+      left: -100%;
+      background: #f9f9f9;
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+      left: 0;
+    }
+    .barraEstatica nav ul li{
+      width: 100%;
+      margin: 0 auto;
+    }
+    .barraEstatica nav ul li a{
+      width: 100%;
+      display: block;
+      font-size: 20px;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #click:checked ~ ul li a{
+      margin-left: 0px;
+    }
+    #cerrar{
+        display: block !important;
+    }
+    .barraEstatica a{
+        margin-top: 10%;
+    }
+  }
+  .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: -1;
+    width: 100%;
+    padding: 0 30px;
+    color: #250335;
+  }
+  .content div{
+    font-size: 40px;
+    font-weight: 700;
+  }
+  #cerrar{
+    display: none;
+  }
+  /*CARRUSEL-------------------------------*/
+  .imgCarrusel{
+    margin: 0 auto;
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url("../assets/img/jetsmart/prev.svg")
+  }
+  
+  .carousel-control-next-icon {
+    background-image: url("../assets/img/jetsmart/next.svg")
+  }
+
+  .carousel-indicators button.active {
+    background-color: #b81fff; /* Cambia #tu_color_activo por el color que desees */
+    }
+  
+  .carousel-indicators button:not(.active) {
+    background-color: #000000; /* Cambia #tu_color por el color que desees */
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    top: 50%;
+    transform: translateY(120%);
+    margin-bottom: 20px; /* Ajusta el valor según sea necesario */
+  }
+
+  /*CONCLUSION DE CADA PROYECTO -----------------------------------*/
+  .conclusion{
+    h2{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    p{
+        color: #f9f9f9;
+    }
+    .textoConclusion {
+        background-color: #250335;
+        width: 100%;
+        padding: 5vh;
+        box-sizing: border-box;
+        margin: 0; /* Agrega margin: 0 */
+      }
+  }
+
+  /*SIGUIENTE Y ANTERIOR PROYECTO ESTILOS --------------------------------------------------- */
+  .siguienteYAnterior{
+    margin-top: 10vh; margin-bottom: 10vh;
+    a{
+        color: #250335;
+    }
+  }
