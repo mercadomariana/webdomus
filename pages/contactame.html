@@ -7,6 +7,8 @@
     <link rel="icon" href="../favicon.ico" type="image/png">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
   </head>
   <body>
     <header>
@@ -60,7 +62,94 @@
         </nav>
     </header>
 
-    <main></main>
+    <main>
+      
+      <!--TITULO DE SECCIÓN CONTÁCTAME-->
+      <div class="tituloProyectos">
+        <h1>CONTÁCTAME</h1>
+    </div>
+
+
+        <!--FORM Y DESCRIPCION PARA PANTALLAS GRANDES-->
+        <div class="container formYdescripciongrande align-items-center">
+          <!--DESCRIPCION DEL FORMULARIO JUNTO CON REDES Y CONTACTO-->
+          <section class="descripcionFormulario d-flex flex-column">
+            <p>Aunque estoy en formación académica, tengo una pasión y compromiso por el desarrollo web (frontend) y el diseño UX/UI. Busco crecer profesionalmente y aprender continuamente. Mi objetivo es crear diseños intuitivos y atractivos que superen expectativas y mejoren la experiencia del usuario, ofreciendo soluciones estéticas y funcionales.</p>
+            <div class="numero-Correo d-flex flex-column">
+                <a class="fw-bold" href="">marivillabona2@gmail.com</a>
+                <a class="fw-bold" href="">+54 9 1168735084</a>
+            </div>
+            <div class="redesContactame d-flex align-items-end">
+                <div class="redYNombre d-flex flex-column justify-content-center align-items-center">
+                    <img class="img-fluid" src="../assets/img/contactameImg/linkedin.svg" alt="">
+                    <p>LinkedIn</p>
+                </div>
+                <div class="redYNombre d-flex flex-column justify-content-center align-items-center">
+                    <img class="img-fluid w-100" src="../assets/img/contactameImg/gmail.svg" alt="">
+                    <p>E-mail</p>
+                </div>
+                <div class="redYNombre d-flex flex-column justify-content-center align-items-center">
+                    <img class="img-fluid w-80" src="../assets/img/contactameImg/whatsapp.svg" alt="">
+                    <p>whatsapp</p>
+                </div>
+            </div>
+        </section>
+
+        <!--FORMULARIO REAL-->
+        <form class="form" action="https://formspree.io/f/mrbzyqey"
+            method="POST">
+                <div class="form_container">
+                    <input type="text" class="nombreYmail" placeholder="Tu nombre" name="name" required>
+                    <input type="email" class="nombreYmail" placeholder="Tu correo electrónico" name="email" required>
+                    <textarea class="form_input--message" placeholder="¿Qué quieres decirme?" name="message" cols="30" rows="5"></textarea required>
+                    <button type="submit" class="form_cta">Hablemos</button>
+                </div>
+            </form>
+        </div>
+            
+
+        <!--FORM Y DESCRIPCION PARA PANTALLAS PEQUEÑAS-->
+        <div class="container formYdescripcionpeque align-items-center">
+          <!--DESCRIPCION DEL FORMULARIO JUNTO CON REDES Y CONTACTO-->
+          <section class="descripcionFormulario d-flex flex-column">
+            <p>Aunque estoy en formación académica, tengo una pasión y compromiso por el desarrollo web (frontend) y el diseño UX/UI. Busco crecer profesionalmente y aprender continuamente. Mi objetivo es crear diseños intuitivos y atractivos que superen expectativas y mejoren la experiencia del usuario, ofreciendo soluciones estéticas y funcionales.</p>
+            <div class="numero-Correo d-flex flex-column">
+                <a class="fw-bold" href="">marivillabona2@gmail.com</a>
+                <a class="fw-bold" href="">+54 9 1168735084</a>
+            </div>
+            
+        </section>
+
+        <!--FORMULARIO REAL-->
+        <form class="form" action="https://formspree.io/f/mrbzyqey"
+            method="POST">
+                <div class="form_container">
+                    <input type="text" class="nombreYmail" placeholder="Tu nombre" name="name" required>
+                    <input type="email" class="nombreYmail" placeholder="Tu correo electrónico" name="email" required>
+                    <textarea class="form_input--message" placeholder="¿Qué quieres decirme?" name="message" cols="30" rows="5"></textarea required>
+                    <button type="submit" class="form_cta">Hablemos</button>
+                </div>
+            </form>
+
+            <div class="redesContactamepeque d-flex align-items-end">
+              <div class="redYNombre d-flex flex-column justify-content-center align-items-center">
+                  <img class="img-fluid" src="../assets/img/contactameImg/linkedin.svg" alt="">
+                  <p>LinkedIn</p>
+              </div>
+              <div class="redYNombre d-flex flex-column justify-content-center align-items-center">
+                  <img class="img-fluid w-100" src="../assets/img/contactameImg/gmail.svg" alt="">
+                  <p>E-mail</p>
+              </div>
+              <div class="redYNombre d-flex flex-column justify-content-center align-items-center">
+                  <img class="img-fluid w-80" src="../assets/img/contactameImg/whatsapp.svg" alt="">
+                  <p>whatsapp</p>
+              </div>
+          </div>
+        </div>
+        
+      
+    </main>
+
     <footer>
         <h3>Mariana Mercado Villabona</h3>
         <div class="redesfooter">

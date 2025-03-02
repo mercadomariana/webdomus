@@ -122,10 +122,33 @@ footer{
     }
 }
 
+/*RESPONSIVE PARA CELULARES EN LAS SECCIONES DE CADA PROYECTO--------------------------*/
+@media screen and (max-width: 481px) {
+    .parteRosada{
+        flex-direction: column !important;
+        p{
+            padding-top: 5vh;
+        }
+        img{
+            padding-bottom: 5vh;
+        }
+    }
+    .elProceso{
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .siguienteYAnterior{
+        gap: 3vh !important;
+        justify-content: center !important;
+        a{
+            font-size: 1.5rem;
+        }
+      }
+}
 
 /*IMAGENES DE LA SECCIÓN DE MIS PROYECTOS--------------------------------------------------------------*/
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
     .imgProyectos{
         height: 55vh; width: 80vh;
         margin-right: 2vh; margin-left: 2vh;
@@ -142,7 +165,9 @@ footer{
         margin-right: 2vh; margin-left: 2vh;
         margin-top: 5vh;
     }
-}
+}*/
+
+
 .imgProyectos {
     background-size: cover;
     background-position: center;
@@ -233,14 +258,14 @@ footer{
         align-content: center;
         gap: 2vh;
         h1{
-            font-size: 5rem;
+            font-size: 5rem !important;
         }
     }
 }
 @media screen and (max-width: 675px) {
     .tituloProyectos{
         h1{
-            font-size: 3.5  rem;
+            font-size: 3.5rem !important;
         }
     }
 }
@@ -248,7 +273,7 @@ footer{
     .tituloProyectos{
         padding-top: 3.5vh; padding-bottom: 3.5vh;
         h1{
-            font-size: 2.5rem;
+            font-size: 2.5rem !important;
         }
     }
 }
@@ -352,6 +377,61 @@ footer{
     bottom: 0;
     width: 70vh;
     z-index: 1; /* Debajo de los marquees */
+}
+
+/*RESPONSIVE DEL INDEX ----------------------------------------------------*/
+.indexPantallaPeque{
+    display: none;
+}
+@media screen and (max-width: 1023px) {
+    .seccionOpcionesIndexPeque{
+        width: auto;
+        margin-top: 10vh;
+        margin-left: 0;
+        nav{
+            margin: 0 auto;
+            ul{
+                text-align: center;
+                list-style-type: none;
+                padding: 0;
+                li{
+                    column-gap: 80px;
+                    a{
+                        text-decoration: none;
+                        color: #955AB1;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    .silueta{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .contenidoMarquee, .contenidoMarquee2 {
+        gap: 3vw;
+    }  
+    .seccionMarquee2 {
+        top: 70%;
+    }
+    .contenedor{
+        margin-top: 10vh;
+    }
+    .indexPantallaGrande{
+        display: none;
+    }
+    .logoIndex{
+        text-align: center;
+        justify-items: center;
+    }
+    .contenidoMarquee h1 {
+        font-size: 3rem;
+    }
+    .contenidoMarquee2 h2 {
+        font-size: 3rem;
+    }
 }
 
 /*OPCIONES DE NAVEGACIÓN DEL INDEX --------------------------------------- */
@@ -852,3 +932,92 @@ img{
         color: #250335;
     }
   }
+
+  /*ESTILOS FORMULARIO EN CONTACTAME------------------------------------------------------------ */
+  .descripcionFormulario{
+    margin-top: 10vh;
+    p{
+        font-size: 1.2rem;
+    }
+  }
+  .numero-Correo{
+    margin-top: 5%;
+    gap: 5vh;
+    a{
+        color: #250335;
+        font-size: 1.2rem;
+    }
+  }
+  .redesContactame {
+    gap: 10vh;
+    margin-top: 10vh !important;
+    img{
+        width: 70px;
+        height: 70px;
+    } 
+  }
+  .redesContactamepeque{
+    gap: 10vh;
+    margin-top: 10vh !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img{
+        width: 70px;
+        height: 70px;
+    }
+  }
+
+  input[type="text"], input[type="email"], .form_input--message, button[type="submit"]{
+    width: 40rem;
+    margin-top: 5vh;
+    padding: 2%;
+    border: 2px solid #250335;
+  }
+
+  button[type="submit"]{
+    background-color: #955AB1;
+    color: #f9f9f9;
+    font-weight: 600;
+    border: none;
+  }
+
+  .formYdescripcionpeque, .formYdescripciongrande{
+    gap: 10vh;
+  }
+  .formYdescripciongrande{
+    display: flex;
+    flex-direction: row;
+  }
+  .formYdescripcionpeque{
+    display: none;
+}
+
+  /*FORM RESPONSIVE ---------------------- */
+  .formYdescripcionpeque{
+    display: none;
+  }
+  @media (max-width: 1400px) {
+    .formYdescripciongrande{
+        display: none;
+    }
+    .formYdescripcionpeque{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  @media (max-width: 954px) {
+    input[type="text"], input[type="email"], .form_input--message, button[type="submit"]{
+        width: 30rem;
+      }
+  }
+  @media (max-width: 492px) {
+    input[type="text"], input[type="email"], .form_input--message, button[type="submit"]{
+        width: 20rem;
+      }
+    form{
+        justify-content: center;
+        align-items: center;
+    }
+  }
+  
