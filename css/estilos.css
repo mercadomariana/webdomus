@@ -1021,3 +1021,126 @@ img{
     }
   }
   
+  /*CONTENEDOR DE HABILIDADES Y DESCRIPCION EN LA SECCION DE CONOCEME---------------------*/
+  .habilidadesYdescripcion{
+    margin-left: 10vh;
+  }
+
+  /*CONTENEDOR DE IMAGEN Y DESCRIPCION EN LA SECCION DE CONOCEME-----------------------------*/
+  .imagenYdescripcion{
+    padding-top: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #301F36;
+    p{color: #f9f9f9;}
+    ul{
+        li{
+            color: #f9f9f9;
+        }
+    }
+  }
+  @media (max-width: 1025px) {
+    .imagenYdescripcion{
+        flex-direction: column;
+        padding-top: 10vh;
+        justify-content: space-between;
+        align-items: end;
+    }
+    .habilidadesYdescripcion{
+        margin-right: 10vh;
+    }
+    .habilidadesContenedor{
+        display: flex;
+        flex-direction: column;
+        p{
+            font-size: 1.5rem;
+        }
+        ul{
+            li{
+                font-size: 1.5rem;
+            }
+        }
+    }
+  }
+
+  /*CONTENEDOR DE NOMBRE Y DESCRIPCION EN LA SECCION DE CONOCEME --------------*/
+  .nombreYdescripcion{
+    h1{
+        font-weight: 600;
+        font-size: 4.5rem;
+        color: #f9f9f9;
+        white-space: none;
+    }
+    h2{
+        font-size: 1.5rem;
+        color: #f9f9f9;
+    }
+  }
+
+  /*PROGRAMAS E IDIOMAS --------------------------------------------------*/
+  .programas-idiomas{
+    margin-top: 8vh;
+    ul{
+        list-style-type: none;
+        li{
+            margin-left: 0%;
+        }
+    }
+  }
+
+  @media (max-width: 426px) {
+    .programas-idiomas{
+        display: flex;
+        flex-direction: column !important;
+        gap: 5vh;
+    }
+  }
+
+  /*MI TRAYECTORIA ---------------------------------------------------*/
+  .licenciatura{
+    background-image: url(../assets/img/imagenesMiTrayectoria/UNLP.svg);
+    width: 29rem; height: 19rem;
+  }
+  .disenoUXUI{
+    background-image: url(../assets/img/imagenesMiTrayectoria/DiseñoUXUI.svg);
+    width: 29rem; height: 19rem;
+  }
+  .disenoAvanzado{
+    background-image: url(../assets/img/imagenesMiTrayectoria/coderhouseUXAvanzado.svg);
+    width: 29rem; height: 19rem;
+  }
+  .proximamente{
+    background-image: url(../assets/img/imagenesMiTrayectoria/proximamente.svg);
+    width: 29rem; height: 19rem;
+  }
+  .seccion-MiTrayectoria{
+    margin-top: 8vh;
+    h2{
+        margin-bottom: 5vh;
+    }
+  }
+  .imagenesTrayectoria{
+    gap: 8vh;
+  }
+
+  /*SECCION DE UN POCO MAS DE MI--------------------------------------------------------*/
+  .seccionUnPocoMas{
+    margin-top: 12vh;
+    gap: 10vh;
+    margin-bottom: 10vh;
+    img{
+        width: 30%; height: 50%;
+    }
+  }
+  @media (max-width: 1025px) {
+    .imagenesTrayectoria{
+        justify-content: center !important;
+        align-items: center !important;
+    }
+  }
+  @media (max-width: 769px) {
+    .seccionUnPocoMas{
+        flex-wrap: wrap;
+        gap: 5vh;
+    }
+  }
