@@ -50,7 +50,6 @@ hr{
     width: fit-content;
     padding-left: 3vh; padding-right: 3vh; padding-top: 2vh; padding-bottom: 2vh;
     margin: 0 auto;
-    margin-top: 15vh;
     cursor: pointer;
     a{
         color: #f9f9f9;
@@ -59,6 +58,9 @@ hr{
 }
 .botonPrototipo:hover{
     background-color: #301F36;
+    a{
+        color: #f9f9f9;
+    }
 }
 
 /*IMAGEN LOGO DEL HEADER CON EL TAMAÑO AJUSTADO-------------------------------------------------------*/
@@ -431,6 +433,9 @@ footer{
     }
     .contenidoMarquee2 h2 {
         font-size: 3rem;
+    }
+    .indexPantallaPeque{
+        display: block;
     }
 }
 
@@ -1144,3 +1149,71 @@ img{
         gap: 5vh;
     }
   }
+
+  /*RESPONSIVE DE TABLA BENCHMARK LA COSA CINE-------------------------------------------*/
+.tablaBenchmarkPeque{
+    margin-top: 7vh;
+    gap: 12vh;
+    display: none;
+}
+.table{
+    display: block;
+}
+@media (max-width: 769px) {
+    .tablaBenchmarkPeque{
+        display: flex;
+    }
+    .table{
+        display: none;
+    }
+}
+
+/*---------------------- GRILLA DEL CARD SORTING LA COSA CINE ------------------------------------------ */
+.grilla-CardSorting{
+    display: grid;
+    grid-template-areas: 
+    "tipo usuariosTesteados"
+    "cartas categorias"
+    "cartas analisis"
+    ;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    column-gap: 20vh; row-gap: 6vw;
+    h2{
+        color:#955AB1;
+    }
+}
+
+#tipo{
+    grid-area: tipo;
+}
+#usuariosTesteados{
+    grid-area: usuariosTesteados;
+}
+#cartas{
+    grid-area: cartas;
+}
+#categorias{
+    grid-area: categorias;
+    height: 10vh; margin-bottom: 10vh;
+}
+#analisis{
+    grid-area: analisis;
+    background-color: #EBBFF0;
+    padding: 5vh;
+}
+#resultado1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .grilla-CardSorting {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #analisis{
+        margin-top: 20vh;
+    }
+}

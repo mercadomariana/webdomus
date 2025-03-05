@@ -60,20 +60,442 @@
         </nav>
     </header>
 
-    <main></main>
-    <footer>
-        <h3>Mariana Mercado Villabona</h3>
-        <div class="redesfooter">
-            <div class="whatsapp">
-                <img src="../assets/img/whatsappLogo.svg" alt="">
-                <p>+54 9 11 68735084</p>
+    <main>
+
+      <div class="container-fluid text-center pt-5" style="background-color: #301F36;" >
+
+        <!--TITULO Y FLECHA DE REGRESAR DE CADA PROYECTO-->
+        <div class="row">
+          <div class="col-2">
+            <div>
+              <a href="../pages/proyectos.html"><img src="../assets/img/flechaRegresar.svg" alt=""></a>
             </div>
-            <div class="gmail">
-                <img src="../assets/img/gmailLogo.svg" alt="">
-                <p>marivillabona2@gmail.com</p>
+          </div>
+            <div class="col-12">
+              <div>
+                <span class="subrayado"><h1 class="titulosProyectos">La Cosa Cine</h1><img src="../assets/img/subrayado.svg" alt=""></span>
+              </div>
             </div>
         </div>
+        <!--DESCRIPCIÓN DE CADA PROYECTO E IMAGEN DE MOCKUP-->
+        <div class="container">
+          <div class="position-relative text-start gap-5 contenedorResumen align-content-center justify-content-center">
+            <img src="../assets/img/imagenesProyectos/lacosacine_mockup_inicio.svg" class="flex-shrink-0 me-3" alt="...">
+            <div class="d-flex flex-column gap-4">
+              <div><p class="descipcionGeneral" id="descipcionGeneral">Desarrollo y rediseño de la página web del medio de comunicación argentino “La Cosa Cine”</p></div>
+              <div class="tipoRolHerramientas" id="tipoRolHerramientas">
+                <p id="tipo"><span>Tipo de proyecto:</span> Rediseño y desarrollo frontend de una página web.</p>
+                <p id="rol"><span>Rol:</span> Rediseño de producto (UX/UI), Desarrollo web.</p>
+                <p id="herramientas"><span>Herramientas utilizadas:</span> Figma, Adobe Illustrator, VS Code, Google Chrome.</p>
+              </div>
+              <div class="botonSolo" id="botonSolo">
+                <a href="https://www.figma.com/proto/QoTF3zQEZCZfwCmhYTKJz8/re-dise%C3%B1o-final?page-id=0%3A1&node-id=112-851&viewport=1580%2C1609%2C0.23&t=a9oTtpa5FDtMrohA-1&scaling=min-zoom&content-scaling=fixed" target="_blank">Ver prototipo en alta fidelidad</a>
+              </div>
+              <div id="nota"><p class="nota">*Nota: Esto es un proyecto conceptual y no está afiliado con La Cosa Cine y fue realizado junto a Romina Miccono, Micaela Nishizawa y Bianca Marino</p></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+        <!--POR QUE REDISEÑAR-->
+      <div class="porQueYQueLograr container">
+        <h2>¿Qué es La Cosa Cine?</h2>
+        <p> “La Cosa Cine" es una revista y sitio web dedicado al mundo del cine, las series de televisión, cómics, videojuegos y la cultura pop. Ofrece una amplia gama de contenidos relacionados con estos temas, incluyendo noticias, reseñas, análisis, entrevistas, reportajes, avances de películas, series, cómics y videojuegos. Además, cubre eventos importantes en la industria del entretenimiento, como festivales de cine, premios y estrenos.</p>
+    </div>
+
+    <!--QUE SE QUIERE LOGRAR-->
+    <div class="porQueYQueLograr container-fluid">
+      <h2 class="container">Propuesta de valor</h2>
+      <div class="parteRosada">
+          <p class="container">La Cosa Cine ofrece información técnica y formal sobre cine, televisión, videojuegos y cómics, destacándose por sus entrevistas exclusivas. Nuestra propuesta es resaltar estas entrevistas en la página principal y crear una sección dedicada para facilitar el acceso de los usuarios. Para fomentar la conexión con la audiencia, añadiremos comentarios debajo de cada entrevista y sugerencias para futuros contenidos. Además, incluiremos una sección de recomendados para aumentar la visibilidad de entrevistas pasadas y noticias relacionadas.</p>
+          <img src="../assets/img/globo.svg" alt="">
+      </div>
+  </div>
+
+  <!--EL PROCESO--> 
+  <section class="d-flex flex-column container " style="margin-top: 15vh;">
+    <h2 style="font-weight: 600;">El proceso</h2>
+    <div class="d-flex flex-wrap justify-content-between elProceso">
+        <div class="imgProceso" id="empatizar-img">
+          <a href="#empatizar"></a>
+      </div>
+      <div class="imgProceso" id="definir-img">
+          <a href="#definir"></a>
+      </div>
+      <div class="imgProceso" id="idear-img">
+          <a href="#idear"></a>
+      </div>
+      <div class="imgProceso" id="prototipar-img">
+          <a href="#prototipar"></a>
+      </div> 
+    </div>
+</section>
+
+<hr>
+
+<!--SECCIÓN DE EMPATIZAR-->
+<section class="container empatizar" id="empatizar">
+  <h2 class="fw-bold">1. Empatizar</h2>
+  <p>A partir de una investigación del medio La Cosa Cine y de sus seguidores y oyentes, se determinaron las temáticas que se discuten, la manera de comunicar y cómo recibe el público esa información. Esta información permitió la creación dos <span class="fw-bold">user persona</span> para poder entender y saber qué cambios serían positivos para los usuarios en el rediseño.</p>
+  <!--USER PERSONA EN PANTALLAS GRANDES-->
+  <div class="userPersonaContainer">
+        <img src="../assets/img/lacosacine/userGabriel.svg" class="img-fluid w-100" alt="">
+        <img src="../assets/img/lacosacine/userAna.svg" class="img-fluid w-100 mt-5" alt="">
+  </div>
+
+  <!--USER PERSONA EN PANTALLAS PEQUEÑAS-->
+  <div class="userPersonaPequeContainer">
+
+      <!--USER PERSONA GABRIEL-->
+      <div class="userPersonaPeque rounded-4">
+        <img src="../assets/img/lacosacine/userGabrielPeque.svg" alt="">
+        <h3>Acerca de</h3>
+        <p>Es una persona dedicada a su trabajo y suele disfrutar mucho de sus tiempos libres yendo al cine y viendo los últimos estrenos.  Le gusta mantenerse informado, especialmente sobre el cine y las series de televisión. Le encanta leer sobre técnicas o consejos para mejorar en su carrera profesional.</p>
+
+        <div class="separadorUser"><hr></div>
+        <h3>Objetivo personal</h3>
+        <ul>
+          <li>“Me gustaría tener propiedad en los temas que dialogo con las demás personas”</li>
+          <li> “Deseo conocer ejemplos de cómo usan las cámaras o cómo es la edición y así emplearlo en mi vida profesional”</li>
+        </ul>
+
+        <div class="separadorUser"><hr></div>
+        <h3>Necesidades</h3>
+        <ul>
+          <li> “Necesito estar al tanto de los estrenos del cine por lo menos mensualmente”</li>
+          <li>“Necesito un espacio donde visualizar y debatir información relacionada  a  cuestiones  estrenos, técnicas  curiosidades del cine”</li>
+        </ul>
+
+        <div class="separadorUser"><hr></div>
+        <h3>Frustraciones</h3>
+        <ul>
+          <li>“A  veces me pierdo de algunos estrenos porque no tengo un recordatorio sobre la fecha de salida”</li>
+          <li> “En redes solo veo noticias de chismes de famosos”</li>
+          <li> “No suelo encontrar personas con las cuales compartir mi opinión sobre el cine”</li>
+        </ul>
+
+      </div>
+
+      <!--USER PERSONA ANA-->
+      <div class="userPersonaPeque rounded-4">
+        <img src="../assets/img/lacosacine/userAnaPeque.svg" alt="">
+        <h3>Acerca de</h3>
+        <p>Es una persona aplicada, amante del  cine,  busca  entrevistas interesantes sin chismes y una plataforma que las almacene. Aspira a ser entrevistadora de actores y directores, mejorando sus habilidades comunicativas. Estudia e investiga sobre los actores tras ver películas.</p>
+
+        <div class="separadorUser"><hr></div>
+        <h3>Objetivo personal</h3>
+        <ul>
+          <li>“Quiero ser entrevistadora de actores, directores y otras celebridades,  realizando preguntas interesantes  y atractivas para ellos y el público”</li>
+          <li> “Deseo  desarrollar  mis habilidades comunicativas y así expresar mis opiniones de manera asertiva”</li>
+        </ul>
+
+        <div class="separadorUser"><hr></div>
+        <h3>Necesidades</h3>
+        <ul>
+          <li>“Necesito encontrar entrevistas que me sirvan de ejemplo para aplicar  en  mi  carrera profesional”</li>
+          <li>“Necesito un lugar donde me pueda informar y al mismo tiempo poner en práctica mis habilidades de comunicación”</li>
+        </ul>
+
+        <div class="separadorUser"><hr></div>
+        <h3>Frustraciones</h3>
+        <ul>
+          <li>“No suelo encontrar entrevistas a figuras del cine donde hagan preguntas interesantes que no tengan que ver con los chismes y/o publicidad amarillista”</li>
+          <li>“No encuentro un lugar donde diversas entrevistas se almacenen en una misma plataforma”</li>
+        </ul>
+
+      </div>
+
+  </div>    
+  <p style="margin-top: 5vh;">Gracias a esta investigación, se logró definir el elemento extra dentro del rediseño de La Cosa Cine el cual sería: Posibilidad de comentar y ganar puntos comentando, gamificación con insignias y la separación y realce de la sección de entrevistas.</p>
+</section>
+
+<hr>
+
+ <!--SECCIÓN DE DEFINIR-->
+ <section class="container empatizar " id="definir">
+  <h2 class="fw-bold">2. Definir</h2>
+  <p>Tomando en cuenta el estilo de la página principal de La Cosa Cine, se creo un <span class="fw-bold">moodboard</span>, el cual permitiría tener las bases de diseño de la página web. En este caso el diseño sería cyberpunk con los colores morado y verde como principales.</p>
+  <!--IMAGEN DE MOODBOARD-->
+  <div class="d-flex container flex-column">
+    <img class="img-fluid" src="../assets/img/lacosacine/moodboard.svg" alt="">
+</div>
+
+<!--BENCHMARK DE LA COSA CINE-->
+<div class="d-flex container flex-column" style="margin-top: 12vh;">
+  <p>Además se realizó un <span class="fw-bold">benchmark</span> para poder entender mejor cómo otras páginas web utilizan los comentarios o la gamificación y poder tener un poco de inspiración. <br>
+  <span class="fst-italic">*En la tabla se podrá ver el apartado de aspecto a comparar, el cual significa lo que se analizó de la web.</span></p>
+  
+  <!--TABLA DEL BENCHMARK LA COSA CINE-->
+  <table class="table tablaBenchmarkGrande" style="margin-top: 5vh;">
+    <thead>
+      <tr>
+        <th scope="col">Web</th>
+        <th scope="col">Aspecto a comparar</th>
+        <th scope="col">¿Qué es lo que mejor hacen?</th>
+        <th scope="col">¿Por qué?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><img src="../assets/img/lacosacine/logoYoutube.svg" alt=""></th>
+        <td>Sección de comentarios</td>
+        <td>La sección de comentarios de YouTube, ubicada bajo el video, representa un espacio dinámico donde los espectadores  pueden  compartir  opiniones respondiendo comentarios de otros usuarios. Además, la función de votación permite a los usuarios destacar los comentarios más relevantes, promoviendo una participación informada y respetuosa</td>
+        <td>Facilitar respuestas a los comentarios permite abrir un espacio para el debate y promueve una comunicación activa entre el usuario y el medio. Esta interacción no solo enriquece la experiencia del usuario al permitirle expresar su opinión y participar en discusiones relevantes, sino que también fortalece la conexión y el compromiso con la comunidad digital del medio.</td>
+      </tr>
+      <tr>
+        <th scope="row"><img src="../assets/img/lacosacine/logoComingsoon.svg" alt=""></th>
+        <td>Sección de reseñas y avances</td>
+        <td>La sección de reseñas y avances de ComingSoon se caracteriza por presentar varias reseñas alineadas una al lado de la otra, cada una acompañada por una imagen, el título de la reseña, un icono de comentario, y la cantidad de comentarios.</td>
+        <td>Esta disposición permite a los usuarios explorar de manera eficiente una variedad de críticas y análisis detallados sobre películas y programas de televisión. Al destacar la opción de comentar, ComingSoon fomenta una participación activa de los usuarios, quienes pueden compartir sus opiniones y contribuir a la discusión sobre el contenido presentado.</td>
+      </tr>
+      <tr>
+        <th scope="row"><img src="../assets/img/lacosacine/logoSensacine.svg" alt=""></th>
+        <td>Nav bar</td>
+        <td>La navbar de Sensacine está diseñada con una estructura clara y funcional que incluye una barra de búsqueda y diversas secciones dispuestas debajo, como Películas, Cartelera, Noticias, entre otras. Además, ofrece la opción de "Mi cuenta" para que los usuarios puedan crear una cuenta o iniciar sesión.</td>
+        <td>Esta disposición facilita una navegación intuitiva y eficiente, permitiendo a los usuarios acceder rápidamente a contenido específico como críticas de películas, horarios de cine actualizados, y noticias relevantes del mundo del entretenimiento. La inclusión de la opción de cuenta personal promueve una experiencia personalizada y conectada, mejorando así la interacción del usuario con la plataforma de Sensacine.</td>
+      </tr>
+      <tr>
+        <th scope="row"><img src="../assets/img/lacosacine/logoElseptimoarte.svg" alt=""></th>
+        <td>Portada con noticias y etiqueta para destacar cada una</td>
+        <td> En la portada de El Séptimo Arte, las noticias se presentan de manera visualmente impactante en forma de collage. Cada noticia está destacada con un título en un rectángulo de color negro, contrastando con la imagen correspondiente, y acompañada de una etiqueta que indica el tipo de noticia.</td>
+        <td>Esta disposición no solo mejora la accesibilidad y legibilidad de las noticias al separar claramente el contenido textual del visual, sino que también proporciona a los usuarios una visión instantánea y organizada de los temas más relevantes del mundo del cine.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!--TABLA DEL BENCHMARK RESPONSIVE PANTAÑÑAS PEQUEÑAS-->
+  <div class="flex-column tablaBenchmarkPeque">
+    <div class="d-flex flex-column align-items-start gap-3">
+      <img src="../assets/img/lacosacine/logoYoutube.svg" alt="">
+      <p><span class="fst-italic">Aspecto a comparar:</span> <span class="fw-bold">Sección de comentarios</span></p>
+      <p><span class="fst-italic">¿Qué es lo que mejor hacen?:</span> La sección de comentarios de YouTube, ubicada bajo el video, representa un espacio dinámico donde los espectadores  pueden  compartir  opiniones respondiendo comentarios de otros usuarios. Además, la función de votación permite a los usuarios destacar los comentarios más relevantes, promoviendo una participación informada y respetuosa.</p>
+      <p><span class="fst-italic">¿Por qué?:</span> Facilitar respuestas a los comentarios permite abrir un espacio para el debate y promueve una comunicación activa entre el usuario y el medio. Esta interacción no solo enriquece la experiencia del usuario al permitirle expresar su opinión y participar en discusiones relevantes, sino que también fortalece la conexión y el compromiso con la comunidad digital del medio.</p>
+    </div>
+    <div class="d-flex flex-column align-items-start gap-3">
+      <img src="../assets/img/lacosacine/logoComingsoon.svg" alt="">
+      <p><span class="fst-italic">Aspecto a comparar:</span> <span class="fw-bold">Sección de reseñas y avances</span></p>
+      <p><span class="fst-italic">¿Qué es lo que mejor hacen?:</span> La sección de reseñas y avances de ComingSoon se caracteriza por presentar varias reseñas alineadas una al lado de la otra, cada una acompañada por una imagen, el título de la reseña, un icono de comentario, y la cantidad de comentarios.</p>
+      <p><span class="fst-italic">¿Por qué?:</span> Esta disposición permite a los usuarios explorar de manera eficiente una variedad de críticas y análisis detallados sobre películas y programas de televisión. Al destacar la opción de comentar, ComingSoon fomenta una participación activa de los usuarios, quienes pueden compartir sus opiniones y contribuir a la discusión sobre el contenido presentado.</p>
+    </div>
+    <div class="d-flex flex-column align-items-start gap-3">
+      <img src="../assets/img/lacosacine/logoSensacine.svg" alt="">
+      <p><span class="fst-italic">Aspecto a comparar:</span> <span class="fw-bold">Nav Bar</span></p>
+      <p><span class="fst-italic">¿Qué es lo que mejor hacen?:</span> La navbar de Sensacine está diseñada con una estructura clara y funcional que incluye una barra de búsqueda y diversas secciones dispuestas debajo, como Películas, Cartelera, Noticias, entre otras. Además, ofrece la opción de "Mi cuenta" para que los usuarios puedan crear una cuenta o iniciar sesión.</p>
+      <p><span class="fst-italic">¿Por qué?:</span> Esta disposición facilita una navegación intuitiva y eficiente, permitiendo a los usuarios acceder rápidamente a contenido específico como críticas de películas, horarios de cine actualizados, y noticias relevantes del mundo del entretenimiento. La inclusión de la opción de cuenta personal promueve una experiencia personalizada y conectada, mejorando así la interacción del usuario con la plataforma de Sensacine.</p>
+    </div>
+    <div class="d-flex flex-column align-items-start gap-3">
+      <img src="../assets/img/lacosacine/logoElseptimoarte.svg" alt="">
+      <p><span class="fst-italic">Aspecto a comparar:</span> <span class="fw-bold">Portada con noticias y etiquetas para destacar cada una</span></p>
+      <p><span class="fst-italic">¿Qué es lo que mejor hacen?:</span> En la portada de El Séptimo Arte, las noticias se presentan de manera visualmente impactante en forma de collage. Cada noticia está destacada con un título en un rectángulo de color negro, contrastando con la imagen correspondiente, y acompañada de una etiqueta que indica el tipo de noticia.</p>
+      <p><span class="fst-italic">¿Por qué?:</span> Esta disposición no solo mejora la accesibilidad y legibilidad de las noticias al separar claramente el contenido textual del visual, sino que también proporciona a los usuarios una visión instantánea y organizada de los temas más relevantes del mundo del cine.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!--SEPARADOR-->
+<hr>
+
+<!--SECCIÓN DE IDEAR-->
+<section class="container empatizar" id="idear">
+  <h2 class="fw-bold">3. Idear</h2>
+  <!--CARD SORTING-->
+  <p>Para lograr una mejor navegación, se realizó un <span class="fw-bold">card sorting</span> y así entender cómo esperaba el usuario que estuvieran jerarquizadas las secciones dentro de la web.</p>
+  <div class="mini-seccion">
+      <div class="grilla-CardSorting">
+          <div id="tipo">
+              <h2>Tipo de Card Sorting:</h2>
+              <p>Se realizó un card sorting cerrado debido a que nuestra propuesta de valor apuntaba específicamente a la mejora de la home page y la creación de una sección de entrevistas, por lo que las categorías en las cuales se podían organizar las cartas eran limitadas.</p>
+          </div>
+          <div id="usuariosTesteados">
+              <h2>Usuarios testeados:</h2>
+              <p>Fueron un total de 7 participantes los cuales estaban familiarizados con tecnología y lectura de noticias en la web.  A estos se les pidió que no solo organizaran las cards por categoría sino también por jerarquización de importancia.</p>
+          </div>
+          <div id="cartas">
+              <h2>Cartas utilizadas:</h2>
+              <ul>
+                  <li>Todas las entrevistas</li>
+                  <li>Entrevistas de actores</li>
+                  <li>Entrevistas de TV</li>
+                  <li>Entrevistas de directores y productores</li>
+                  <li>Entrevistas de otras temáticas</li>
+                  <li>Videos de entrevistas</li>
+                  <li>Descripción de entrevista</li>
+                  <li>Comentarios</li>
+                  <li>Sugerencias</li>
+                  <li>Noticias destacadas</li>
+                  <li>Últimas noticias</li>
+                  <li>Entrevistas exclusivas</li>
+                  <li>Te podría interesar</li>
+                  <li>Noticias de cómics</li>
+                  <li>Noticias de videojuegos</li>
+                  <li>Noticias de TV</li>
+                  <li>Noticias de cine</li>
+                  <li>Películas en cine esta semana</li>
+              </ul>
+          </div>
+          <div id="categorias">
+              <h2>Categorías:</h2>
+              <ul>
+                  <li>Home</li>
+                  <li>Búsqueda de entrevistas</li>
+                  <li>Visualización de entrevista</li>
+              </ul>
+          </div>
+          <div id="analisis">
+              <h2 class="fw-bold" style="color: #301F36;">Análisis de resultados:</h2>
+              <p>Los usuarios demostraron que las categorías propuestas son entendibles tanto en nombre como en ubicación, permitiéndonos observar que el planteamiento inicial de la organización de la información fue correcto. Por ende se realizó una nueva arquitectura de la información implementando las nuevas categorías sobre todo en el home y en la búsqueda de entrevistas.</p>
+          </div>
+          <div id="resultado1">
+              <img src="../assets/img/lacosacine/resultado1.svg" alt="" class="zoom-imagen">
+              <p>Resultados generales</p>
+          </div>
+          <div id="resultado1">
+            <img src="../assets/img/lacosacine/resultado2.svg" alt="" class="zoom-imagen">
+            <p>Ubicaciones populares</p>
+        </div>
+      </div>
+  </div>
+ 
+</section>
+   
+</section>
+
+<hr>
+
+<!--SECCION DE PROTOTIPAR-->
+<section class="container empatizar" id="prototipar">
+  <h2 class="fw-bold">4. Prototipar</h2>
+  <!--GIF DE MOCKUPS LA COSA CINE-->
+  <p>Una vez definidas las ubicaciones se realizaron los wireframes para terminar de jerarquizar la información y posterior a eso se diseñó el <span class="fw-bold">prototipo final,</span> del cual se tomaría la pantalla más importante para implementar en el desarrollo:</p>
+  <img src="../assets/img/gif_lacosacine_desktop.gif" alt="">
+  <p>Se seleccionó para <span class="fw-bold">implementar en el desarrollo web,</span> la pantalla de comentarios y visualización de una publicación, ya que esta es la que más abarca la propuesta de valor (comentarios, gamificación)</p>
+  <div class="botonPrototipo">
+    <a class="nav-link"  href="../pages/contactame.html">Acceder a página web</a>
+  </div>
+</section>
+
+ <!--CONCLUSION-->
+ <section class="conclusion container" id="conclusion" style="margin-top: 15vh;">
+  <h2 class="container">Para finalizar</h2>
+  <div class="textoConclusion">
+    <p >JetSMART es una aerolínea en crecimiento, llegando a nuevos países como Colombia lo que significa que requiere una experiencia apta para todo el público, con el objetivo de brindarle a sus usuarios la tranquilidad y comodidad de entrar a su página y comprar en la aerolínea que les brindará la oportunidad de realizar su próximo viaje.
+      Por todo lo anterior, es indispensable que a pesar de las mejoras, estas puedan seguir siendo revisadas pero también actualizadas constantemente para que los usuarios sientan una navegación ligera y sencilla en todo momento y así puedan volar a su manera...</p>
+  </div>
+</section>
+
+<!--PROYECTO ANTERIOR, SIGUIENTE PROYECTO-->
+<section class="container d-flex justify-content-between siguienteYAnterior flex-wrap">
+  <div class="d-flex gap-3">
+    <a href=""><img src="../assets/img/flechaAnterior.svg" alt=""></a>
+    <a href="">Proyecto anterior</a>
+  </div>
+  <div class="d-flex gap-3">
+    <a href="">Siguiente proyecto</a>
+    <a href=""><img src="../assets/img/flechasiguiente.svg" alt=""></a>
+  </div>
+</section>
+
+</section>
+
+</section>
+
+<!--BARRA DE NAVEGACIÓN EN LA MISMA PÁGINA-->
+<div class="barraEstatica fixed-bottom">
+<nav class="text-center">
+<input type="checkbox" id="click">
+<label for="click" class="menu-btn">
+ <p>Ir a sección</p>
+ <img src="../assets/img/iraseccion.svg" alt="">
+</label>
+<ul >
+   <li id="cerrar"><a onclick="closeMenu()"><img src="../assets/img/XparacerrarOscura.svg" alt=""></a></li>
+   <li><a href="#inicio" onclick="closeMenu()">Inicio</a></li>
+   <li><a href="#empatizar" onclick="closeMenu()">1. Empatizar</a></li>
+   <li><a href="#definir" onclick="closeMenu()">2. Definir</a></li>
+   <li><a href="#idear" onclick="closeMenu()">3. Idear</a></li>
+   <li><a href="#prototipar" onclick="closeMenu()">4. Prototipar</a></li>
+   <li><a href="#conclusion" onclick="closeMenu()">Conclusión</a></li>
+</ul>
+</nav>
+</div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-white mt-0" style="background-color: #955AB1; padding-bottom: 20vh;">
+      <!-- Grid container -->
+      <div class="container">
+        <!-- Section: Links -->
+        <section class="mt-1">
+          <!-- Grid row-->
+          <div class="row text-center d-flex justify-content-center pt-5">
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="font-weight-bold">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2">
+                <h6 class="font-weight-bold">
+                    <a class="nav-link " aria-current="page" href="../pages/proyectos.html" >Mis Proyectos</a>
+                </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="font-weight-bold">
+                <a class="nav-link" aria-current="page" href="../index.html">Conóceme</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="font-weight-bold">
+                <a class="nav-link" aria-current="page" href="../index.html">Contáctame</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+        </section>
+        <!-- Section: Links -->
+  
+        <hr class="my-5" />
+  
+        <!-- Section: Text -->
+        <section class="mb-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <p>Diseñadora UX / UI</p>
+              <p>Desarrolladora web</p>
+            </div>
+          </div>
+        </section>
+        <!-- Section: Text -->
+  
+        <!-- Section: Social -->
+        <section class="text-center mb-5">
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"><img src="../assets/img/whatsappLogo.svg" alt=""></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"><img src="../assets/img/gmailLogo.svg" alt=""></i>
+          </a>
+        </section>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); width: 100%;">
+            © 2025 Mariana Mercado Villabona
+        </div>
+      </div>
     </footer>
+    <!-- Footer -->
 
 
     <script src="../js/bootstrap.bundle.min.js"></script>
