@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
   </head>
   <body>
-    <header>
+    <header id="inicio">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
             <!-- Logo del header -->
@@ -67,7 +67,7 @@
         <!--TITULO Y FLECHA DE REGRESAR DE CADA PROYECTO-->
         <div class="row">
           <div class="col-2">
-            <div>
+            <div class="mt-3">
               <a href="../pages/proyectos.html"><img src="../assets/img/flechaRegresar.svg" alt=""></a>
             </div>
           </div>
@@ -114,7 +114,7 @@
   </div>
 
   <!--EL PROCESO--> 
-  <section class="d-flex flex-column container " style="margin-top: 15vh;">
+  <section class="d-flex flex-column container " style="margin-top: 8vh;">
     <h2 style="font-weight: 600;">El proceso</h2>
     <div class="d-flex flex-wrap justify-content-between elProceso">
         <div class="imgProceso" id="empatizar-img">
@@ -222,16 +222,16 @@
 </div>
 
 <!--BENCHMARK DE LA COSA CINE-->
-<div class="d-flex container flex-column" style="margin-top: 12vh;">
+<div class="d-flex container flex-column" style="margin-top: 8vh;">
   <p>Además se realizó un <span class="fw-bold">benchmark</span> para poder entender mejor cómo otras páginas web utilizan los comentarios o la gamificación y poder tener un poco de inspiración. <br>
   <span class="fst-italic">*En la tabla se podrá ver el apartado de aspecto a comparar, el cual significa lo que se analizó de la web.</span></p>
   
   <!--TABLA DEL BENCHMARK LA COSA CINE-->
-  <table class="table tablaBenchmarkGrande" style="margin-top: 5vh;">
+  <table class="table" style="margin-top: 5vh;">
     <thead>
       <tr>
         <th scope="col">Web</th>
-        <th scope="col">Aspecto a comparar</th>
+        <th scope="col" style="white-space: nowrap;">Aspecto a comparar</th>
         <th scope="col">¿Qué es lo que mejor hacen?</th>
         <th scope="col">¿Por qué?</th>
       </tr>
@@ -302,8 +302,8 @@
   <h2 class="fw-bold">3. Idear</h2>
   <!--CARD SORTING-->
   <p>Para lograr una mejor navegación, se realizó un <span class="fw-bold">card sorting</span> y así entender cómo esperaba el usuario que estuvieran jerarquizadas las secciones dentro de la web.</p>
-  <div class="mini-seccion">
-      <div class="grilla-CardSorting">
+   <!--ESTO ES UNA MINI SECCION-->
+      <div class="CardSorting d-flex flex-column mt-5 gap-5">
           <div id="tipo">
               <h2>Tipo de Card Sorting:</h2>
               <p>Se realizó un card sorting cerrado debido a que nuestra propuesta de valor apuntaba específicamente a la mejora de la home page y la creación de una sección de entrevistas, por lo que las categorías en las cuales se podían organizar las cartas eran limitadas.</p>
@@ -347,7 +347,7 @@
               <h2 class="fw-bold" style="color: #301F36;">Análisis de resultados:</h2>
               <p>Los usuarios demostraron que las categorías propuestas son entendibles tanto en nombre como en ubicación, permitiéndonos observar que el planteamiento inicial de la organización de la información fue correcto. Por ende se realizó una nueva arquitectura de la información implementando las nuevas categorías sobre todo en el home y en la búsqueda de entrevistas.</p>
           </div>
-          <div id="resultado1">
+            <div id="resultado1">
               <img src="../assets/img/lacosacine/resultado1.svg" alt="" class="zoom-imagen">
               <p>Resultados generales</p>
           </div>
@@ -356,7 +356,6 @@
             <p>Ubicaciones populares</p>
         </div>
       </div>
-  </div>
  
 </section>
    
@@ -377,7 +376,7 @@
 </section>
 
  <!--CONCLUSION-->
- <section class="conclusion container" id="conclusion" style="margin-top: 15vh;">
+ <section class="conclusion container" id="conclusion" style="margin-top: 8vh;">
   <h2 class="container">Para finalizar</h2>
   <div class="textoConclusion">
     <p >JetSMART es una aerolínea en crecimiento, llegando a nuevos países como Colombia lo que significa que requiere una experiencia apta para todo el público, con el objetivo de brindarle a sus usuarios la tranquilidad y comodidad de entrar a su página y comprar en la aerolínea que les brindará la oportunidad de realizar su próximo viaje.
@@ -491,7 +490,7 @@
         </section>
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); width: 100%;">
-            © 2025 Mariana Mercado Villabona
+          © 2025 Portafolio - Mariana Mercado Villabona
         </div>
       </div>
     </footer>

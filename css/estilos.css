@@ -1,5 +1,5 @@
 *{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -86,15 +86,13 @@ hr{
 /*ESTILO PERSONALIZADO DEL MENÚ DE HAMBURGUESA DEL HEADER (RESPONSIVE)----------------------------------------------*/
 .navbar-toggler {
     border: none;
+    .navbar-toggler-icon{
+        width: 1.5rem;
+        height: 1.5rem;
+        background-image: url(../assets/img/menuHamburguesa.svg);
+    }
   }
-.navbar-toggler-icon{
-    width: 1.5rem;
-    height: 1.5rem;
-    background-image: url(../assets/img/menuHamburguesa.svg);
-}
-.navbar-toggler {
-    border: none;
-}
+
 .estiloMenuHamburguesa{
     background-color: #955AB1;
     width: 100%;
@@ -150,97 +148,31 @@ footer{
 
 /*IMAGENES DE LA SECCIÓN DE MIS PROYECTOS--------------------------------------------------------------*/
 
-/*@media screen and (max-width: 768px) {
-    .imgProyectos{
-        height: 55vh; width: 80vh;
-        margin-right: 2vh; margin-left: 2vh;
-    }
-}
-@media screen and (max-width: 576px) {
-    .imgProyectos{
-        height: 47vh; width: 72vh;
-    }
-}
-@media screen and (max-width: 481px) {
-    .imgProyectos{
-        height: 30vh; width: 55vh;
-        margin-right: 2vh; margin-left: 2vh;
-        margin-top: 5vh;
-    }
-}*/
-
-
 .imgProyectos {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 60vh;
-    width: 85vh;
-    margin-top: 15vh;
-    position: relative; /* Para poder colocar el pseudo-elemento correctamente */
-  }
-  
-  .imgProyectos a {
-    display: block; /* Asegura que el enlace ocupe todo el espacio del div */
-    position: absolute; /* Posiciona el enlace sobre el div */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1; /* Asegura que el enlace esté por encima del fondo */
-  }
-  
-  .imgProyectos a::after {
-    content: ''; /* Necesario para crear el pseudo-elemento */
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent; /* El pseudo-elemento será invisible */
-    pointer-events: none; /* Permite que el enlace sea clickeable pero sin afectar el área visible */
-  }
-  
-  #jetsmart-img {
-    background-image: url(../assets/img/jetsmartProyectos.svg);
-    &:hover{
-        background-image: url(../assets/img/jetsmartProyectosHover.svg);
+    max-width: 1000px;
+    min-width: 320px;
+    max-height: 750px;
+    min-height: 250px;
+    width: 45vw;
+    height: 30vw;
+    position: relative;
+    margin-top: 10vh;
+    a{
+        img{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
     }
-  }
-  
-  #alma-img {
-    background-image: url(../assets/img/almaProyectos.svg);
-    &:hover{
-        background-image: url(../assets/img/almaProyectosHover.svg);
+    #img2{
+        &:hover{
+            cursor: url(../assets/img/cursorMano.png), auto;
+            opacity: 0;
+        }
     }
   }
 
-  #panu-img {
-    background-image: url(../assets/img/panuProyectos.svg);
-    &:hover{
-        background-image: url(../assets/img/panuProyectosHover.svg);
-    }
-  }
-
-  #gelatina-img {
-    background-image: url(../assets/img/gelatinaProyectos.svg);
-    &:hover{
-        background-image: url(../assets/img/gelatinaProyectosHover.svg);
-    }
-  }
-  
-  #lacosacine-img {
-    background-image: url(../assets/img/lacosacineProyectos.svg);
-    &:hover{
-        background-image: url(../assets/img/lacosacineProyectosHover.svg);
-    }
-  }
-  
-  #proximamente-img {
-    background-image: url(../assets/img/proximamenteProyectos.svg);
-  }
-  
 /*TITULO DE PAGINA DE MIS PROYECTOS JUNTO CON EL AJUSTE RESPONSIVE EN LAS PANTALLAS----------------------------------------------*/
 .tituloProyectos{
     background-color: #301F36;
@@ -287,17 +219,83 @@ footer{
     width: 100%;
     height: 100vh; /* Para ocupar toda la pantalla */
     overflow: hidden; /* Evita cortes en los marquees */
-}
 
-/* MARQUEE 1 */
-.seccionMarquee {
-    position: absolute; /* Se superpone sobre la silueta */
-    top: 50%; /* Ajusta la altura del primer marquee */
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    z-index: 2; /* Asegura que esté sobre la silueta */
+    /* SILUETA */
+    .silueta {
+        position: absolute; /* Se superpone en el fondo */
+        right: 0;
+        bottom: 0;
+        width: 70vh;
+        z-index: 1; /* Debajo de los marquees */
+    }
+
+    /* MARQUEE 1 */
+    .seccionMarquee {
+        position: absolute;
+        top: 50%; 
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        z-index: 2; 
+
+        .contenidoMarquee {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1vw;
+            min-width: 200%;
+            background-color: #301F36;
+            animation: marquee 20s linear infinite;
+            padding-top: 3vh; padding-bottom: 3vh;
+        
+            h1{
+                color: #f9f9f9;
+                font-size: 4rem;
+                background-color: #301F36;
+                font-weight: 650;
+            }
+        
+            img{
+                height: 5vh;
+                background-color: #301F36;
+            }
+        }
+    }
+
+/* MARQUEE 2 */
+    .seccionMarquee2 {
+        position: absolute;
+        top: 75%; /* Ajusta la altura del segundo marquee */
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        z-index: 2;
+
+        h2{
+            color: #f9f9f9;
+            font-size: 4rem;
+            background-color: #301F36;
+            font-weight: 650;
+        }
+
+        .contenidoMarquee2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1vw;
+            min-width: 200%;
+            background-color: #301F36;
+            animation: marquee2 20s linear infinite;
+            padding-top: 3vh; padding-bottom: 3vh;
+        
+            img{
+                height: 5vh;
+                background-color: #301F36;
+            }
+        }
+    }
 }
 
 @keyframes marquee {
@@ -305,80 +303,9 @@ footer{
     to { transform: translateX(-30%); }
 }
 
-.contenidoMarquee {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1vw;
-    min-width: 200%;
-    background-color: #301F36;
-    animation: marquee 20s linear infinite;
-    padding-top: 3vh; padding-bottom: 3vh;
-}
-
-.contenidoMarquee h1 {
-    color: #f9f9f9;
-    font-size: 4rem;
-    background-color: #301F36;
-    font-weight: 650;
-}
-.contenidoMarquee2 h2 {
-    color: #f9f9f9;
-    font-size: 4rem;
-    background-color: #301F36;
-    font-weight: 650;
-}
-
-.contenidoMarquee img {
-    height: 5vh;
-    background-color: #301F36;
-}
-
-/* MARQUEE 2 */
-.seccionMarquee2 {
-    position: absolute;
-    top: 75%; /* Ajusta la altura del segundo marquee */
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    z-index: 2;
-}
-
 @keyframes marquee2 {
     from { transform: translateX(-30%); }
     to { transform: translateX(0%); }
-}
-
-.contenidoMarquee2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1vw;
-    min-width: 200%;
-    background-color: #301F36;
-    animation: marquee2 20s linear infinite;
-    padding-top: 3vh; padding-bottom: 3vh;
-}
-
-.contenidoMarquee2 h1 {
-    color: #f9f9f9;
-    font-size: 4rem;
-    background-color: #301F36;
-}
-
-.contenidoMarquee2 img {
-    height: 5vh;
-    background-color: #301F36;
-}
-
-/* SILUETA */
-.silueta {
-    position: absolute; /* Se superpone en el fondo */
-    right: 0;
-    bottom: 0;
-    width: 70vh;
-    z-index: 1; /* Debajo de los marquees */
 }
 
 /*RESPONSIVE DEL INDEX ----------------------------------------------------*/
@@ -458,8 +385,9 @@ footer{
 
 /*BOTONES ------------------------------------*/
  
- .boton a{
-     font-size: 2rem;
+ .boton {
+    a{
+        font-size: 2rem;
      color: #f9f9f9;
      font-weight: 600;
      text-decoration: none;
@@ -468,6 +396,8 @@ footer{
      &:hover{
         background-color: #301F36;
      }
+    }
+     
  }
 
 /*SUBRAYADO DE PALABRAS ---------------------- */
@@ -494,7 +424,7 @@ footer{
 .descipcionGeneral{
     color: #E9C8FF;
     font-size: 1.7rem;
-    padding-top: 15vh;
+    padding-top: 10vh;
 }
 .tipoRolHerramientas{
     color: #f9f9f9;
@@ -550,21 +480,47 @@ img{
 }
 
 /*BOTON QUE ESTÁ EN EL RESUMEN DE CADA PROYECTO Y LLEVA A LOS PROTOTIPOS---------------------------*/
-.botonSolo a{
-    white-space: nowrap;
-    background-color: #955AB1;
-    padding-left: 3%; padding-right: 3%; padding-top: 2%; padding-bottom: 2%;
-    font-size: 1.2rem;
-     color: #f9f9f9;
-     font-weight: 600;
-     text-decoration: none;
+.botonSolo {
+    a{
+        white-space: nowrap;
+        background-color: #955AB1;
+        padding-left: 3%; padding-right: 3%; padding-top: 2%; padding-bottom: 2%;
+        font-size: 1.2rem;
+        color: #f9f9f9;
+        font-weight: 600;
+        text-decoration: none;
 
-     &:hover{
-        background-color: #C9B3E2;
-        color: #301F36;
-     }
+        &:hover{
+            background-color: #C9B3E2;
+            color: #301F36;
+        }
+    }
  }
 
+  /*ESTE ES CUANDO HAY DOS BOTONES EN LA PARTE DEL INICIO, POR EJEMPLO EN EL CASO DE GELATINA SE MUESTRA EL VER PROTOTIPO Y VER DESARROLLO WEB*/
+ .botonDobleEnInicio{
+    display: flex;
+    flex-direction: row;
+    gap: 5vh;
+    flex-wrap: wrap;
+    align-items: center;
+    
+        a{
+            white-space: nowrap;
+            background-color: #955AB1;
+            padding: 2%;
+            font-size: 1.2rem;
+            color: #f9f9f9;
+            font-weight: 600;
+            text-decoration: none;
+
+            &:hover{
+                background-color: #C9B3E2;
+                color: #301F36;
+            }
+        
+    }
+ }
  /*NOTA PEQUEÑA QUE TIENE EL RESUMEN DE CADA UNO DE LOS PROYECTOS-----------------------------------*/
  .nota{
     color: #f9f9f9;
@@ -578,7 +534,7 @@ img{
     display: flex;
     flex-direction: column;
     gap: 3vh;
-    margin-top: 15vh;
+    margin-top: 8vh;
 
     p{
         font-size: 1.5rem;
@@ -631,30 +587,29 @@ img{
     height: 213px;
     width: 200px;
     margin-top: 5vh;
-    position: relative; /* Para poder colocar el pseudo-elemento correctamente */
+    position: relative; 
+    a{
+        display: block; /* Asegura que el enlace ocupe todo el espacio del div */
+        position: absolute; /* Posiciona el enlace sobre el div */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1; /* Asegura que el enlace esté por encima del fondo */
+        &::after{
+            content: ''; /* Necesario para crear el pseudo-elemento */
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent; /* El pseudo-elemento será invisible */
+            pointer-events: none; /* Permite que el enlace sea clickeable pero sin afectar el área visible */
+        }
+    }
   }
   
-  .imgProceso a {
-    display: block; /* Asegura que el enlace ocupe todo el espacio del div */
-    position: absolute; /* Posiciona el enlace sobre el div */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1; /* Asegura que el enlace esté por encima del fondo */
-  }
-  
-  .imgProceso a::after {
-    content: ''; /* Necesario para crear el pseudo-elemento */
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent; /* El pseudo-elemento será invisible */
-    pointer-events: none; /* Permite que el enlace sea clickeable pero sin afectar el área visible */
-  }
  
   /*SECCIONES DE EMPATIZAR, DEFINIR, IDEAR Y PROTOTIPAR -------------------------*/
 
@@ -671,7 +626,6 @@ img{
         font-size: 1.5rem;
     }
     h2{
-        margin-bottom: 5vh;
         font-size: 2rem;
     }
 }
@@ -715,6 +669,7 @@ img{
         display: none !important;
     }
 }
+
 @media screen and (min-width: 850px) {
     .userPersonaPequeContainer{
         display: none !important;
@@ -731,31 +686,45 @@ img{
     border-style: solid;
     border-color: #301F36;
     width: 100%;
-    ul{
-        list-style-type: none;
-        gap: 15vh;
+    
+    nav{
+        display: flex;
+        height: 80px;
+        width: 100%;
+        background: #f9f9f9;
         align-items: center;
         justify-content: center;
-        padding: 2vh;
-        display: flex;
-        a{
-            text-decoration: none;
-            color: #250335;
-            font-size: 1.2rem;
+        padding: 0 50px 0 100px;
+        flex-wrap: wrap;
+        font-size: 22px;
+        ul{
+            list-style-type: none;
+            gap: 15vh;
+            align-items: center;
+            justify-content: center;
+            padding: 2vh;
+            display: flex;
+            white-space: nowrap;
+            li{
+                margin: 0 auto;
+                a{
+                    color: #250335;
+                    text-decoration: underline;
+                    font-size: 18px;
+                    font-weight: 500;
+                    padding: 0px 0px;
+                    border-radius: 5px;
+                    letter-spacing: 1px;
+                    font-family: 'Montserrat';
+                    transition: all 0.3s ease;
+                }
+            }
+            
         }
+
     }
 }
 
-.barraEstatica nav{
-    display: flex;
-    height: 80px;
-    width: 100%;
-    background: #f9f9f9;
-    align-items: center;
-    justify-content: center;
-    padding: 0 50px 0 100px;
-    flex-wrap: wrap;
-  }
   .menu-btn{
     display: flex;
     align-items: center; justify-content: center; align-content: center;
@@ -771,31 +740,12 @@ img{
         width: 4vh;
     }
     display: none;
-  }
-  .barraEstatica nav ul{
-    display: flex;
-    list-style: none;
-    white-space: nowrap;
-  }
-  .barraEstatica nav ul li{
-    margin: 0 auto;
-  }
-  .barraEstatica nav ul li a{
-    color: #250335;
-    text-decoration: underline;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 0px 0px;
-    border-radius: 5px;
-    letter-spacing: 1px;
-    font-family: 'Montserrat';
-    transition: all 0.3s ease;
-  }
-  .barraEstatica nav .menu-btn i{
-    color: #fff;
+    i{
+        color: #fff;
     font-size: 22px;
     cursor: pointer;
     display: none;
+    }
   }
   input[type="checkbox"]{
     display: none;
@@ -1169,51 +1119,125 @@ img{
 }
 
 /*---------------------- GRILLA DEL CARD SORTING LA COSA CINE ------------------------------------------ */
-.grilla-CardSorting{
-    display: grid;
-    grid-template-areas: 
-    "tipo usuariosTesteados"
-    "cartas categorias"
-    "cartas analisis"
-    ;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(3, auto);
-    column-gap: 20vh; row-gap: 6vw;
+
+
+.CardSorting{
     h2{
         color:#955AB1;
     }
-}
-
-#tipo{
-    grid-area: tipo;
-}
-#usuariosTesteados{
-    grid-area: usuariosTesteados;
-}
-#cartas{
-    grid-area: cartas;
-}
-#categorias{
-    grid-area: categorias;
-    height: 10vh; margin-bottom: 10vh;
-}
-#analisis{
-    grid-area: analisis;
-    background-color: #EBBFF0;
-    padding: 5vh;
-}
-#resultado1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-@media screen and (max-width: 600px) {
-    .grilla-CardSorting {
-      display: flex;
-      flex-wrap: wrap;
-    }
     #analisis{
-        margin-top: 20vh;
+        grid-area: analisis;
+        background-color: #EBBFF0;
+        padding: 5vh;
+    }
+    div{
+        margin-bottom: 3vh;
+    }
+    #resultado1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            object-fit: cover;
+            max-width: 600px;
+            min-width: 320px;
+            width: 100vw !important;
+        }
+    }
+}
+
+table{
+    tbody{
+        tr{
+            th{
+                img{
+                    padding-top: 3vh !important; padding-bottom: 3vh !important;
+                }
+            }
+            td{
+                padding-top: 3vh !important; padding-bottom: 3vh !important;
+            }
+        }
+    }
+}
+
+/*ESTILOS DE LA LISTA DESPLEGABLE HECHA CON BOOTSTRAP PARA EL MAPA DE EMPATIA ---------------------------------*/
+
+/*Edita el tamaño del texto dentro de cada item*/
+.accordion-body{
+    ul{
+        gap: 1rem;
+        li{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.accordion-button{
+    font-size: 1.2rem;
+
+    &:focus{
+      box-shadow:0 0 0 0.25rem #955AB1;
+    }
+    &:not(.collapsed) {
+        background-color: #E9C8FF;
+      }
+}
+
+/*RESPONSIVE DEL TAMAÑO DE LOS MOCKUPS DEL INICIO CUANDO SON CELULARES--------------------------*/
+@media screen and (min-width: 1025px){
+    .mockupCel{       
+            height: 80vh;
+    }
+}
+
+/*ESTILOS DEL ARBOL DEL PROBLEMA--------------------------------------------------------*/
+.verde{
+    background-color: #E3F8D3;
+}
+.morado{
+    background-color: #EACBF9;
+}
+.cafecito{
+    background-color: #E9DDD8;
+}
+.rojito{
+    background-color: #FBA3A3;
+}
+.efectos{
+    .contenedorArbol{
+        gap: 4vh;
+        div{
+            display: inline-block;
+            padding: 1.5vh;
+            font-size: large;
+        }
+    }
+}
+
+/*5 WHYS---------------------------------------------------------------------*/
+
+.whys{
+    div{
+        padding: 2vh;
+        text-align: center;
+    }
+}
+
+.borde{
+    border: 1px solid #250335;
+}
+
+/*MATRIZ DELTA NEXT -------------------------------------------------*/
+.parrafo{
+    p{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 560px){
+    .parrafo{
+        p{
+            width: 100%;
+        }
     }
 }
