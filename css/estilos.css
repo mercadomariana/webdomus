@@ -1,1243 +1,1192 @@
-*{
-    font-family: 'Montserrat', sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@charset "UTF-8";
+/*MAPA DE JUSTIFY CONTENT*/
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-html{
-    background-color: #f9f9f9;
-    scroll-behavior: smooth;
-    cursor: url(../assets/img/cursor.png), auto;
+
+html {
+  background-color: #f9f9f9;
+  scroll-behavior: smooth;
+  cursor: url(../assets/img/cursor.png), auto;
 }
-body{
-    cursor: url(../assets/img/cursor.png), auto;
+
+body {
+  cursor: url(../assets/img/cursor.png), auto;
 }
-a{
-    cursor: url(../assets/img/cursorMano.png), auto;
+
+a {
+  cursor: url(../assets/img/cursorMano.png), auto;
 }
 
 /*-------------------- SEPARADOR----------------------------*/
-
-hr{
-    margin-top: 10%; margin-bottom: 10%;
-    background-color: #301F36 !important;
-    width: 100%; height: 1vh;
-}
-
-/*SEPARADOR DE LOS USER PERSONA EN LAS PANTALLAS PEQUEÑAS-------------------------------------*/
-.separadorUser{
-    hr{
-    background-color: #83847A;
-    width: 100%; height: .5vh;
-    }
-}
-
-/*ESTILO DEL BOTÓN CONTÁCTAME DEL HEADER------------------------------------------------------------------------*/
-#contactameBoton{
-    background-color: #955AB1;
-    padding: 2vh;
-    color: #f9f9f9;
-    font-weight: 550;
-    &:hover{
-        background-color: #301F36;
-    }
-}
-
-/*ESTILO DEL BOTON DEL PROTOTIPO ------------------------------------------------------------*/
-
-.botonPrototipo{
-    background-color: #955AB1;
-    width: fit-content;
-    padding-left: 3vh; padding-right: 3vh; padding-top: 2vh; padding-bottom: 2vh;
-    margin: 0 auto;
-    cursor: pointer;
-    a{
-        color: #f9f9f9;
-        cursor: pointer;
-    }
-}
-.botonPrototipo:hover{
-    background-color: #301F36;
-    a{
-        color: #f9f9f9;
-    }
-}
-
-/*IMAGEN LOGO DEL HEADER CON EL TAMAÑO AJUSTADO-------------------------------------------------------*/
-.navbar-brand{
-    img{
-        height: 7vh;
-    }
+hr {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  background-color: #301F36 !important;
+  width: 100%;
+  height: 1vh;
 }
 
 /*DARLE COLOR MORADO A LAS LETRAS EN CASO DE NECESITARSE-------------------------------------------------------*/
-.colorMorado{
-    color: #955AB1;
+.colorMorado {
+  color: #955AB1;
+}
+
+/*ESTILO DEL BOTON DEL PROTOTIPO ------------------------------------------------------------*/
+.botonPrototipo {
+  background-color: #955AB1;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 3vh;
+  padding-right: 3vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.botonPrototipo a {
+  color: #f9f9f9;
+  cursor: pointer;
+}
+
+.botonPrototipo:hover {
+  background-color: #301F36;
+}
+.botonPrototipo:hover a {
+  color: #f9f9f9;
+}
+
+/*BOTONES ------------------------------------*/
+.boton a {
+  font-size: 2rem;
+  color: #f9f9f9;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #955AB1;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.boton a:hover {
+  background-color: #301F36;
+}
+
+/*SUBRAYADO DE PALABRAS ---------------------- */
+.subrayado {
+  position: relative;
+  display: inline-block;
+}
+.subrayado img {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  right: 0%;
+}
+
+/*PARTE ROSADA DE LA SECCIÓN DE QUE SE QUIERE LOGRAR-------------------------------*/
+.parteRosada {
+  gap: 3%;
+  background-color: #EBBFF0;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+/*IMAGEN LOGO DEL HEADER CON EL TAMAÑO AJUSTADO-------------------------------------------------------*/
+.navbar-brand img {
+  height: 7vh;
 }
 
 /*LAS LETRAS DE LAS OPCIONES DEL HEADER CAMBIAN SU GROSOR----------------------------------------------------*/
-.nav-link{
-    font-weight: 550;
-    &:hover{
-        color: #301F36;
-    }
+.nav-link {
+  font-weight: 550;
+}
+.nav-link:hover {
+  color: #301F36;
 }
 
 /*ESTILO PERSONALIZADO DEL MENÚ DE HAMBURGUESA DEL HEADER (RESPONSIVE)----------------------------------------------*/
 .navbar-toggler {
-    border: none;
-    .navbar-toggler-icon{
-        width: 1.5rem;
-        height: 1.5rem;
-        background-image: url(../assets/img/menuHamburguesa.svg);
-    }
-  }
+  border: none;
+}
+.navbar-toggler .navbar-toggler-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(../assets/img/menuHamburguesa.svg);
+}
 
-.estiloMenuHamburguesa{
-    background-color: #955AB1;
-    width: 100%;
-   
-    li{
-        a{
-            color: #f9f9f9;
-            
-        }
-    }
+.estiloMenuHamburguesa {
+  background-color: #955AB1;
+  width: 100%;
+}
+.estiloMenuHamburguesa li a {
+  color: #f9f9f9;
+}
+
+/*ESTILO DEL BOTÓN CONTÁCTAME DEL HEADER------------------------------------------------------------------------*/
+#contactameBoton {
+  background-color: #955AB1;
+  padding: 2vh;
+  color: #f9f9f9;
+  font-weight: 550;
+}
+#contactameBoton:hover {
+  background-color: #301F36;
 }
 
 /* ------------------------------------------------- FOOTER ------------------------------------------------------*/
-
-footer{
-    background-color: #955AB1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    color: #f9f9f9;
-    padding-top: 2%; padding-bottom: 2%; 
-    margin-top: 15vh;
-    h3{
-        font-weight: 600;
-        font-family: 'Montserrat';
-    }
+footer {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 15vh;
 }
 
 /*RESPONSIVE PARA CELULARES EN LAS SECCIONES DE CADA PROYECTO--------------------------*/
 @media screen and (max-width: 481px) {
-    .parteRosada{
-        flex-direction: column !important;
-        p{
-            padding-top: 5vh;
-        }
-        img{
-            padding-bottom: 5vh;
-        }
-    }
-    .elProceso{
-        justify-content: center !important;
-        align-items: center !important;
-    }
-    .siguienteYAnterior{
-        gap: 3vh !important;
-        justify-content: center !important;
-        a{
-            font-size: 1.5rem;
-        }
-      }
-}
-
-/*IMAGENES DE LA SECCIÓN DE MIS PROYECTOS--------------------------------------------------------------*/
-
-.imgProyectos {
-    max-width: 1000px;
-    min-width: 320px;
-    max-height: 750px;
-    min-height: 250px;
-    width: 45vw;
-    height: 30vw;
-    position: relative;
-    margin-top: 10vh;
-    a{
-        img{
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-    }
-    #img2{
-        &:hover{
-            cursor: url(../assets/img/cursorMano.png), auto;
-            opacity: 0;
-        }
-    }
+  .parteRosada {
+    flex-direction: column !important;
   }
+  .parteRosada p {
+    padding-top: 5vh;
+  }
+  .parteRosada img {
+    padding-bottom: 5vh;
+  }
+  .elProceso {
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .siguienteYAnterior {
+    gap: 3vh !important;
+    justify-content: center !important;
+  }
+  .siguienteYAnterior a {
+    font-size: 1.5rem;
+  }
+}
+/*IMAGENES DE LA SECCIÓN DE MIS PROYECTOS--------------------------------------------------------------*/
+.imgProyectos {
+  max-width: 1000px;
+  min-width: 320px;
+  max-height: 750px;
+  min-height: 250px;
+  width: 45vw;
+  height: 30vw;
+  position: relative;
+  margin-top: 10vh;
+}
+.imgProyectos a img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.imgProyectos #img2:hover {
+  cursor: url(../assets/img/cursorMano.png), auto;
+  opacity: 0;
+}
 
 /*TITULO DE PAGINA DE MIS PROYECTOS JUNTO CON EL AJUSTE RESPONSIVE EN LAS PANTALLAS----------------------------------------------*/
-.tituloProyectos{
-    background-color: #301F36;
-    padding-top: 5vh; padding-bottom: 5vh;
-    justify-content: center; align-items: center;
-    text-align: center;
-    display: flex; flex-wrap: wrap;
-    gap: 6vh;
-    h1{
-        color: #E9C8FF;
-        font-size: 7rem;
-        font-weight: 600;
-    }
+.tituloProyectos {
+  background-color: #301F36;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  gap: 6vh;
 }
+.tituloProyectos h1 {
+  color: #E9C8FF;
+  font-size: 7rem;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 955px) {
-    .tituloProyectos{
-        align-content: center;
-        gap: 2vh;
-        h1{
-            font-size: 5rem !important;
-        }
-    }
+  .tituloProyectos {
+    align-content: center;
+    gap: 2vh;
+  }
+  .tituloProyectos h1 {
+    font-size: 5rem !important;
+  }
 }
 @media screen and (max-width: 675px) {
-    .tituloProyectos{
-        h1{
-            font-size: 3.5rem !important;
-        }
-    }
+  .tituloProyectos h1 {
+    font-size: 3.5rem !important;
+  }
 }
 @media screen and (max-width: 481px) {
-    .tituloProyectos{
-        padding-top: 3.5vh; padding-bottom: 3.5vh;
-        h1{
-            font-size: 2.5rem !important;
-        }
-    }
+  .tituloProyectos {
+    padding-top: 3.5vh;
+    padding-bottom: 3.5vh;
+  }
+  .tituloProyectos h1 {
+    font-size: 2.5rem !important;
+  }
+}
+/*FLEX DEL CONTENEDOR MOCKUP + DESCRIPCION EN CADA PROYECTO--------------------*/
+.contenedorResumen {
+  padding-bottom: 10vh;
+}
+.contenedorResumen img {
+  width: 50%;
+}
+
+@media screen and (max-width: 955px) {
+  .contenedorResumen {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .contenedorResumen img {
+    width: 80%;
+  }
+  .titulosProyectos {
+    font-size: 9rem;
+    padding-top: 5vh;
+  }
+}
+@media screen and (max-width: 675px) {
+  .titulosProyectos {
+    font-size: 7rem;
+    padding-top: 5vh;
+  }
+}
+@media screen and (max-width: 481px) {
+  .titulosProyectos {
+    font-size: 5rem;
+    padding-top: 5vh;
+  }
+}
+@media screen and (max-width: 432px) {
+  .titulosProyectos {
+    font-size: 4.2rem;
+    padding-top: 5vh;
+  }
+  .descipcionGeneral {
+    padding-top: 5vh;
+  }
+}
+/*BOTON QUE ESTÁ EN EL RESUMEN DE CADA PROYECTO Y LLEVA A LOS PROTOTIPOS---------------------------*/
+.botonSolo a {
+  white-space: nowrap;
+  background-color: #955AB1;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 1.2rem;
+  color: #f9f9f9;
+  font-weight: 600;
+}
+.botonSolo a:hover {
+  background-color: #C9B3E2;
+  color: #301F36;
+}
+
+/*ESTE ES CUANDO HAY DOS BOTONES EN LA PARTE DEL INICIO, POR EJEMPLO EN EL CASO DE GELATINA SE MUESTRA EL VER PROTOTIPO Y VER DESARROLLO WEB*/
+.botonDobleEnInicio {
+  gap: 5vh;
+}
+.botonDobleEnInicio a {
+  white-space: nowrap;
+  background-color: #955AB1;
+  padding: 2%;
+  font-size: 1.2rem;
+  color: #f9f9f9;
+  font-weight: 600;
+}
+.botonDobleEnInicio a:hover {
+  background-color: #C9B3E2;
+  color: #301F36;
+}
+
+/*NOTA PEQUEÑA QUE TIENE EL RESUMEN DE CADA UNO DE LOS PROYECTOS-----------------------------------*/
+.nota {
+  color: #f9f9f9;
+  font-style: italic;
+  opacity: 60%;
+  font-size: 1rem;
+}
+
+/* FLEX DE SECCIONES POR QUE REDISEÑAR Y QUE SE QUIERE LOGRAR PARA PROYECTOS WEB ---------------------------------------- */
+.porQueYQueLograr {
+  gap: 3vh;
+  margin-top: 8vh;
+}
+.porQueYQueLograr p {
+  font-size: 1.5rem;
+}
+.porQueYQueLograr h2 {
+  font-weight: 600;
+}
+
+/*TITULO DE CADA UNO DE LOS PROYECTOS ---------------------------------*/
+.titulosProyectos {
+  color: #E9C8FF;
+  font-weight: 700;
+  font-size: 11rem;
+}
+
+/*ESTILOS DE TEXTO DE RESUMEN DE CADA PROYECTO--------------------------*/
+.descipcionGeneral {
+  color: #E9C8FF;
+  font-size: 1.7rem;
+  padding-top: 10vh;
+}
+
+.tipoRolHerramientas {
+  color: #f9f9f9;
+  font-size: 1.2rem;
+}
+.tipoRolHerramientas span {
+  font-weight: bold;
+}
+
+/*IMAGENES DE EL PROCESO DE CADA PROYECTO -----------------------------*/
+#empatizar-img {
+  background-image: url(../assets/img/empatizar.svg);
+}
+#empatizar-img:hover {
+  background-image: url(../assets/img/empatizarHover.svg);
+}
+
+#idear-img {
+  background-image: url(../assets/img/idear.svg);
+}
+#idear-img:hover {
+  background-image: url(../assets/img/idearHover.svg);
+}
+
+#definir-img {
+  background-image: url(../assets/img/definir.svg);
+}
+#definir-img:hover {
+  background-image: url(../assets/img/definirHover.svg);
+}
+
+#prototipar-img {
+  background-image: url(../assets/img/prototipar.svg);
+}
+#prototipar-img:hover {
+  background-image: url(../assets/img/prototiparHover.svg);
+}
+
+.imgProceso {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 213px;
+  width: 200px;
+  margin-top: 5vh;
+  position: relative;
+}
+.imgProceso a {
+  display: block; /* Asegura que el enlace ocupe todo el espacio del div */
+  position: absolute; /* Posiciona el enlace sobre el div */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Asegura que el enlace esté por encima del fondo */
+}
+.imgProceso a::after {
+  content: ""; /* Necesario para crear el pseudo-elemento */
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent; /* El pseudo-elemento será invisible */
+  pointer-events: none; /* Permite que el enlace sea clickeable pero sin afectar el área visible */
+}
+
+/*SECCIONES DE EMPATIZAR, DEFINIR, IDEAR Y PROTOTIPAR -------------------------*/
+.empatizar {
+  gap: 5vh;
+}
+.empatizar p {
+  font-size: 1.5rem;
+}
+.empatizar ul {
+  margin-left: 5%;
+  font-size: 1.5rem;
+}
+.empatizar h2 {
+  font-size: 2rem;
+}
+
+/*MEDIA QUERIES DE USER PERSONA Y UX CANVAS PARA TAMAÑOS DE PANTALLA MAS PEQUEÑOS --------------------------------------*/
+.userPersonaPeque {
+  margin-top: 6vh;
+  background-color: #F7F7F7;
+  padding: 5vh;
+}
+.userPersonaPeque img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.userPersonaPeque h3 {
+  font-weight: 600;
+  color: #FBB12E;
+  margin-top: 5vh;
+}
+.userPersonaPeque ul {
+  padding-top: 2%;
+  margin-left: 0%;
+}
+
+.containerUXCanvaPeque img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 850px) {
+  .userPersonaContainer {
+    display: none !important;
+  }
+  .containerUXCanva {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 850px) {
+  .userPersonaPequeContainer {
+    display: none !important;
+  }
+  .containerUXCanvaPeque {
+    display: none !important;
+  }
+}
+/*BARRA ESTATICA DE NAVEGACION EN CADA PROYECTO ------------------------------------------------- */
+.barraEstatica {
+  background-color: #f9f9f9;
+  border-width: 10%;
+  border-style: solid;
+  border-color: #301F36;
+  width: 100%;
+}
+.barraEstatica nav {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #f9f9f9;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  font-size: 22px;
+}
+.barraEstatica nav ul {
+  list-style-type: none;
+  gap: 15vh;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh;
+  display: flex;
+  white-space: nowrap;
+}
+.barraEstatica nav ul li {
+  margin: 0 auto;
+}
+.barraEstatica nav ul li a {
+  color: #250335;
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0px 0px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-family: "Montserrat";
+  transition: all 0.3s ease;
+}
+
+.menu-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  cursor: pointer;
+  margin: 0 auto;
+  gap: 3vh;
+  display: none;
+}
+.menu-btn p {
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+.menu-btn img {
+  width: 4vh;
+}
+.menu-btn i {
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .barraEstatica nav {
+    padding: 0 40px 0 50px;
+  }
+}
+/*AL TENER UN TAMAÑO MENOS EL ESPACIO ENTRE CADA ELEMENTO DE LAS LISTAS SE DISMINUYE ---------------------------*/
+@media (max-width: 1635px) {
+  .barraEstatica ul {
+    gap: 20% !important;
+  }
+}
+@media (max-width: 1395px) {
+  .barraEstatica ul {
+    gap: 15% !important;
+  }
+}
+@media (max-width: 1184px) {
+  .barraEstatica ul {
+    gap: 10% !important;
+  }
+}
+/*CONVERSIÓN DE LISTA A MENU DESPLEGABLE --------------------------------*/
+@media (max-width: 920px) {
+  .menu-btn {
+    display: flex;
+  }
+  .barraEstatica nav .menu-btn i {
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  .barraEstatica nav ul {
+    position: fixed;
+    bottom: 0px;
+    left: -100%;
+    background: #f9f9f9;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul {
+    left: 0;
+  }
+  .barraEstatica nav ul li {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .barraEstatica nav ul li a {
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a {
+    margin-left: 0px;
+  }
+  #cerrar {
+    display: block !important;
+  }
+  .barraEstatica a {
+    margin-top: 10%;
+  }
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: #250335;
+}
+
+.content div {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#cerrar {
+  display: none;
+}
+
+/*CARRUSEL-------------------------------*/
+.imgCarrusel {
+  margin: 0 auto;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../assets/img/jetsmart/prev.svg");
+}
+
+.carousel-control-next-icon {
+  background-image: url("../assets/img/jetsmart/next.svg");
+}
+
+.carousel-indicators button.active {
+  background-color: #b81fff; /* Cambia #tu_color_activo por el color que desees */
+}
+
+.carousel-indicators button:not(.active) {
+  background-color: #000000; /* Cambia #tu_color por el color que desees */
+}
+
+.carousel-indicators {
+  position: absolute;
+  top: 50%;
+  transform: translateY(120%);
+  margin-bottom: 20px; /* Ajusta el valor según sea necesario */
+}
+
+/*CONCLUSION DE CADA PROYECTO -----------------------------------*/
+.conclusion h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.conclusion p {
+  color: #f9f9f9;
+}
+.conclusion .textoConclusion {
+  background-color: #250335;
+  width: 100%;
+  padding: 5vh;
+  box-sizing: border-box;
+  margin: 0; /* Agrega margin: 0 */
+}
+
+/*SIGUIENTE Y ANTERIOR PROYECTO ESTILOS --------------------------------------------------- */
+.siguienteYAnterior {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.siguienteYAnterior a {
+  color: #250335;
+}
+
+/*RESPONSIVE DE TABLA BENCHMARK LA COSA CINE-------------------------------------------*/
+.tablaBenchmarkPeque {
+  margin-top: 7vh;
+  gap: 12vh;
+  display: none;
+}
+
+.table {
+  display: block;
+}
+
+@media (max-width: 769px) {
+  .tablaBenchmarkPeque {
+    display: flex;
+  }
+  .table {
+    display: none;
+  }
+}
+/*---------------------- GRILLA DEL CARD SORTING LA COSA CINE ------------------------------------------ */
+.CardSorting h2 {
+  color: #955AB1;
+}
+.CardSorting #analisis {
+  grid-area: analisis;
+  background-color: #EBBFF0;
+  padding: 5vh;
+}
+.CardSorting div {
+  margin-bottom: 3vh;
+}
+.CardSorting #resultado1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.CardSorting #resultado1 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 600px;
+  min-width: 320px;
+  width: 100vw !important;
+}
+
+table tbody tr th img {
+  padding-top: 3vh !important;
+  padding-bottom: 3vh !important;
+}
+table tbody tr td {
+  padding-top: 3vh !important;
+  padding-bottom: 3vh !important;
+}
+
+/*ESTILOS DE LA LISTA DESPLEGABLE HECHA CON BOOTSTRAP PARA EL MAPA DE EMPATIA ---------------------------------*/
+/*Edita el tamaño del texto dentro de cada item*/
+.accordion-body ul {
+  gap: 1rem;
+}
+.accordion-body ul li {
+  font-size: 1.2rem;
+}
+
+.accordion-button {
+  font-size: 1.2rem;
+}
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem #955AB1;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #E9C8FF;
+}
+
+/*RESPONSIVE DEL TAMAÑO DE LOS MOCKUPS DEL INICIO CUANDO SON CELULARES--------------------------*/
+@media screen and (min-width: 1025px) {
+  .mockupCel {
+    height: 80vh;
+  }
+}
+/*ESTILOS DEL ARBOL DEL PROBLEMA--------------------------------------------------------*/
+.verde {
+  background-color: #E3F8D3;
+}
+
+.morado {
+  background-color: #EACBF9;
+}
+
+.cafecito {
+  background-color: #E9DDD8;
+}
+
+.rojito {
+  background-color: #FBA3A3;
+}
+
+.efectos .contenedorArbol {
+  gap: 4vh;
+}
+.efectos .contenedorArbol div {
+  display: inline-block;
+  padding: 1.5vh;
+  font-size: large;
+}
+
+/*5 WHYS---------------------------------------------------------------------*/
+.whys div {
+  padding: 2vh;
+  text-align: center;
+}
+
+.borde {
+  border: 1px solid #250335;
+}
+
+/*MATRIZ DELTA NEXT -------------------------------------------------*/
+.parrafo p {
+  width: 45%;
+}
+
+@media screen and (max-width: 560px) {
+  .parrafo p {
+    width: 100%;
+  }
+}
+/*SEPARADOR DE LOS USER PERSONA EN LAS PANTALLAS PEQUEÑAS-------------------------------------*/
+.separadorUser hr {
+  background-color: #83847A;
+  width: 100%;
+  height: 0.5vh;
 }
 
 /*SECCIÓN MARQUEE Y SILUETA EN EL INDEX ---------------------------------------*/
 /* Contenedor principal */
 .contenedor {
-    position: relative; /* Permite posicionar elementos internos con absolute */
-    width: 100%;
-    height: 100vh; /* Para ocupar toda la pantalla */
-    overflow: hidden; /* Evita cortes en los marquees */
-
-    /* SILUETA */
-    .silueta {
-        position: absolute; /* Se superpone en el fondo */
-        right: 0;
-        bottom: 0;
-        width: 70vh;
-        z-index: 1; /* Debajo de los marquees */
-    }
-
-    /* MARQUEE 1 */
-    .seccionMarquee {
-        position: absolute;
-        top: 50%; 
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        white-space: nowrap;
-        z-index: 2; 
-
-        .contenidoMarquee {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 1vw;
-            min-width: 200%;
-            background-color: #301F36;
-            animation: marquee 20s linear infinite;
-            padding-top: 3vh; padding-bottom: 3vh;
-        
-            h1{
-                color: #f9f9f9;
-                font-size: 4rem;
-                background-color: #301F36;
-                font-weight: 650;
-            }
-        
-            img{
-                height: 5vh;
-                background-color: #301F36;
-            }
-        }
-    }
-
-/* MARQUEE 2 */
-    .seccionMarquee2 {
-        position: absolute;
-        top: 75%; /* Ajusta la altura del segundo marquee */
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        white-space: nowrap;
-        z-index: 2;
-
-        h2{
-            color: #f9f9f9;
-            font-size: 4rem;
-            background-color: #301F36;
-            font-weight: 650;
-        }
-
-        .contenidoMarquee2 {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 1vw;
-            min-width: 200%;
-            background-color: #301F36;
-            animation: marquee2 20s linear infinite;
-            padding-top: 3vh; padding-bottom: 3vh;
-        
-            img{
-                height: 5vh;
-                background-color: #301F36;
-            }
-        }
-    }
+  position: relative; /* Permite posicionar elementos internos con absolute */
+  width: 100%;
+  height: 100vh; /* Para ocupar toda la pantalla */
+  overflow: hidden; /* Evita cortes en los marquees */
+  /* SILUETA */
+  /* MARQUEE 1 */
+  /* MARQUEE 2 */
+}
+.contenedor .silueta {
+  position: absolute; /* Se superpone en el fondo */
+  right: 0;
+  bottom: 0;
+  width: 70vh;
+  z-index: 1; /* Debajo de los marquees */
+}
+.contenedor .seccionMarquee {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 2;
+}
+.contenedor .seccionMarquee .contenidoMarquee {
+  align-items: center;
+  gap: 1vw;
+  min-width: 200%;
+  background-color: #301F36;
+  animation: marquee 20s linear infinite;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+.contenedor .seccionMarquee .contenidoMarquee h1 {
+  color: #f9f9f9;
+  font-size: 4rem;
+  background-color: #301F36;
+  font-weight: 650;
+}
+.contenedor .seccionMarquee .contenidoMarquee img {
+  height: 5vh;
+  background-color: #301F36;
+}
+.contenedor .seccionMarquee2 {
+  position: absolute;
+  top: 75%; /* Ajusta la altura del segundo marquee */
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 2;
+}
+.contenedor .seccionMarquee2 h2 {
+  color: #f9f9f9;
+  font-size: 4rem;
+  background-color: #301F36;
+  font-weight: 650;
+}
+.contenedor .seccionMarquee2 .contenidoMarquee2 {
+  gap: 1vw;
+  min-width: 200%;
+  background-color: #301F36;
+  animation: marquee2 20s linear infinite;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+.contenedor .seccionMarquee2 .contenidoMarquee2 img {
+  height: 5vh;
+  background-color: #301F36;
 }
 
 @keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-30%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-30%);
+  }
 }
-
 @keyframes marquee2 {
-    from { transform: translateX(-30%); }
-    to { transform: translateX(0%); }
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
-
 /*RESPONSIVE DEL INDEX ----------------------------------------------------*/
-.indexPantallaPeque{
-    display: none;
+.indexPantallaPeque {
+  display: none;
 }
+
 @media screen and (max-width: 1023px) {
-    .seccionOpcionesIndexPeque{
-        width: auto;
-        margin-top: 10vh;
-        margin-left: 0;
-        nav{
-            margin: 0 auto;
-            ul{
-                text-align: center;
-                list-style-type: none;
-                padding: 0;
-                li{
-                    column-gap: 80px;
-                    a{
-                        text-decoration: none;
-                        color: #955AB1;
-                        font-size: 2rem;
-                    }
-                }
-            }
-        }
-    }
-    .silueta{
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .contenidoMarquee, .contenidoMarquee2 {
-        gap: 3vw;
-    }  
-    .seccionMarquee2 {
-        top: 70%;
-    }
-    .contenedor{
-        margin-top: 10vh;
-    }
-    .indexPantallaGrande{
-        display: none;
-    }
-    .logoIndex{
-        text-align: center;
-        justify-items: center;
-    }
-    .contenidoMarquee h1 {
-        font-size: 3rem;
-    }
-    .contenidoMarquee2 h2 {
-        font-size: 3rem;
-    }
-    .indexPantallaPeque{
-        display: block;
-    }
-}
-
-/*OPCIONES DE NAVEGACIÓN DEL INDEX --------------------------------------- */
-.seccionOpcionesIndex{
+  .seccionOpcionesIndexPeque {
     width: auto;
-    position: absolute;
-    z-index: 5;
-    ul{
-        list-style-type: none; 
-        width: auto;
-        li:nth-child(1) a, li:nth-child(2) a{
-            text-decoration: none;
-            color: inherit;
-            font-size: 2rem;
-            font-weight: 450;
-        }
-    }
-}
-
-/*BOTONES ------------------------------------*/
- 
- .boton {
-    a{
-        font-size: 2rem;
-     color: #f9f9f9;
-     font-weight: 600;
-     text-decoration: none;
-     background-color: #955AB1;
-     padding-left: 6%; padding-right: 6%; padding-top: 4%; padding-bottom: 4%;
-     &:hover{
-        background-color: #301F36;
-     }
-    }
-     
- }
-
-/*SUBRAYADO DE PALABRAS ---------------------- */
-.subrayado{
-    position: relative;
-    display: inline-block;
-
-    img{
-        position: absolute;
-        bottom: 0%;
-        width: 100%;
-        right: 0%;
-    }
-}
-
-/*TITULO DE CADA UNO DE LOS PROYECTOS ---------------------------------*/
-.titulosProyectos{
-        color: #E9C8FF;
-        font-weight: 700;
-        font-size: 11rem;
-}
-
-/*ESTILOS DE TEXTO DE RESUMEN DE CADA PROYECTO--------------------------*/
-.descipcionGeneral{
-    color: #E9C8FF;
-    font-size: 1.7rem;
-    padding-top: 10vh;
-}
-.tipoRolHerramientas{
-    color: #f9f9f9;
-    font-size: 1.2rem;
-    span{
-        font-weight: bold;
-    }
-}
-
-/*FLEX DEL CONTENEDOR MOCKUP + DESCRIPCION EN CADA PROYECTO--------------------*/
-.contenedorResumen{
-display: flex;
-flex-direction: row-reverse;
-padding-bottom: 10vh;
-img{
-    width: 50%;
-}
-}
-
-@media screen and (max-width: 955px) {
-    .contenedorResumen{
-        flex-direction: column-reverse;
-        align-items: center;
-        img{
-            width: 80%;
-        }
-    }
-    .titulosProyectos{
-        font-size: 9rem;
-        padding-top: 5vh;
-    }
-}
-@media screen and (max-width: 675px) {
-    .titulosProyectos{
-        font-size: 7rem;
-        padding-top: 5vh;
-    }
-}
-@media screen and (max-width: 481px) {
-    .titulosProyectos{
-        font-size: 5rem;
-        padding-top: 5vh;
-    }
-}
-@media screen and (max-width: 432px) {
-    .titulosProyectos{
-        font-size: 4.2rem;
-        padding-top: 5vh;
-    }
-    .descipcionGeneral{
-        padding-top: 5vh;
-    }
-}
-
-/*BOTON QUE ESTÁ EN EL RESUMEN DE CADA PROYECTO Y LLEVA A LOS PROTOTIPOS---------------------------*/
-.botonSolo {
-    a{
-        white-space: nowrap;
-        background-color: #955AB1;
-        padding-left: 3%; padding-right: 3%; padding-top: 2%; padding-bottom: 2%;
-        font-size: 1.2rem;
-        color: #f9f9f9;
-        font-weight: 600;
-        text-decoration: none;
-
-        &:hover{
-            background-color: #C9B3E2;
-            color: #301F36;
-        }
-    }
- }
-
-  /*ESTE ES CUANDO HAY DOS BOTONES EN LA PARTE DEL INICIO, POR EJEMPLO EN EL CASO DE GELATINA SE MUESTRA EL VER PROTOTIPO Y VER DESARROLLO WEB*/
- .botonDobleEnInicio{
-    display: flex;
-    flex-direction: row;
-    gap: 5vh;
-    flex-wrap: wrap;
-    align-items: center;
-    
-        a{
-            white-space: nowrap;
-            background-color: #955AB1;
-            padding: 2%;
-            font-size: 1.2rem;
-            color: #f9f9f9;
-            font-weight: 600;
-            text-decoration: none;
-
-            &:hover{
-                background-color: #C9B3E2;
-                color: #301F36;
-            }
-        
-    }
- }
- /*NOTA PEQUEÑA QUE TIENE EL RESUMEN DE CADA UNO DE LOS PROYECTOS-----------------------------------*/
- .nota{
-    color: #f9f9f9;
-    font-style:italic;
-    opacity: 60%;
-    font-size: 1rem;
-}
-
-/* FLEX DE SECCIONES POR QUE REDISEÑAR Y QUE SE QUIERE LOGRAR PARA PROYECTOS WEB ---------------------------------------- */
-.porQueYQueLograr{
-    display: flex;
-    flex-direction: column;
-    gap: 3vh;
-    margin-top: 8vh;
-
-    p{
-        font-size: 1.5rem;
-    }
-    h2{
-        font-weight: 600;
-    }
-}
-
-/*PARTE ROSADA DE LA SECCIÓN DE QUE SE QUIERE LOGRAR-------------------------------*/
-.parteRosada{
-    display: flex;
-    flex-direction: row;
-    gap: 3%;
-    align-items: center;background-color: #EBBFF0;
-    width: 100%;
-    padding-left: 5%; padding-right: 5%; padding-top: 2%; padding-bottom: 2%;
-}
-
-/*IMAGENES DE EL PROCESO DE CADA PROYECTO -----------------------------*/
-#empatizar-img {
-    background-image: url(../assets/img/empatizar.svg);
-    &:hover{
-        background-image: url(../assets/img/empatizarHover.svg);
-    }
-}
-#idear-img {
-    background-image: url(../assets/img/idear.svg);
-    &:hover{
-        background-image: url(../assets/img/idearHover.svg);
-    }
-}
-#definir-img {
-    background-image: url(../assets/img/definir.svg);
-    &:hover{
-        background-image: url(../assets/img/definirHover.svg);
-    }
-}
-#prototipar-img {
-    background-image: url(../assets/img/prototipar.svg);
-    &:hover{
-        background-image: url(../assets/img/prototiparHover.svg);
-    }
-}
-
-.imgProceso {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 213px;
-    width: 200px;
-    margin-top: 5vh;
-    position: relative; 
-    a{
-        display: block; /* Asegura que el enlace ocupe todo el espacio del div */
-        position: absolute; /* Posiciona el enlace sobre el div */
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1; /* Asegura que el enlace esté por encima del fondo */
-        &::after{
-            content: ''; /* Necesario para crear el pseudo-elemento */
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: transparent; /* El pseudo-elemento será invisible */
-            pointer-events: none; /* Permite que el enlace sea clickeable pero sin afectar el área visible */
-        }
-    }
-  }
-  
- 
-  /*SECCIONES DE EMPATIZAR, DEFINIR, IDEAR Y PROTOTIPAR -------------------------*/
-
-.empatizar{
-    display: flex;
-    flex-direction: column;
-    gap: 5vh;
-    
-    p{
-        font-size: 1.5rem;
-    }
-    ul{
-        margin-left: 5%;
-        font-size: 1.5rem;
-    }
-    h2{
-        font-size: 2rem;
-    }
-}
-
-/*MEDIA QUERIES DE USER PERSONA Y UX CANVAS PARA TAMAÑOS DE PANTALLA MAS PEQUEÑOS --------------------------------------*/
-.userPersona, .userPersonaPeque{
-    display: inline-flex;
-    flex-direction: column;
-}
-.userPersonaPeque{
-    margin-top: 6vh;
-    background-color: #F7F7F7;
-    padding: 5vh;
-    img{
-        width: 100%; 
-        height: 100%; 
-        object-fit: cover;
-    }
-    h3{
-        font-weight: 600;
-        color: #FBB12E;
-        margin-top: 5vh;
-    }
-    ul{
-        padding-top: 2%;
-        margin-left: 0%;
-    }
-}
-.containerUXCanvaPeque{
-    img{
-        width: 100%; 
-        height: 100%; 
-        object-fit: cover;
-    }
-}
-@media screen and (max-width: 850px) {
-    .userPersonaContainer{
-        display: none !important;
-    }
-    .containerUXCanva{
-        display: none !important;
-    }
-}
-
-@media screen and (min-width: 850px) {
-    .userPersonaPequeContainer{
-        display: none !important;
-    }
-    .containerUXCanvaPeque{
-        display: none !important;
-    }
-}
-
-/*BARRA ESTATICA DE NAVEGACION EN CADA PROYECTO ------------------------------------------------- */
-.barraEstatica{
-    background-color: #f9f9f9;
-    border-width: 10%;
-    border-style: solid;
-    border-color: #301F36;
-    width: 100%;
-    
-    nav{
-        display: flex;
-        height: 80px;
-        width: 100%;
-        background: #f9f9f9;
-        align-items: center;
-        justify-content: center;
-        padding: 0 50px 0 100px;
-        flex-wrap: wrap;
-        font-size: 22px;
-        ul{
-            list-style-type: none;
-            gap: 15vh;
-            align-items: center;
-            justify-content: center;
-            padding: 2vh;
-            display: flex;
-            white-space: nowrap;
-            li{
-                margin: 0 auto;
-                a{
-                    color: #250335;
-                    text-decoration: underline;
-                    font-size: 18px;
-                    font-weight: 500;
-                    padding: 0px 0px;
-                    border-radius: 5px;
-                    letter-spacing: 1px;
-                    font-family: 'Montserrat';
-                    transition: all 0.3s ease;
-                }
-            }
-            
-        }
-
-    }
-}
-
-  .menu-btn{
-    display: flex;
-    align-items: center; justify-content: center; align-content: center;
-    justify-items: center;
-    cursor: pointer;
-    margin: 0 auto;
-    gap: 3vh;
-    p{
-        text-decoration: underline;
-        font-size: 1.5rem;
-    }
-    img{
-        width: 4vh;
-    }
-    display: none;
-    i{
-        color: #fff;
-    font-size: 22px;
-    cursor: pointer;
-    display: none;
-    }
-  }
-  input[type="checkbox"]{
-    display: none;
-  }
-  @media (max-width: 1000px){
-    .barraEstatica nav{
-      padding: 0 40px 0 50px;
-    }
-  }
-  /*AL TENER UN TAMAÑO MENOS EL ESPACIO ENTRE CADA ELEMENTO DE LAS LISTAS SE DISMINUYE ---------------------------*/
-  @media (max-width: 1635px) {
-    .barraEstatica ul {
-        gap: 20% !important;
-    }
-  }
-  @media (max-width: 1395px) {
-    .barraEstatica ul {
-        gap: 15% !important;
-    }
-  }
-  @media (max-width: 1184px) {
-    .barraEstatica ul {
-        gap: 10% !important;
-    }
-  }
-  /*CONVERSIÓN DE LISTA A MENU DESPLEGABLE --------------------------------*/
-  @media (max-width: 920px) {
-    .menu-btn{
-        display: flex;
-    }
-    .barraEstatica nav .menu-btn i{
-      display: block;
-    }
-    #click:checked ~ .menu-btn i:before{
-      content: "\f00d";
-    }
-    .barraEstatica nav ul{
-      position: fixed;
-      bottom: 0px;
-      left: -100%;
-      background: #f9f9f9;
-      height: 100vh;
-      width: 100%;
-      text-align: center;
-      display: block;
-      transition: all 0.3s ease;
-    }
-    #click:checked ~ ul{
-      left: 0;
-    }
-    .barraEstatica nav ul li{
-      width: 100%;
-      margin: 0 auto;
-    }
-    .barraEstatica nav ul li a{
-      width: 100%;
-      display: block;
-      font-size: 20px;
-      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-    #click:checked ~ ul li a{
-      margin-left: 0px;
-    }
-    #cerrar{
-        display: block !important;
-    }
-    .barraEstatica a{
-        margin-top: 10%;
-    }
-  }
-  .content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: -1;
-    width: 100%;
-    padding: 0 30px;
-    color: #250335;
-  }
-  .content div{
-    font-size: 40px;
-    font-weight: 700;
-  }
-  #cerrar{
-    display: none;
-  }
-  /*CARRUSEL-------------------------------*/
-  .imgCarrusel{
-    margin: 0 auto;
-  }
-
-  .carousel-control-prev-icon {
-    background-image: url("../assets/img/jetsmart/prev.svg")
-  }
-  
-  .carousel-control-next-icon {
-    background-image: url("../assets/img/jetsmart/next.svg")
-  }
-
-  .carousel-indicators button.active {
-    background-color: #b81fff; /* Cambia #tu_color_activo por el color que desees */
-    }
-  
-  .carousel-indicators button:not(.active) {
-    background-color: #000000; /* Cambia #tu_color por el color que desees */
-  }
-
-  .carousel-indicators {
-    position: absolute;
-    top: 50%;
-    transform: translateY(120%);
-    margin-bottom: 20px; /* Ajusta el valor según sea necesario */
-  }
-
-  /*CONCLUSION DE CADA PROYECTO -----------------------------------*/
-  .conclusion{
-    h2{
-        font-size: 3rem;
-        font-weight: 700;
-    }
-    p{
-        color: #f9f9f9;
-    }
-    .textoConclusion {
-        background-color: #250335;
-        width: 100%;
-        padding: 5vh;
-        box-sizing: border-box;
-        margin: 0; /* Agrega margin: 0 */
-      }
-  }
-
-  /*SIGUIENTE Y ANTERIOR PROYECTO ESTILOS --------------------------------------------------- */
-  .siguienteYAnterior{
-    margin-top: 10vh; margin-bottom: 10vh;
-    a{
-        color: #250335;
-    }
-  }
-
-  /*ESTILOS FORMULARIO EN CONTACTAME------------------------------------------------------------ */
-  .descripcionFormulario{
     margin-top: 10vh;
-    p{
-        font-size: 1.2rem;
-    }
+    margin-left: 0;
   }
-  .numero-Correo{
-    margin-top: 5%;
-    gap: 5vh;
-    a{
-        color: #250335;
-        font-size: 1.2rem;
-    }
+  .seccionOpcionesIndexPeque nav {
+    margin: 0 auto;
   }
-  .redesContactame {
-    gap: 10vh;
-    margin-top: 10vh !important;
-    img{
-        width: 70px;
-        height: 70px;
-    } 
+  .seccionOpcionesIndexPeque nav ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
   }
-  .redesContactamepeque{
-    gap: 10vh;
-    margin-top: 10vh !important;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    img{
-        width: 70px;
-        height: 70px;
-    }
+  .seccionOpcionesIndexPeque nav ul li {
+    -moz-column-gap: 80px;
+         column-gap: 80px;
   }
-
-  input[type="text"], input[type="email"], .form_input--message, button[type="submit"]{
-    width: 40rem;
-    margin-top: 5vh;
-    padding: 2%;
-    border: 2px solid #250335;
+  .seccionOpcionesIndexPeque nav ul li a {
+    text-decoration: none;
+    color: #955AB1;
+    font-size: 2rem;
   }
-
-  button[type="submit"]{
-    background-color: #955AB1;
-    color: #f9f9f9;
-    font-weight: 600;
-    border: none;
+  .silueta {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
-
-  .formYdescripcionpeque, .formYdescripciongrande{
-    gap: 10vh;
+  .contenidoMarquee, .contenidoMarquee2 {
+    gap: 3vw;
   }
-  .formYdescripciongrande{
-    display: flex;
-    flex-direction: row;
+  .seccionMarquee2 {
+    top: 70%;
   }
-  .formYdescripcionpeque{
+  .contenedor {
+    margin-top: 10vh;
+  }
+  .indexPantallaGrande {
     display: none;
+  }
+  .logoIndex {
+    text-align: center;
+    justify-items: center;
+  }
+  .contenidoMarquee h1 {
+    font-size: 3rem;
+  }
+  .contenidoMarquee2 h2 {
+    font-size: 3rem;
+  }
+  .indexPantallaPeque {
+    display: block;
+  }
+}
+/*OPCIONES DE NAVEGACIÓN DEL INDEX --------------------------------------- */
+.seccionOpcionesIndex {
+  width: auto;
+  position: absolute;
+  z-index: 5;
+}
+.seccionOpcionesIndex ul {
+  list-style-type: none;
+  width: auto;
+}
+.seccionOpcionesIndex ul li:nth-child(1) a, .seccionOpcionesIndex ul li:nth-child(2) a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 2rem;
+  font-weight: 450;
 }
 
-  /*FORM RESPONSIVE ---------------------- */
-  .formYdescripcionpeque{
+/*ESTILOS FORMULARIO EN CONTACTAME------------------------------------------------------------ */
+.descripcionFormulario {
+  margin-top: 10vh;
+}
+.descripcionFormulario p {
+  font-size: 1.2rem;
+}
+
+.numero-Correo {
+  margin-top: 5%;
+  gap: 5vh;
+}
+.numero-Correo a {
+  color: #250335;
+  font-size: 1.2rem;
+}
+
+.redesContactame {
+  gap: 10vh;
+  margin-top: 10vh !important;
+}
+.redesContactame img {
+  width: 70px;
+  height: 70px;
+}
+
+.redesContactamepeque {
+  gap: 10vh;
+  margin-top: 10vh !important;
+  flex-wrap: wrap;
+}
+.redesContactamepeque img {
+  width: 70px;
+  height: 70px;
+}
+
+input[type=text], input[type=email], .form_input--message, button[type=submit] {
+  width: 40rem;
+  margin-top: 5vh;
+  padding: 2%;
+  border: 2px solid #250335;
+}
+
+button[type=submit] {
+  background-color: #955AB1;
+  color: #f9f9f9;
+  font-weight: 600;
+  border: none;
+}
+
+.formYdescripcionpeque, .formYdescripciongrande {
+  gap: 10vh;
+}
+
+.formYdescripcionpeque {
+  display: none;
+}
+
+/*FORM RESPONSIVE ---------------------- */
+.formYdescripcionpeque {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .formYdescripciongrande {
     display: none;
   }
-  @media (max-width: 1400px) {
-    .formYdescripciongrande{
-        display: none;
-    }
-    .formYdescripcionpeque{
-        display: flex;
-        flex-direction: column;
-    }
+  .formYdescripcionpeque {
+    display: flex;
+    flex-direction: column;
   }
-  @media (max-width: 954px) {
-    input[type="text"], input[type="email"], .form_input--message, button[type="submit"]{
-        width: 30rem;
-      }
+}
+@media (max-width: 954px) {
+  input[type=text], input[type=email], .form_input--message, button[type=submit] {
+    width: 30rem;
   }
-  @media (max-width: 492px) {
-    input[type="text"], input[type="email"], .form_input--message, button[type="submit"]{
-        width: 20rem;
-      }
-    form{
-        justify-content: center;
-        align-items: center;
-    }
+}
+@media (max-width: 492px) {
+  input[type=text], input[type=email], .form_input--message, button[type=submit] {
+    width: 20rem;
   }
-  
-  /*CONTENEDOR DE HABILIDADES Y DESCRIPCION EN LA SECCION DE CONOCEME---------------------*/
-  .habilidadesYdescripcion{
-    margin-left: 10vh;
+  form {
+    justify-content: center;
+    align-items: center;
   }
+}
+/*CONTENEDOR DE HABILIDADES Y DESCRIPCION EN LA SECCION DE CONOCEME---------------------*/
+.habilidadesYdescripcion {
+  margin-left: 10vh;
+}
 
-  /*CONTENEDOR DE IMAGEN Y DESCRIPCION EN LA SECCION DE CONOCEME-----------------------------*/
-  .imagenYdescripcion{
+/*CONTENEDOR DE IMAGEN Y DESCRIPCION EN LA SECCION DE CONOCEME-----------------------------*/
+.imagenYdescripcion {
+  padding-top: 10vh;
+  background-color: #301F36;
+}
+.imagenYdescripcion p {
+  color: #f9f9f9;
+}
+.imagenYdescripcion ul li {
+  color: #f9f9f9;
+}
+
+@media (max-width: 1025px) {
+  .imagenYdescripcion {
+    flex-direction: column;
     padding-top: 10vh;
     justify-content: space-between;
-    align-items: center;
-    background-color: #301F36;
-    p{color: #f9f9f9;}
-    ul{
-        li{
-            color: #f9f9f9;
-        }
-    }
+    align-items: end;
   }
-  @media (max-width: 1025px) {
-    .imagenYdescripcion{
-        flex-direction: column;
-        padding-top: 10vh;
-        justify-content: space-between;
-        align-items: end;
-    }
-    .habilidadesYdescripcion{
-        margin-right: 10vh;
-    }
-    .habilidadesContenedor{
-        display: flex;
-        flex-direction: column;
-        p{
-            font-size: 1.5rem;
-        }
-        ul{
-            li{
-                font-size: 1.5rem;
-            }
-        }
-    }
+  .habilidadesYdescripcion {
+    margin-right: 10vh;
   }
-
-  /*CONTENEDOR DE NOMBRE Y DESCRIPCION EN LA SECCION DE CONOCEME --------------*/
-  .nombreYdescripcion{
-    h1{
-        font-weight: 600;
-        font-size: 4.5rem;
-        color: #f9f9f9;
-        white-space: none;
-    }
-    h2{
-        font-size: 1.5rem;
-        color: #f9f9f9;
-    }
+  .habilidadesContenedor {
+    display: flex;
+    flex-direction: column;
   }
-
-  /*PROGRAMAS E IDIOMAS --------------------------------------------------*/
-  .programas-idiomas{
-    margin-top: 8vh;
-    ul{
-        list-style-type: none;
-        li{
-            margin-left: 0%;
-        }
-    }
+  .habilidadesContenedor p {
+    font-size: 1.5rem;
   }
-
-  @media (max-width: 426px) {
-    .programas-idiomas{
-        display: flex;
-        flex-direction: column !important;
-        gap: 5vh;
-    }
+  .habilidadesContenedor ul li {
+    font-size: 1.5rem;
   }
-
-  /*MI TRAYECTORIA ---------------------------------------------------*/
-  .licenciatura{
-    background-image: url(../assets/img/imagenesMiTrayectoria/UNLP.svg);
-    width: 29rem; height: 19rem;
-  }
-  .disenoUXUI{
-    background-image: url(../assets/img/imagenesMiTrayectoria/DiseñoUXUI.svg);
-    width: 29rem; height: 19rem;
-  }
-  .disenoAvanzado{
-    background-image: url(../assets/img/imagenesMiTrayectoria/coderhouseUXAvanzado.svg);
-    width: 29rem; height: 19rem;
-  }
-  .proximamente{
-    background-image: url(../assets/img/imagenesMiTrayectoria/proximamente.svg);
-    width: 29rem; height: 19rem;
-  }
-  .seccion-MiTrayectoria{
-    margin-top: 8vh;
-    h2{
-        margin-bottom: 5vh;
-    }
-  }
-  .imagenesTrayectoria{
-    gap: 8vh;
-  }
-
-  /*SECCION DE UN POCO MAS DE MI--------------------------------------------------------*/
-  .seccionUnPocoMas{
-    margin-top: 12vh;
-    gap: 10vh;
-    margin-bottom: 10vh;
-    img{
-        width: 30%; height: 50%;
-    }
-  }
-  @media (max-width: 1025px) {
-    .imagenesTrayectoria{
-        justify-content: center !important;
-        align-items: center !important;
-    }
-  }
-  @media (max-width: 769px) {
-    .seccionUnPocoMas{
-        flex-wrap: wrap;
-        gap: 5vh;
-    }
-  }
-
-  /*RESPONSIVE DE TABLA BENCHMARK LA COSA CINE-------------------------------------------*/
-.tablaBenchmarkPeque{
-    margin-top: 7vh;
-    gap: 12vh;
-    display: none;
 }
-.table{
-    display: block;
+/*CONTENEDOR DE NOMBRE Y DESCRIPCION EN LA SECCION DE CONOCEME --------------*/
+.nombreYdescripcion h1 {
+  font-weight: 600;
+  font-size: 4.5rem;
+  color: #f9f9f9;
+  white-space: none;
+}
+.nombreYdescripcion h2 {
+  font-size: 1.5rem;
+  color: #f9f9f9;
+}
+
+/*PROGRAMAS E IDIOMAS --------------------------------------------------*/
+.programas-idiomas {
+  margin-top: 8vh;
+}
+.programas-idiomas ul {
+  list-style-type: none;
+}
+.programas-idiomas ul li {
+  margin-left: 0%;
+}
+
+@media (max-width: 426px) {
+  .programas-idiomas {
+    display: flex;
+    flex-direction: column !important;
+    gap: 5vh;
+  }
+}
+/*MI TRAYECTORIA ---------------------------------------------------*/
+.licenciatura {
+  background-image: url(../assets/img/imagenesMiTrayectoria/UNLP.svg);
+  width: 29rem;
+  height: 19rem;
+}
+
+.disenoUXUI {
+  background-image: url(../assets/img/imagenesMiTrayectoria/DiseñoUXUI.svg);
+  width: 29rem;
+  height: 19rem;
+}
+
+.disenoAvanzado {
+  background-image: url(../assets/img/imagenesMiTrayectoria/coderhouseUXAvanzado.svg);
+  width: 29rem;
+  height: 19rem;
+}
+
+.proximamente {
+  background-image: url(../assets/img/imagenesMiTrayectoria/proximamente.svg);
+  width: 29rem;
+  height: 19rem;
+}
+
+.seccion-MiTrayectoria {
+  margin-top: 8vh;
+}
+.seccion-MiTrayectoria h2 {
+  margin-bottom: 5vh;
+}
+
+.imagenesTrayectoria {
+  gap: 8vh;
+}
+
+/*SECCION DE UN POCO MAS DE MI--------------------------------------------------------*/
+.seccionUnPocoMas {
+  margin-top: 12vh;
+  gap: 10vh;
+  margin-bottom: 10vh;
+}
+.seccionUnPocoMas img {
+  width: 30%;
+  height: 50%;
+}
+
+@media (max-width: 1025px) {
+  .imagenesTrayectoria {
+    justify-content: center !important;
+    align-items: center !important;
+  }
 }
 @media (max-width: 769px) {
-    .tablaBenchmarkPeque{
-        display: flex;
-    }
-    .table{
-        display: none;
-    }
-}
-
-/*---------------------- GRILLA DEL CARD SORTING LA COSA CINE ------------------------------------------ */
-
-
-.CardSorting{
-    h2{
-        color:#955AB1;
-    }
-    #analisis{
-        grid-area: analisis;
-        background-color: #EBBFF0;
-        padding: 5vh;
-    }
-    div{
-        margin-bottom: 3vh;
-    }
-    #resultado1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        img{
-            object-fit: cover;
-            max-width: 600px;
-            min-width: 320px;
-            width: 100vw !important;
-        }
-    }
-}
-
-table{
-    tbody{
-        tr{
-            th{
-                img{
-                    padding-top: 3vh !important; padding-bottom: 3vh !important;
-                }
-            }
-            td{
-                padding-top: 3vh !important; padding-bottom: 3vh !important;
-            }
-        }
-    }
-}
-
-/*ESTILOS DE LA LISTA DESPLEGABLE HECHA CON BOOTSTRAP PARA EL MAPA DE EMPATIA ---------------------------------*/
-
-/*Edita el tamaño del texto dentro de cada item*/
-.accordion-body{
-    ul{
-        gap: 1rem;
-        li{
-            font-size: 1.2rem;
-        }
-    }
-}
-
-.accordion-button{
-    font-size: 1.2rem;
-
-    &:focus{
-      box-shadow:0 0 0 0.25rem #955AB1;
-    }
-    &:not(.collapsed) {
-        background-color: #E9C8FF;
-      }
-}
-
-/*RESPONSIVE DEL TAMAÑO DE LOS MOCKUPS DEL INICIO CUANDO SON CELULARES--------------------------*/
-@media screen and (min-width: 1025px){
-    .mockupCel{       
-            height: 80vh;
-    }
-}
-
-/*ESTILOS DEL ARBOL DEL PROBLEMA--------------------------------------------------------*/
-.verde{
-    background-color: #E3F8D3;
-}
-.morado{
-    background-color: #EACBF9;
-}
-.cafecito{
-    background-color: #E9DDD8;
-}
-.rojito{
-    background-color: #FBA3A3;
-}
-.efectos{
-    .contenedorArbol{
-        gap: 4vh;
-        div{
-            display: inline-block;
-            padding: 1.5vh;
-            font-size: large;
-        }
-    }
-}
-
-/*5 WHYS---------------------------------------------------------------------*/
-
-.whys{
-    div{
-        padding: 2vh;
-        text-align: center;
-    }
-}
-
-.borde{
-    border: 1px solid #250335;
-}
-
-/*MATRIZ DELTA NEXT -------------------------------------------------*/
-.parrafo{
-    p{
-        width: 45%;
-    }
-}
-@media screen and (max-width: 560px){
-    .parrafo{
-        p{
-            width: 100%;
-        }
-    }
-}
+  .seccionUnPocoMas {
+    flex-wrap: wrap;
+    gap: 5vh;
+  }
+}/*# sourceMappingURL=estilos.css.map */

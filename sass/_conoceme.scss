@@ -1,0 +1,122 @@
+
+/*CONTENEDOR DE HABILIDADES Y DESCRIPCION EN LA SECCION DE CONOCEME---------------------*/
+.habilidadesYdescripcion{
+    margin-left: map-get($viewHeight, diez );
+  }
+
+  /*CONTENEDOR DE IMAGEN Y DESCRIPCION EN LA SECCION DE CONOCEME-----------------------------*/
+  .imagenYdescripcion{
+    padding-top: map-get($viewHeight, diez );
+    background-color: $color-hover;
+    p{color: #f9f9f9;}
+    ul{
+        li{
+            color: #f9f9f9;
+        }
+    }
+  }
+  @media (max-width: 1025px) {
+    .imagenYdescripcion{
+        flex-direction: column;
+        padding-top: map-get($viewHeight, diez );
+        justify-content: space-between;
+        align-items: end;
+    }
+    .habilidadesYdescripcion{
+        margin-right: map-get($viewHeight, diez );
+    }
+    .habilidadesContenedor{
+        display: flex;
+        flex-direction: column;
+        p{
+            font-size: $unoPuntoCinco-rem;
+        }
+        ul{
+            li{
+                font-size: $unoPuntoCinco-rem;
+            }
+        }
+    }
+  }
+
+  /*CONTENEDOR DE NOMBRE Y DESCRIPCION EN LA SECCION DE CONOCEME --------------*/
+  .nombreYdescripcion{
+    h1{
+        font-weight: 600;
+        font-size: 4.5rem;
+        color: #f9f9f9;
+        white-space: none;
+    }
+    h2{
+        font-size: $unoPuntoCinco-rem;
+        color: #f9f9f9;
+    }
+  }
+
+  /*PROGRAMAS E IDIOMAS --------------------------------------------------*/
+  .programas-idiomas{
+    margin-top: map-get($viewHeight, ocho );
+    ul{
+        list-style-type: none;
+        li{
+            margin-left: 0%;
+        }
+    }
+  }
+
+  @media (max-width: 426px) {
+    .programas-idiomas{
+        display: flex;
+        flex-direction: column !important;
+        gap: map-get($viewHeight, cinco );
+    }
+  }
+
+  /*MI TRAYECTORIA ---------------------------------------------------*/
+  .licenciatura{
+    background-image: url(../assets/img/imagenesMiTrayectoria/UNLP.svg);
+    width: 29rem; height: 19rem;
+  }
+  .disenoUXUI{
+    background-image: url(../assets/img/imagenesMiTrayectoria/DiseñoUXUI.svg);
+    width: 29rem; height: 19rem;
+  }
+  .disenoAvanzado{
+    background-image: url(../assets/img/imagenesMiTrayectoria/coderhouseUXAvanzado.svg);
+    width: 29rem; height: 19rem;
+  }
+  .proximamente{
+    background-image: url(../assets/img/imagenesMiTrayectoria/proximamente.svg);
+    width: 29rem; height: 19rem;
+  }
+  .seccion-MiTrayectoria{
+    margin-top: map-get($viewHeight, ocho );
+    h2{
+        margin-bottom: map-get($viewHeight, cinco );
+    }
+  }
+  .imagenesTrayectoria{
+    gap: map-get($viewHeight, ocho );
+  }
+
+  /*SECCION DE UN POCO MAS DE MI--------------------------------------------------------*/
+  .seccionUnPocoMas{
+    margin-top: map-get($viewHeight, doce );
+    gap: map-get($viewHeight, diez );
+    margin-bottom: map-get($viewHeight, diez );
+    img{
+        width: 30%; height: 50%;
+    }
+  }
+  @media (max-width: 1025px) {
+    .imagenesTrayectoria{
+        justify-content: $center !important;
+        align-items: $center !important;
+    }
+  }
+  @media (max-width: 769px) {
+    .seccionUnPocoMas{
+        flex-wrap: $wrap;
+        gap: map-get($viewHeight, cinco );
+    }
+  }
