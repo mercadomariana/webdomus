@@ -59,7 +59,7 @@
   }
   @media (max-width: 1400px) {
     .formYdescripciongrande{
-        display: none;
+        display: none !important;
     }
     .formYdescripcionpeque{
         display: flex;
@@ -80,3 +80,5 @@
         align-items: $center;
     }
   }
+
+  

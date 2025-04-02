@@ -1,29 +1,30 @@
+
+
 /*RESPONSIVE PARA CELULARES EN LAS SECCIONES DE CADA PROYECTO--------------------------*/
 @media screen and (max-width: 481px) {
-    .parteRosada{
+    .parteRosada {
         flex-direction: column !important;
-        p{
+        p {
             padding-top: map-get($viewHeight, cinco );
         }
-        img{
+        img {
             padding-bottom: map-get($viewHeight, cinco );
         }
     }
-    .elProceso{
+    .elProceso {
         justify-content: map-get($alineacion, centro ) !important;
         align-items: map-get($alineacion, centro ) !important;
     }
-    .siguienteYAnterior{
+    .siguienteYAnterior {
         gap: map-get($viewHeight, tres ) !important;
         justify-content: map-get($alineacion, centro ) !important;
-        a{
+        a {
             font-size: $unoPuntoCinco-rem;
         }
-      }
+    }
 }
 
 /*IMAGENES DE LA SECCIÓN DE MIS PROYECTOS--------------------------------------------------------------*/
-
 .imgProyectos {
     max-width: 1000px;
     min-width: 320px;
@@ -33,174 +34,159 @@
     height: 30vw;
     position: relative;
     margin-top: map-get($viewHeight, diez );
-    a{
-        img{
+    a {
+        img {
             position: absolute;
             height: 100%;
             width: 100%;
             object-fit: cover;
         }
     }
-    #img2{
-        &:hover{
+    #img2 {
+        &:hover {
             cursor: url(../assets/img/cursorMano.png), auto;
             opacity: 0;
         }
     }
-  }
+}
 
 /*TITULO DE PAGINA DE MIS PROYECTOS JUNTO CON EL AJUSTE RESPONSIVE EN LAS PANTALLAS----------------------------------------------*/
-.tituloProyectos{
+.tituloProyectos {
     background-color: $color-hover;
-    padding-top: map-get($viewHeight, cinco ); padding-bottom: map-get($viewHeight, cinco );
+    padding-top: map-get($viewHeight, cinco );
+    padding-bottom: map-get($viewHeight, cinco );
     gap: map-get($viewHeight, seis );
-    h1{
+    h1 {
         color: #E9C8FF;
         font-size: 7rem;
         font-weight: 600;
     }
-}
-@media screen and (max-width: 955px) {
-    .tituloProyectos{
+    @media screen and (max-width: 955px) {
         align-content: map-get($alineacion, centro );
         gap: map-get($viewHeight, dos );
-        h1{
+        h1 {
             font-size: 5rem !important;
         }
     }
-}
-@media screen and (max-width: 675px) {
-    .tituloProyectos{
-        h1{
+    @media screen and (max-width: 675px) {
+        h1 {
             font-size: 3.5rem !important;
         }
     }
-}
-@media screen and (max-width: 481px) {
-    .tituloProyectos{
-        padding-top: 3.5vh; padding-bottom: 3.5vh;
-        h1{
+    @media screen and (max-width: 481px) {
+        padding-top: 3.5vh;
+        padding-bottom: 3.5vh;
+        h1 {
             font-size: 2.5rem !important;
         }
     }
 }
 
 /*FLEX DEL CONTENEDOR MOCKUP + DESCRIPCION EN CADA PROYECTO--------------------*/
-.contenedorResumen{
+.contenedorResumen {
     padding-bottom: map-get($viewHeight, diez );
-    img{
+    img {
         width: 50%;
     }
-    }
-    
     @media screen and (max-width: 955px) {
-        .contenedorResumen{
-            @include flex-alineacion(column-reverse, center);
-            img{
-                width: 80%;
-            }
-        }
-        .titulosProyectos{
-            font-size: 9rem;
-            padding-top: map-get($viewHeight, cinco );
-        }
-    }
-    @media screen and (max-width: 675px) {
-        .titulosProyectos{
-            font-size: 7rem;
-            padding-top: map-get($viewHeight, cinco );
-        }
-    }
-    @media screen and (max-width: 481px) {
-        .titulosProyectos{
-            font-size: 5rem;
-            padding-top: map-get($viewHeight, cinco );
-        }
-    }
-    @media screen and (max-width: 432px) {
-        .titulosProyectos{
-            font-size: 4.2rem;
-            padding-top: map-get($viewHeight, cinco );
-        }
-        .descipcionGeneral{
-            padding-top: map-get($viewHeight, cinco );
+        @include flex-alineacion(column-reverse, center);
+        img {
+            width: 80%;
         }
     }
     
-    /*BOTON QUE ESTÁ EN EL RESUMEN DE CADA PROYECTO Y LLEVA A LOS PROTOTIPOS---------------------------*/
-    .botonSolo {
-        a{
-            white-space: $noWrap;
-            background-color: $color-morado;
-            padding-left: 3%; padding-right: 3%; padding-top: 2%; padding-bottom: 2%;
-            font-size: 1.2rem;
-            color: #f9f9f9;
-            font-weight: 600;
-    
-            &:hover{
-                background-color: #C9B3E2;
-                color: $color-hover;
-            }
-        }
-     }
-    
-      /*ESTE ES CUANDO HAY DOS BOTONES EN LA PARTE DEL INICIO, POR EJEMPLO EN EL CASO DE GELATINA SE MUESTRA EL VER PROTOTIPO Y VER DESARROLLO WEB*/
-     .botonDobleEnInicio{
-        gap: map-get($viewHeight, cinco );
-        
-            a{
-                white-space: $noWrap;
-                background-color: $color-morado;
-                padding: 2%;
-                font-size: 1.2rem;
-                color: #f9f9f9;
-                font-weight: 600;
-    
-                &:hover{
-                    background-color: #C9B3E2;
-                    color: $color-hover;
-                }
-            
-        }
-     }
-     /*NOTA PEQUEÑA QUE TIENE EL RESUMEN DE CADA UNO DE LOS PROYECTOS-----------------------------------*/
-     .nota{
-        color: #f9f9f9;
-        font-style:italic;
-        opacity: 60%;
-        font-size: 1rem;
+    .descipcionGeneral {
+        padding-top: map-get($viewHeight, cinco );
     }
-    
-    /* FLEX DE SECCIONES POR QUE REDISEÑAR Y QUE SE QUIERE LOGRAR PARA PROYECTOS WEB ---------------------------------------- */
-    .porQueYQueLograr{
-        gap: map-get($viewHeight, tres );
-        margin-top: map-get($viewHeight, ocho );
-    
-        p{
-            font-size: $unoPuntoCinco-rem;
-        }
-        h2{
-            font-weight: 600;
-        }
-    }
-
-    /*TITULO DE CADA UNO DE LOS PROYECTOS ---------------------------------*/
-.titulosProyectos{
-    color: #E9C8FF;
-    font-weight: 700;
-    font-size: 11rem;
 }
 
+.titulosProyectos {
+    color: #E9C8FF;
+font-weight: 700;
+font-size: 11rem;
+    font-size: 9rem;
+    padding-top: map-get($viewHeight, cinco );
+    @media screen and (max-width: 675px) {
+        font-size: 7rem;
+        padding-top: map-get($viewHeight, cinco );
+    }
+    @media screen and (max-width: 481px) {
+        font-size: 5rem;
+        padding-top: map-get($viewHeight, cinco );
+    }
+    @media screen and (max-width: 432px) {
+        font-size: 4.2rem;
+        padding-top: map-get($viewHeight, cinco );
+    }
+}
+
+/*BOTON QUE ESTÁ EN EL RESUMEN DE CADA PROYECTO Y LLEVA A LOS PROTOTIPOS---------------------------*/
+.botonSolo {
+    a {
+        white-space: $noWrap;
+        background-color: $color-morado;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 1.2rem;
+        color: #f9f9f9;
+        font-weight: 600;
+        &:hover {
+            background-color: #C9B3E2;
+            color: $color-hover;
+        }
+    }
+}
+
+/*ESTE ES CUANDO HAY DOS BOTONES EN LA PARTE DEL INICIO, POR EJEMPLO EN EL CASO DE GELATINA SE MUESTRA EL VER PROTOTIPO Y VER DESARROLLO WEB*/
+.botonDobleEnInicio {
+    gap: map-get($viewHeight, cinco );
+    a {
+        white-space: $noWrap;
+        background-color: $color-morado;
+        padding: 2%;
+        font-size: 1.2rem;
+        color: #f9f9f9;
+        font-weight: 600;
+        &:hover {
+            background-color: #C9B3E2;
+            color: $color-hover;
+        }
+    }
+}
+
+/*NOTA PEQUEÑA QUE TIENE EL RESUMEN DE CADA UNO DE LOS PROYECTOS-----------------------------------*/
+.nota {
+    color: #f9f9f9;
+    font-style: italic;
+    opacity: 60%;
+    font-size: 1rem;
+}
+
+/* FLEX DE SECCIONES POR QUE REDISEÑAR Y QUE SE QUIERE LOGRAR PARA PROYECTOS WEB ---------------------------------------- */
+.porQueYQueLograr {
+    gap: map-get($viewHeight, tres );
+    margin-top: map-get($viewHeight, ocho );
+    p {
+        font-size: $unoPuntoCinco-rem;
+    }
+    h2 {
+        font-weight: 600;
+    }
+}
+
+/*T
 /*ESTILOS DE TEXTO DE RESUMEN DE CADA PROYECTO--------------------------*/
-.descipcionGeneral{
+.descipcionGeneral {
     color: #E9C8FF;
     font-size: 1.7rem;
     padding-top: map-get($viewHeight, diez );
 }
-.tipoRolHerramientas{
+.tipoRolHerramientas {
     color: #f9f9f9;
     font-size: 1.2rem;
-    span{
+    span {
         font-weight: bold;
     }
 }
@@ -208,25 +194,25 @@
 /*IMAGENES DE EL PROCESO DE CADA PROYECTO -----------------------------*/
 #empatizar-img {
     background-image: url(../assets/img/empatizar.svg);
-    &:hover{
+    &:hover {
         background-image: url(../assets/img/empatizarHover.svg);
     }
 }
 #idear-img {
     background-image: url(../assets/img/idear.svg);
-    &:hover{
+    &:hover {
         background-image: url(../assets/img/idearHover.svg);
     }
 }
 #definir-img {
     background-image: url(../assets/img/definir.svg);
-    &:hover{
+    &:hover {
         background-image: url(../assets/img/definirHover.svg);
     }
 }
 #prototipar-img {
     background-image: url(../assets/img/prototipar.svg);
-    &:hover{
+    &:hover {
         background-image: url(../assets/img/prototiparHover.svg);
     }
 }
@@ -238,102 +224,96 @@
     height: 213px;
     width: 200px;
     margin-top: map-get($viewHeight, cinco );
-    position: relative; 
-    a{
-        display: block; /* Asegura que el enlace ocupe todo el espacio del div */
-        position: absolute; /* Posiciona el enlace sobre el div */
+    position: relative;
+    a {
+        display: block;
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: 1; /* Asegura que el enlace esté por encima del fondo */
-        &::after{
-            content: ''; /* Necesario para crear el pseudo-elemento */
+        z-index: 1;
+        &::after {
+            content: '';
             display: block;
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: transparent; /* El pseudo-elemento será invisible */
-            pointer-events: none; /* Permite que el enlace sea clickeable pero sin afectar el área visible */
+            background-color: transparent;
+            pointer-events: none;
         }
     }
-  }
-  
- 
-  /*SECCIONES DE EMPATIZAR, DEFINIR, IDEAR Y PROTOTIPAR -------------------------*/
+}
 
-.empatizar{
+/*SECCIONES DE EMPATIZAR, DEFINIR, IDEAR Y PROTOTIPAR -------------------------*/
+.empatizar {
     gap: map-get($viewHeight, cinco );
-    
-    p{
+    p {
         font-size: $unoPuntoCinco-rem;
     }
-    ul{
+    ul {
         margin-left: 5%;
         font-size: $unoPuntoCinco-rem;
     }
-    h2{
+    h2 {
         font-size: 2rem;
     }
 }
 
 /*MEDIA QUERIES DE USER PERSONA Y UX CANVAS PARA TAMAÑOS DE PANTALLA MAS PEQUEÑOS --------------------------------------*/
-
-.userPersonaPeque{
+.userPersonaPeque {
     margin-top: map-get($viewHeight, seis );
     background-color: #F7F7F7;
     padding: map-get($viewHeight, cinco );
-    img{
-        width: 100%; 
-        height: 100%; 
+    img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
-    h3{
+    h3 {
         font-weight: 600;
         color: #FBB12E;
         margin-top: map-get($viewHeight, cinco );
     }
-    ul{
+    ul {
         padding-top: 2%;
         margin-left: 0%;
     }
 }
-.containerUXCanvaPeque{
-    img{
-        width: 100%; 
-        height: 100%; 
+.containerUXCanvaPeque {
+    img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 }
 @media screen and (max-width: 850px) {
-    .userPersonaContainer{
+    .userPersonaContainer {
         display: none !important;
     }
-    .containerUXCanva{
+    .containerUXCanva {
         display: none !important;
     }
 }
-
 @media screen and (min-width: 850px) {
-    .userPersonaPequeContainer{
+    .userPersonaPequeContainer {
         display: none !important;
     }
-    .containerUXCanvaPeque{
+    .containerUXCanvaPeque {
         display: none !important;
     }
 }
 
 /*BARRA ESTATICA DE NAVEGACION EN CADA PROYECTO ------------------------------------------------- */
-.barraEstatica{
+.barraEstatica {
     background-color: #f9f9f9;
     border-width: 10%;
     border-style: solid;
     border-color: $color-hover;
     width: 100%;
-    
-    nav{
+    nav {
         display: flex;
         height: 80px;
         width: 100%;
@@ -343,7 +323,7 @@
         padding: 0 50px 0 100px;
         flex-wrap: $wrap;
         font-size: 22px;
-        ul{
+        ul {
             list-style-type: none;
             gap: map-get($viewHeight, quince );
             align-items: map-get($alineacion, centro );
@@ -351,9 +331,9 @@
             padding: map-get($viewHeight, dos );
             display: flex;
             white-space: $noWrap;
-            li{
+            li {
                 margin: 0 auto;
-                a{
+                a {
                     color: #250335;
                     text-decoration: underline;
                     font-size: 18px;
@@ -365,104 +345,103 @@
                     transition: all 0.3s ease;
                 }
             }
-            
         }
-
     }
 }
 
-.menu-btn{
+.menu-btn {
     @include flex-alineacion(row, map-get($alineacion, centro));
-    justify-content: map-get($alineacion, centro ); align-content: map-get($alineacion, centro );
+    justify-content: map-get($alineacion, centro );
+    align-content: map-get($alineacion, centro );
     justify-items: map-get($alineacion, centro );
     cursor: pointer;
     margin: 0 auto;
     gap: map-get($viewHeight, tres );
-    p{
+    p {
         text-decoration: underline;
         font-size: $unoPuntoCinco-rem;
     }
-    img{
+    img {
         width: map-get($viewHeight, cuatro );
     }
     display: none;
-    i{
+    i {
         color: #fff;
-    font-size: 22px;
-    cursor: pointer;
-    display: none;
+        font-size: 22px;
+        cursor: pointer;
+        display: none;
     }
-  }
-  input[type="checkbox"]{
+}
+input[type="checkbox"] {
     display: none;
-  }
-  @media (max-width: 1000px){
-    .barraEstatica nav{
-      padding: 0 40px 0 50px;
+}
+@media (max-width: 1000px) {
+    .barraEstatica nav {
+        padding: 0 40px 0 50px;
     }
-  }
-  /*AL TENER UN TAMAÑO MENOS EL ESPACIO ENTRE CADA ELEMENTO DE LAS LISTAS SE DISMINUYE ---------------------------*/
-  @media (max-width: 1635px) {
+}
+/*AL TENER UN TAMAÑO MENOS EL ESPACIO ENTRE CADA ELEMENTO DE LAS LISTAS SE DISMINUYE ---------------------------*/
+@media (max-width: 1635px) {
     .barraEstatica ul {
         gap: 20% !important;
     }
-  }
-  @media (max-width: 1395px) {
+}
+@media (max-width: 1395px) {
     .barraEstatica ul {
         gap: 15% !important;
     }
-  }
-  @media (max-width: 1184px) {
+}
+@media (max-width: 1184px) {
     .barraEstatica ul {
         gap: 10% !important;
     }
-  }
-  /*CONVERSIÓN DE LISTA A MENU DESPLEGABLE --------------------------------*/
-  @media (max-width: 920px) {
-    .menu-btn{
+}
+/*CONVERSIÓN DE LISTA A MENU DESPLEGABLE --------------------------------*/
+@media (max-width: 920px) {
+    .menu-btn {
         display: flex;
     }
-    .barraEstatica nav .menu-btn i{
-      display: block;
+    .barraEstatica nav .menu-btn i {
+        display: block;
     }
-    #click:checked ~ .menu-btn i:before{
-      content: "\f00d";
+    #click:checked ~ .menu-btn i:before {
+        content: "\f00d";
     }
-    .barraEstatica nav ul{
-      position: fixed;
-      bottom: 0px;
-      left: -100%;
-      background: #f9f9f9;
-      height: 100vh;
-      width: 100%;
-      text-align: $center;
-      display: block;
-      transition: all 0.3s ease;
+    .barraEstatica nav ul {
+        position: fixed;
+        bottom: 0px;
+        left: -100%;
+        background: #f9f9f9;
+        height: 100vh;
+        width: 100%;
+        text-align: $center;
+        display: block;
+        transition: all 0.3s ease;
     }
-    #click:checked ~ ul{
-      left: 0;
+    #click:checked ~ ul {
+        left: 0;
     }
-    .barraEstatica nav ul li{
-      width: 100%;
-      margin: 0 auto;
+    .barraEstatica nav ul li {
+        width: 100%;
+        margin: 0 auto;
     }
-    .barraEstatica nav ul li a{
-      width: 100%;
-      display: block;
-      font-size: 20px;
-      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    .barraEstatica nav ul li a {
+        width: 100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
-    #click:checked ~ ul li a{
-      margin-left: 0px;
+    #click:checked ~ ul li a {
+        margin-left: 0px;
     }
-    #cerrar{
+    #cerrar {
         display: block !important;
     }
-    .barraEstatica a{
+    .barraEstatica a {
         margin-top: 10%;
     }
-  }
-  .content{
+}
+.content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -472,49 +451,49 @@
     width: 100%;
     padding: 0 30px;
     color: #250335;
-  }
-  .content div{
+}
+.content div {
     font-size: 40px;
     font-weight: 700;
-  }
-  #cerrar{
+}
+#cerrar {
     display: none;
-  }
-  /*CARRUSEL-------------------------------*/
-  .imgCarrusel{
+}
+/*CARRUSEL-------------------------------*/
+.imgCarrusel {
     margin: 0 auto;
-  }
+}
 
-  .carousel-control-prev-icon {
+.carousel-control-prev-icon {
     background-image: url("../assets/img/jetsmart/prev.svg")
-  }
-  
-  .carousel-control-next-icon {
+}
+
+.carousel-control-next-icon {
     background-image: url("../assets/img/jetsmart/next.svg")
-  }
+}
 
-  .carousel-indicators button.active {
-    background-color: #b81fff; /* Cambia #tu_color_activo por el color que desees */
-    }
-  
-  .carousel-indicators button:not(.active) {
-    background-color: #000000; /* Cambia #tu_color por el color que desees */
-  }
+.carousel-indicators button.active {
+    background-color: #b81fff;
+}
 
-  .carousel-indicators {
+.carousel-indicators button:not(.active) {
+    background-color: #000000;
+}
+
+.carousel-indicators {
     position: absolute;
     top: 50%;
     transform: translateY(120%);
-    margin-bottom: 20px; /* Ajusta el valor según sea necesario */
-  }
+    margin-bottom: 20px;
+}
 
-  /*CONCLUSION DE CADA PROYECTO -----------------------------------*/
-  .conclusion{
-    h2{
+/*CONCLUSION DE CADA PROYECTO -----------------------------------*/
+.conclusion {
+    h2 {
         font-size: 3rem;
         font-weight: 700;
     }
-    p{
+    p {
         color: #f9f9f9;
     }
     .textoConclusion {
@@ -522,54 +501,53 @@
         width: 100%;
         padding: map-get($viewHeight, cinco );
         box-sizing: border-box;
-        margin: 0; /* Agrega margin: 0 */
-      }
-  }
+        margin: 0;
+    }
+}
 
-  /*SIGUIENTE Y ANTERIOR PROYECTO ESTILOS --------------------------------------------------- */
-  .siguienteYAnterior{
-    margin-top: map-get($viewHeight, diez ); margin-bottom: map-get($viewHeight, diez );
-    a{
+/*SIGUIENTE Y ANTERIOR PROYECTO ESTILOS --------------------------------------------------- */
+.siguienteYAnterior {
+    margin-top: map-get($viewHeight, diez );
+    margin-bottom: map-get($viewHeight, diez );
+    a {
         color: #250335;
     }
-  }
+}
 
-  /*RESPONSIVE DE TABLA BENCHMARK LA COSA CINE-------------------------------------------*/
-.tablaBenchmarkPeque{
+/*RESPONSIVE DE TABLA BENCHMARK LA COSA CINE-------------------------------------------*/
+.tablaBenchmarkPeque {
     margin-top: map-get($viewHeight, siete );
     gap: map-get($viewHeight, doce );
     display: none;
 }
-.table{
+.table {
     display: block;
 }
 @media (max-width: 769px) {
-    .tablaBenchmarkPeque{
+    .tablaBenchmarkPeque {
         display: flex;
     }
-    .table{
+    .table {
         display: none;
     }
 }
 
 /*---------------------- GRILLA DEL CARD SORTING LA COSA CINE ------------------------------------------ */
-
-
-.CardSorting{
-    h2{
-        color:$color-morado;
+.CardSorting {
+    h2 {
+        color: $color-morado;
     }
-    #analisis{
+    #analisis {
         grid-area: analisis;
         background-color: #EBBFF0;
         padding: map-get($viewHeight, cinco );
     }
-    div{
+    div {
         margin-bottom: map-get($viewHeight, tres );
     }
-    #resultado1{
+    #resultado1 {
         @include flex-alineacion(column, center);
-        img{
+        img {
             object-fit: cover;
             max-width: 600px;
             min-width: 320px;
@@ -578,68 +556,68 @@
     }
 }
 
-table{
-    tbody{
-        tr{
-            th{
-                img{
-                    padding-top: map-get($viewHeight, tres ) !important; padding-bottom: map-get($viewHeight, tres ) !important;
+table {
+    tbody {
+        tr {
+            th {
+                img {
+                    padding-top: map-get($viewHeight, tres ) !important;
+                    padding-bottom: map-get($viewHeight, tres ) !important;
                 }
             }
-            td{
-                padding-top: map-get($viewHeight, tres ) !important; padding-bottom: map-get($viewHeight, tres ) !important;
+            td {
+                padding-top: map-get($viewHeight, tres ) !important;
+                padding-bottom: map-get($viewHeight, tres ) !important;
             }
         }
     }
 }
 
 /*ESTILOS DE LA LISTA DESPLEGABLE HECHA CON BOOTSTRAP PARA EL MAPA DE EMPATIA ---------------------------------*/
-
 /*Edita el tamaño del texto dentro de cada item*/
-.accordion-body{
-    ul{
+.accordion-body {
+    ul {
         gap: 1rem;
-        li{
+        li {
             font-size: 1.2rem;
         }
     }
 }
 
-.accordion-button{
+.accordion-button {
     font-size: 1.2rem;
-
-    &:focus{
-      box-shadow:0 0 0 0.25rem $color-morado;
+    &:focus {
+        box-shadow: 0 0 0 0.25rem $color-morado;
     }
     &:not(.collapsed) {
         background-color: #E9C8FF;
-      }
+    }
 }
 
 /*RESPONSIVE DEL TAMAÑO DE LOS MOCKUPS DEL INICIO CUANDO SON CELULARES--------------------------*/
-@media screen and (min-width: 1025px){
-    .mockupCel{       
-            height: map-get($viewHeight, ochenta );
+@media screen and (min-width: 1025px) {
+    .mockupCel {
+        height: map-get($viewHeight, ochenta );
     }
 }
 
 /*ESTILOS DEL ARBOL DEL PROBLEMA--------------------------------------------------------*/
-.verde{
+.verde {
     background-color: #E3F8D3;
 }
-.morado{
+.morado {
     background-color: #EACBF9;
 }
-.cafecito{
+.cafecito {
     background-color: #E9DDD8;
 }
-.rojito{
+.rojito {
     background-color: #FBA3A3;
 }
-.efectos{
-    .contenedorArbol{
+.efectos {
+    .contenedorArbol {
         gap: map-get($viewHeight, cuatro );
-        div{
+        div {
             display: inline-block;
             padding: 1.5vh;
             font-size: large;
@@ -648,36 +626,34 @@ table{
 }
 
 /*5 WHYS---------------------------------------------------------------------*/
-
-.whys{
-    div{
+.whys {
+    div {
         padding: map-get($viewHeight, dos );
         text-align: $center;
     }
 }
 
-.borde{
+.borde {
     border: 1px solid #250335;
 }
 
 /*MATRIZ DELTA NEXT -------------------------------------------------*/
-.parrafo{
-    p{
+.parrafo {
+    p {
         width: 45%;
     }
-}
-@media screen and (max-width: 560px){
-    .parrafo{
-        p{
+    @media screen and (max-width: 560px) {
+        p {
             width: 100%;
         }
     }
 }
 
 /*SEPARADOR DE LOS USER PERSONA EN LAS PANTALLAS PEQUEÑAS-------------------------------------*/
-.separadorUser{
-    hr{
-    background-color: #83847A;
-    width: 100%; height: map-get($viewHeight, medio );
+.separadorUser {
+    hr {
+        background-color: #83847A;
+        width: 100%;
+        height: map-get($viewHeight, medio );
     }
 }

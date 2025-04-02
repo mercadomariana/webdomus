@@ -1,8 +1,5 @@
 
-/*CONTENEDOR DE HABILIDADES Y DESCRIPCION EN LA SECCION DE CONOCEME---------------------*/
-.habilidadesYdescripcion{
-    margin-left: map-get($viewHeight, diez );
-  }
+
 
   /*CONTENEDOR DE IMAGEN Y DESCRIPCION EN LA SECCION DE CONOCEME-----------------------------*/
   .imagenYdescripcion{
@@ -14,6 +11,24 @@
             color: #f9f9f9;
         }
     }
+    /*CONTENEDOR DE HABILIDADES Y DESCRIPCION EN LA SECCION DE CONOCEME---------------------*/
+    .habilidadesYdescripcion{
+      margin-left: map-get($viewHeight, diez );
+
+      /*CONTENEDOR DE NOMBRE Y DESCRIPCION EN LA SECCION DE CONOCEME --------------*/
+    .nombreYdescripcion{
+      h1{
+          font-weight: 600;
+          font-size: 4.5rem;
+          color: #f9f9f9;
+          white-space: none;
+      }
+      h2{
+          font-size: $unoPuntoCinco-rem;
+          color: #f9f9f9;
+      }
+    }
+    }
   }
   @media (max-width: 1025px) {
     .imagenYdescripcion{
@@ -21,37 +36,27 @@
         padding-top: map-get($viewHeight, diez );
         justify-content: space-between;
         align-items: end;
-    }
-    .habilidadesYdescripcion{
-        margin-right: map-get($viewHeight, diez );
-    }
-    .habilidadesContenedor{
-        display: flex;
-        flex-direction: column;
-        p{
-            font-size: $unoPuntoCinco-rem;
-        }
-        ul{
-            li{
+        .habilidadesYdescripcion{
+          margin-right: map-get($viewHeight, diez );
+          .habilidadesContenedor{
+            display: flex;
+            flex-direction: column;
+            p{
                 font-size: $unoPuntoCinco-rem;
             }
+            ul{
+                li{
+                    font-size: $unoPuntoCinco-rem;
+                }
+            }
         }
+      }
     }
+    
+    
   }
 
-  /*CONTENEDOR DE NOMBRE Y DESCRIPCION EN LA SECCION DE CONOCEME --------------*/
-  .nombreYdescripcion{
-    h1{
-        font-weight: 600;
-        font-size: 4.5rem;
-        color: #f9f9f9;
-        white-space: none;
-    }
-    h2{
-        font-size: $unoPuntoCinco-rem;
-        color: #f9f9f9;
-    }
-  }
+  
 
   /*PROGRAMAS E IDIOMAS --------------------------------------------------*/
   .programas-idiomas{
@@ -84,46 +89,19 @@
   .adelante, .atras {
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Eliminar width fijo */
+    height: 100%; /* Eliminar height fijo */
     transition: transform 0.6s ease-in-out;
     backface-visibility: hidden;
     cursor: url(../assets/img/cursorMano.png), auto;
-  }
-  
+}
   .adelante {
     z-index: 2;
     transform: rotateY(0deg);
-    width: 29rem; height: 19rem;
-    .licenciaturaAdelante{
-      background-image: url(../assets/img/imagenesMiTrayectoria/UNLP.svg);
-      width: 29rem; height: 19rem;
-    }
-    .diseno-uxui-adelante{
-      background-image: url(../assets/img/imagenesMiTrayectoria/DiseñoUXUI.svg);
-      width: 29rem; height: 19rem;
-    }
-    .diseno-avanzado-adelante{
-      background-image: url(../assets/img/imagenesMiTrayectoria/coderhouseUXAvanzado.svg);
-      width: 29rem; height: 19rem;
-    }
   }
   .atras {
     z-index: 1;
     transform: rotateY(180deg);
-    width: 29rem; height: 19rem;
-    .licenciaturaAtras{
-      background-image: url(../assets/img/imagenesMiTrayectoria/UNLPatras.svg);
-      width: 29rem; height: 19rem;
-    }
-    .diseno-uxui-atras{
-      background-image: url(../assets/img/imagenesMiTrayectoria/DiseñoUXUIAtras.svg);
-      width: 29rem; height: 19rem;
-    }
-    .diseno-avanzado-atras{
-      background-image: url(../assets/img/imagenesMiTrayectoria/coderhouseUXAvanzadoAtras.svg);
-      width: 29rem; height: 19rem;
-    }
   }
 
   .containerTarjetas.flipped .adelante {
@@ -137,6 +115,7 @@
   .proximamente{
     background-image: url(../assets/img/imagenesMiTrayectoria/proximamente.svg);
     width: 29rem; height: 19rem;
+    
   }
 
   .seccion-MiTrayectoria{
@@ -148,6 +127,9 @@
   .imagenesTrayectoria{
     gap: map-get($viewHeight, ocho );
   }
+
+  
+
 
   /*SECCION DE UN POCO MAS DE MI--------------------------------------------------------*/
   .seccionUnPocoMas{

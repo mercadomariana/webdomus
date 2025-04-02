@@ -209,7 +209,6 @@ footer {
   font-size: 7rem;
   font-weight: 600;
 }
-
 @media screen and (max-width: 955px) {
   .tituloProyectos {
     align-content: center;
@@ -233,6 +232,7 @@ footer {
     font-size: 2.5rem !important;
   }
 }
+
 /*FLEX DEL CONTENEDOR MOCKUP + DESCRIPCION EN CADA PROYECTO--------------------*/
 .contenedorResumen {
   padding-bottom: 10vh;
@@ -240,7 +240,6 @@ footer {
 .contenedorResumen img {
   width: 50%;
 }
-
 @media screen and (max-width: 955px) {
   .contenedorResumen {
     display: flex;
@@ -250,10 +249,17 @@ footer {
   .contenedorResumen img {
     width: 80%;
   }
-  .titulosProyectos {
-    font-size: 9rem;
-    padding-top: 5vh;
-  }
+}
+.contenedorResumen .descipcionGeneral {
+  padding-top: 5vh;
+}
+
+.titulosProyectos {
+  color: #E9C8FF;
+  font-weight: 700;
+  font-size: 11rem;
+  font-size: 9rem;
+  padding-top: 5vh;
 }
 @media screen and (max-width: 675px) {
   .titulosProyectos {
@@ -272,10 +278,8 @@ footer {
     font-size: 4.2rem;
     padding-top: 5vh;
   }
-  .descipcionGeneral {
-    padding-top: 5vh;
-  }
 }
+
 /*BOTON QUE ESTÁ EN EL RESUMEN DE CADA PROYECTO Y LLEVA A LOS PROTOTIPOS---------------------------*/
 .botonSolo a {
   white-space: nowrap;
@@ -330,13 +334,7 @@ footer {
   font-weight: 600;
 }
 
-/*TITULO DE CADA UNO DE LOS PROYECTOS ---------------------------------*/
-.titulosProyectos {
-  color: #E9C8FF;
-  font-weight: 700;
-  font-size: 11rem;
-}
-
+/*T
 /*ESTILOS DE TEXTO DE RESUMEN DE CADA PROYECTO--------------------------*/
 .descipcionGeneral {
   color: #E9C8FF;
@@ -391,24 +389,24 @@ footer {
   position: relative;
 }
 .imgProceso a {
-  display: block; /* Asegura que el enlace ocupe todo el espacio del div */
-  position: absolute; /* Posiciona el enlace sobre el div */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1; /* Asegura que el enlace esté por encima del fondo */
-}
-.imgProceso a::after {
-  content: ""; /* Necesario para crear el pseudo-elemento */
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: transparent; /* El pseudo-elemento será invisible */
-  pointer-events: none; /* Permite que el enlace sea clickeable pero sin afectar el área visible */
+  z-index: 1;
+}
+.imgProceso a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  pointer-events: none;
 }
 
 /*SECCIONES DE EMPATIZAR, DEFINIR, IDEAR Y PROTOTIPAR -------------------------*/
@@ -645,18 +643,18 @@ input[type=checkbox] {
 }
 
 .carousel-indicators button.active {
-  background-color: #b81fff; /* Cambia #tu_color_activo por el color que desees */
+  background-color: #b81fff;
 }
 
 .carousel-indicators button:not(.active) {
-  background-color: #000000; /* Cambia #tu_color por el color que desees */
+  background-color: #000000;
 }
 
 .carousel-indicators {
   position: absolute;
   top: 50%;
   transform: translateY(120%);
-  margin-bottom: 20px; /* Ajusta el valor según sea necesario */
+  margin-bottom: 20px;
 }
 
 /*CONCLUSION DE CADA PROYECTO -----------------------------------*/
@@ -672,7 +670,7 @@ input[type=checkbox] {
   width: 100%;
   padding: 5vh;
   box-sizing: border-box;
-  margin: 0; /* Agrega margin: 0 */
+  margin: 0;
 }
 
 /*SIGUIENTE Y ANTERIOR PROYECTO ESTILOS --------------------------------------------------- */
@@ -802,12 +800,12 @@ table tbody tr td {
 .parrafo p {
   width: 45%;
 }
-
 @media screen and (max-width: 560px) {
   .parrafo p {
     width: 100%;
   }
 }
+
 /*SEPARADOR DE LOS USER PERSONA EN LAS PANTALLAS PEQUEÑAS-------------------------------------*/
 .separadorUser hr {
   background-color: #83847A;
@@ -815,7 +813,24 @@ table tbody tr td {
   height: 0.5vh;
 }
 
-/*SECCIÓN MARQUEE Y SILUETA EN EL INDEX ---------------------------------------*/
+/*OPCIONES DE NAVEGACIÓN DEL INDEX --------------------------------------- */
+.seccionOpcionesIndex {
+  width: auto;
+  position: absolute;
+  z-index: 5;
+}
+.seccionOpcionesIndex ul {
+  list-style-type: none;
+  width: auto;
+}
+.seccionOpcionesIndex ul li:nth-child(1) a, .seccionOpcionesIndex ul li:nth-child(2) a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 2rem;
+  font-weight: 450;
+}
+
+/* SECCIÓN MARQUEE Y SILUETA EN EL INDEX ---------------------------------------*/
 /* Contenedor principal */
 .contenedor {
   position: relative; /* Permite posicionar elementos internos con absolute */
@@ -825,6 +840,7 @@ table tbody tr td {
   /* SILUETA */
   /* MARQUEE 1 */
   /* MARQUEE 2 */
+  /* RESPONSIVE DEL INDEX ----------------------------------------------------*/
 }
 .contenedor .silueta {
   position: absolute; /* Se superpone en el fondo */
@@ -843,6 +859,8 @@ table tbody tr td {
   z-index: 2;
 }
 .contenedor .seccionMarquee .contenidoMarquee {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 1vw;
   min-width: 200%;
@@ -877,6 +895,9 @@ table tbody tr td {
   font-weight: 650;
 }
 .contenedor .seccionMarquee2 .contenidoMarquee2 {
+  display: flex; /* Asegura que flexbox esté habilitado */
+  flex-direction: row; /* Fuerza la alineación horizontal */
+  align-items: center;
   gap: 1vw;
   min-width: 200%;
   background-color: #301F36;
@@ -887,6 +908,25 @@ table tbody tr td {
 .contenedor .seccionMarquee2 .contenidoMarquee2 img {
   height: 5vh;
   background-color: #301F36;
+}
+@media screen and (max-width: 1023px) {
+  .contenedor {
+    margin-top: 10vh;
+  }
+  .contenedor .silueta {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .contenedor .seccionMarquee2 {
+    top: 70%;
+  }
+  .contenedor .contenidoMarquee, .contenedor .contenidoMarquee2 {
+    gap: 3vw;
+  }
+  .contenedor .contenidoMarquee h1, .contenedor .contenidoMarquee2 h2 {
+    font-size: 3rem;
+  }
 }
 
 @keyframes marquee {
@@ -905,12 +945,22 @@ table tbody tr td {
     transform: translateX(0%);
   }
 }
-/*RESPONSIVE DEL INDEX ----------------------------------------------------*/
+/* RESPONSIVE GENERAL DEL INDEX ----------------------------------------------------*/
 .indexPantallaPeque {
   display: none;
 }
 
 @media screen and (max-width: 1023px) {
+  .indexPantallaPeque {
+    display: block;
+  }
+  .indexPantallaGrande {
+    display: none;
+  }
+  .logoIndex {
+    text-align: center;
+    justify-items: center;
+  }
   .seccionOpcionesIndexPeque {
     width: auto;
     margin-top: 10vh;
@@ -933,54 +983,7 @@ table tbody tr td {
     color: #955AB1;
     font-size: 2rem;
   }
-  .silueta {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .contenidoMarquee, .contenidoMarquee2 {
-    gap: 3vw;
-  }
-  .seccionMarquee2 {
-    top: 70%;
-  }
-  .contenedor {
-    margin-top: 10vh;
-  }
-  .indexPantallaGrande {
-    display: none;
-  }
-  .logoIndex {
-    text-align: center;
-    justify-items: center;
-  }
-  .contenidoMarquee h1 {
-    font-size: 3rem;
-  }
-  .contenidoMarquee2 h2 {
-    font-size: 3rem;
-  }
-  .indexPantallaPeque {
-    display: block;
-  }
 }
-/*OPCIONES DE NAVEGACIÓN DEL INDEX --------------------------------------- */
-.seccionOpcionesIndex {
-  width: auto;
-  position: absolute;
-  z-index: 5;
-}
-.seccionOpcionesIndex ul {
-  list-style-type: none;
-  width: auto;
-}
-.seccionOpcionesIndex ul li:nth-child(1) a, .seccionOpcionesIndex ul li:nth-child(2) a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 2rem;
-  font-weight: 450;
-}
-
 /*ESTILOS FORMULARIO EN CONTACTAME------------------------------------------------------------ */
 .descripcionFormulario {
   margin-top: 10vh;
@@ -1046,7 +1049,7 @@ button[type=submit] {
 
 @media (max-width: 1400px) {
   .formYdescripciongrande {
-    display: none;
+    display: none !important;
   }
   .formYdescripcionpeque {
     display: flex;
@@ -1067,20 +1070,30 @@ button[type=submit] {
     align-items: center;
   }
 }
-/*CONTENEDOR DE HABILIDADES Y DESCRIPCION EN LA SECCION DE CONOCEME---------------------*/
-.habilidadesYdescripcion {
-  margin-left: 10vh;
-}
-
 /*CONTENEDOR DE IMAGEN Y DESCRIPCION EN LA SECCION DE CONOCEME-----------------------------*/
 .imagenYdescripcion {
   padding-top: 10vh;
   background-color: #301F36;
+  /*CONTENEDOR DE HABILIDADES Y DESCRIPCION EN LA SECCION DE CONOCEME---------------------*/
 }
 .imagenYdescripcion p {
   color: #f9f9f9;
 }
 .imagenYdescripcion ul li {
+  color: #f9f9f9;
+}
+.imagenYdescripcion .habilidadesYdescripcion {
+  margin-left: 10vh;
+  /*CONTENEDOR DE NOMBRE Y DESCRIPCION EN LA SECCION DE CONOCEME --------------*/
+}
+.imagenYdescripcion .habilidadesYdescripcion .nombreYdescripcion h1 {
+  font-weight: 600;
+  font-size: 4.5rem;
+  color: #f9f9f9;
+  white-space: none;
+}
+.imagenYdescripcion .habilidadesYdescripcion .nombreYdescripcion h2 {
+  font-size: 1.5rem;
   color: #f9f9f9;
 }
 
@@ -1091,32 +1104,20 @@ button[type=submit] {
     justify-content: space-between;
     align-items: end;
   }
-  .habilidadesYdescripcion {
+  .imagenYdescripcion .habilidadesYdescripcion {
     margin-right: 10vh;
   }
-  .habilidadesContenedor {
+  .imagenYdescripcion .habilidadesYdescripcion .habilidadesContenedor {
     display: flex;
     flex-direction: column;
   }
-  .habilidadesContenedor p {
+  .imagenYdescripcion .habilidadesYdescripcion .habilidadesContenedor p {
     font-size: 1.5rem;
   }
-  .habilidadesContenedor ul li {
+  .imagenYdescripcion .habilidadesYdescripcion .habilidadesContenedor ul li {
     font-size: 1.5rem;
   }
 }
-/*CONTENEDOR DE NOMBRE Y DESCRIPCION EN LA SECCION DE CONOCEME --------------*/
-.nombreYdescripcion h1 {
-  font-weight: 600;
-  font-size: 4.5rem;
-  color: #f9f9f9;
-  white-space: none;
-}
-.nombreYdescripcion h2 {
-  font-size: 1.5rem;
-  color: #f9f9f9;
-}
-
 /*PROGRAMAS E IDIOMAS --------------------------------------------------*/
 .programas-idiomas {
   margin-top: 8vh;
@@ -1146,8 +1147,8 @@ button[type=submit] {
 .adelante, .atras {
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100%; /* Eliminar width fijo */
+  height: 100%; /* Eliminar height fijo */
   transition: transform 0.6s ease-in-out;
   backface-visibility: hidden;
   cursor: url(../assets/img/cursorMano.png), auto;
@@ -1156,45 +1157,11 @@ button[type=submit] {
 .adelante {
   z-index: 2;
   transform: rotateY(0deg);
-  width: 29rem;
-  height: 19rem;
-}
-.adelante .licenciaturaAdelante {
-  background-image: url(../assets/img/imagenesMiTrayectoria/UNLP.svg);
-  width: 29rem;
-  height: 19rem;
-}
-.adelante .diseno-uxui-adelante {
-  background-image: url(../assets/img/imagenesMiTrayectoria/DiseñoUXUI.svg);
-  width: 29rem;
-  height: 19rem;
-}
-.adelante .diseno-avanzado-adelante {
-  background-image: url(../assets/img/imagenesMiTrayectoria/coderhouseUXAvanzado.svg);
-  width: 29rem;
-  height: 19rem;
 }
 
 .atras {
   z-index: 1;
   transform: rotateY(180deg);
-  width: 29rem;
-  height: 19rem;
-}
-.atras .licenciaturaAtras {
-  background-image: url(../assets/img/imagenesMiTrayectoria/UNLPatras.svg);
-  width: 29rem;
-  height: 19rem;
-}
-.atras .diseno-uxui-atras {
-  background-image: url(../assets/img/imagenesMiTrayectoria/DiseñoUXUIAtras.svg);
-  width: 29rem;
-  height: 19rem;
-}
-.atras .diseno-avanzado-atras {
-  background-image: url(../assets/img/imagenesMiTrayectoria/coderhouseUXAvanzadoAtras.svg);
-  width: 29rem;
-  height: 19rem;
 }
 
 .containerTarjetas.flipped .adelante {
