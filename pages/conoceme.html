@@ -3,17 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portafolio | Mariana Mercado</title>
+    <meta name="description" content="Página para conocer un poco más de Mariana Mercado, no solo su trayectoria educativa sino también un poco de sus gustos y habilidades en diferentes áreas">
+    <meta name="keywords" content="PROYECTOS, PORTAFOLIO, TRABAJO, FREELANCE, CONTACTAME, CONOCEME, MARIANA MERCADO, ESTUDIANTE, DISEÑO UX/UI, DESARROLLO WEB, FRONT-END, TRABAJADORA, DISEÑADORA, DESARROLLADOR, DESARROLLADORA, HABILIDADES, GUSTOS, TRAYECTORIA, EDUCACIÓN">
+    <title>Conóceme | Mariana Mercado</title>
     <link rel="icon" href="../favicon.ico" type="image/png">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
             <!-- Logo del header -->
-            <a class="navbar-brand ms-4" href="#"><img src="../assets/img/logo.png" alt="Logo MMVI"></a>
+            <a class="navbar-brand ms-4" href="../index.html"><img src="../assets/img/logo.png" alt="Logo MMVI"></a>
             <!-- Botón de menú de hamburguesa -->
             <button class="navbar-toggler me-5 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -33,7 +36,7 @@
                     <a class="nav-link " href="../pages/conoceme.html">Conóceme</a>
                   </li>
                   <li class="nav-item ms-4 me-5 py-3 d-block d-lg-none">
-                    <a class="nav-link " id="contactameBoton" href="../pages/contactame.html">Contáctame</a>
+                    <a class="nav-link hvr-grow" id="contactameBoton" href="../pages/contactame.html">Contáctame</a>
                   </li>
                 </div>
                 
@@ -50,7 +53,7 @@
                     <a class="nav-link colorMorado" href="../pages/conoceme.html">Conóceme</a>
                   </li>
                   <li class="nav-item ms-4 me-5 py-3 d-none d-lg-block">
-                    <a class="nav-link colorMorado" id="contactameBoton" href="../pages/contactame.html">Contáctame</a>
+                    <a class="nav-link colorMorado hvr-grow" id="contactameBoton" href="../pages/contactame.html">Contáctame</a>
                   </li>
                 </div>
                 
@@ -68,7 +71,7 @@
             <!--CONTENEDOR DE HABILIDADES Y DESCRIPCION-->
             <div class="d-flex flex-column gap-5 habilidadesYdescripcion">
               <!--CONTENEDOR DE NOMBRE Y DESCRIPCION-->
-              <div class="d-flex flex-column gap-5 nombreYdescripcion">
+              <div data-aos="zoom-in" class="d-flex flex-column gap-5 nombreYdescripcion">
                 <!-- Titulo + descripción de conoceme -->
                <h1>¡Hola! <br> Soy <span class="subrayado">Mariana. <img src="../assets/img/subrayado.svg" alt="subrayado con estilo a mano"></span></h1>
                <div class="separacionDeTexto">
@@ -78,7 +81,7 @@
               </div>
   
               <!-- Contenedor de habilidades conóceme -->
-           <div class="habilidadesContenedor d-flex gap-5">
+           <div data-aos="fade-left" class="habilidadesContenedor d-flex gap-5">
             <!-- Lista de habilidades tecnicas -->
             <div>
                 <p class="fw-bold">Habilidades técnicas</p>
@@ -93,7 +96,7 @@
             </div>
   
             <!-- Lista de habilidades blandas -->
-            <div>
+            <div data-aos="fade-left">
                 <p class="fw-bold">Habilidades blandas</p>
             <ul>
                 <li>Buena gestión del tiempo</li>
@@ -106,15 +109,15 @@
             </div>
         </div>
             </div>
-            <img class="imgYo" src="../assets/img/fotoConoceme.svg" alt="foto de mariana con pequeñas decoraciones estilo doodle">
+            <img data-aos="fade-left" class="imgYo" src="../assets/img/fotoConoceme.svg" alt="foto de mariana con pequeñas decoraciones estilo doodle">
           </div>          
         </section>
 
         <!--PROGRAMAS E IDIOMAS-->
         <section class="programas-idiomas container d-flex justify-content-between">
-          <div class="programas">
+          <div data-aos="fade-right" class="programas">
               <!--Programas que uso-->
-              <h2 class="fw-bold">Programas</h2>
+              <h2 class="fw-bold ">Programas</h2>
               <ul>
                   <li>Figma</li>
                   <li>Adobe Illustrator</li>
@@ -123,7 +126,7 @@
               </ul>
           </div>
           
-          <div class="idiomas">
+          <div data-aos="fade-left" class="idiomas">
               <!--Idiomas que hablo-->
               <h2 class="fw-bold">Idiomas</h2>
               <ul>
@@ -137,30 +140,55 @@
       <section class="seccion-MiTrayectoria container">
         <h2 class="fw-bold">Mi trayectoria</h2>
         <div class="imagenesTrayectoria d-flex flex-wrap justify-content-between">
-          <a href=""><div class="licenciatura img-fluid"></div></a>
-          <a href=""><div class="disenoUXUI"></div></a>
-          <a href=""><div class="disenoAvanzado"></div></a>
-          <a href=""><div class="proximamente"></div></a>
+
+          <div class="position-relative containerTarjetas">
+            <div class="adelante d-flex justify-content-center align-items-center position-absolute">
+              <div class=" licenciaturaAdelante img-fluid"></div>
+            </div>
+            <div class="atras d-flex justify-content-center align-items-center position-absolute">
+              <div class="licenciaturaAtras img-fluid"></div>
+            </div>
+          </div>
+
+          <div class="position-relative containerTarjetas">
+            <div class="adelante d-flex justify-content-center align-items-center position-absolute">
+              <div class=" diseno-uxui-adelante img-fluid"></div>
+            </div>
+            <div class="atras d-flex justify-content-center align-items-center position-absolute">
+              <div class="diseno-uxui-atras img-fluid"></div>
+            </div>
+          </div>
+
+          <div class="position-relative containerTarjetas">
+            <div class="adelante d-flex justify-content-center align-items-center position-absolute">
+              <div class=" diseno-avanzado-adelante img-fluid"></div>
+            </div>
+            <div class="atras d-flex justify-content-center align-items-center position-absolute">
+              <div class="diseno-avanzado-atras img-fluid"></div>
+            </div>
+          </div>
+          
+          <a href=""><div class="proximamente img-fluid"></div></a>
         </div>
     </section>
          
     <!--SECCION UN POCO MAS DE MI-->
     <section class="seccionUnPocoMas container d-flex justify-content-between">
-      <div class="contenedorUnPocoMas d-flex justify-content-center align-items-center gap-3">
+      <div data-aos="zoom-in" class="contenedorUnPocoMas d-flex justify-content-center align-items-center gap-3">
           <img class="img-fluid" src="../assets/img/imagenesMiTrayectoria/tenedores.svg" alt="">
           <div class="textoUnPocoMas">
               <h3 class="fw-bold">Hobbies</h3>
               <p>Me encanta salir a comer con mi familia, ver el contenido de mis streamers favoritos y leer las últimas noticias.</p>
           </div>
       </div>
-      <div class="contenedorUnPocoMas d-flex justify-content-center align-items-center gap-3">
+      <div data-aos="zoom-in" class="contenedorUnPocoMas d-flex justify-content-center align-items-center gap-3">
           <img class="img-fluid" src="../assets/img/imagenesMiTrayectoria/audifonos.svg" alt="">
           <div class="textoUnPocoMas">
               <h3 class="fw-bold">Música</h3>
               <p>Soy mucho de música alternativa, aunque debo admitir que Bad Bunny es siempre mi artista más escuchado en Spotify.</p>
           </div>
       </div>
-      <div class="contenedorUnPocoMas d-flex justify-content-center align-items-center gap-3">
+      <div data-aos="zoom-in" class="contenedorUnPocoMas d-flex justify-content-center align-items-center gap-3">
           <img class="img-fluid" src="../assets/img/imagenesMiTrayectoria/corazon.svg" alt="">
           <div class="textoUnPocoMas">
               <h3 class="fw-bold">Yo</h3>
@@ -198,7 +226,7 @@
             <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="font-weight-bold">
-                <a class="nav-link" aria-current="page" href="../index.html">Conóceme</a>
+                <a class="nav-link" aria-current="page" href="../pages/conoceme.html">Conóceme</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -206,7 +234,7 @@
             <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="font-weight-bold">
-                <a class="nav-link" aria-current="page" href="../index.html">Contáctame</a>
+                <a class="nav-link" aria-current="page" href="../pages/contactame.html">Contáctame</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -247,5 +275,20 @@
 
 
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    const tarjetas = document.querySelectorAll(".containerTarjetas");
+
+    tarjetas.forEach(tarjeta => {
+        tarjeta.addEventListener("click", function () {
+            tarjeta.classList.toggle("flipped");
+        });
+    });
+});
+  </script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>

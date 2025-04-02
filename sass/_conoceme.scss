@@ -73,22 +73,72 @@
   }
 
   /*MI TRAYECTORIA ---------------------------------------------------*/
-  .licenciatura{
-    background-image: url(../assets/img/imagenesMiTrayectoria/UNLP.svg);
-    width: 29rem; height: 19rem;
+  
+  .containerTarjetas{
+    position: relative;
+    width: 29rem;
+    height: 19rem;
+    perspective: 1000px;
   }
-  .disenoUXUI{
-    background-image: url(../assets/img/imagenesMiTrayectoria/DiseñoUXUI.svg);
-    width: 29rem; height: 19rem;
+  
+  .adelante, .atras {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+    backface-visibility: hidden;
+    cursor: url(../assets/img/cursorMano.png), auto;
   }
-  .disenoAvanzado{
-    background-image: url(../assets/img/imagenesMiTrayectoria/coderhouseUXAvanzado.svg);
+  
+  .adelante {
+    z-index: 2;
+    transform: rotateY(0deg);
     width: 29rem; height: 19rem;
+    .licenciaturaAdelante{
+      background-image: url(../assets/img/imagenesMiTrayectoria/UNLP.svg);
+      width: 29rem; height: 19rem;
+    }
+    .diseno-uxui-adelante{
+      background-image: url(../assets/img/imagenesMiTrayectoria/DiseñoUXUI.svg);
+      width: 29rem; height: 19rem;
+    }
+    .diseno-avanzado-adelante{
+      background-image: url(../assets/img/imagenesMiTrayectoria/coderhouseUXAvanzado.svg);
+      width: 29rem; height: 19rem;
+    }
   }
+  .atras {
+    z-index: 1;
+    transform: rotateY(180deg);
+    width: 29rem; height: 19rem;
+    .licenciaturaAtras{
+      background-image: url(../assets/img/imagenesMiTrayectoria/UNLPatras.svg);
+      width: 29rem; height: 19rem;
+    }
+    .diseno-uxui-atras{
+      background-image: url(../assets/img/imagenesMiTrayectoria/DiseñoUXUIAtras.svg);
+      width: 29rem; height: 19rem;
+    }
+    .diseno-avanzado-atras{
+      background-image: url(../assets/img/imagenesMiTrayectoria/coderhouseUXAvanzadoAtras.svg);
+      width: 29rem; height: 19rem;
+    }
+  }
+
+  .containerTarjetas.flipped .adelante {
+    transform: rotateY(180deg);
+  }
+  
+  .containerTarjetas.flipped .atras {
+    transform: rotateY(0deg);
+  }
+  
   .proximamente{
     background-image: url(../assets/img/imagenesMiTrayectoria/proximamente.svg);
     width: 29rem; height: 19rem;
   }
+
   .seccion-MiTrayectoria{
     margin-top: map-get($viewHeight, ocho );
     h2{
@@ -120,3 +170,5 @@
         gap: map-get($viewHeight, cinco );
     }
   }
+
+ 

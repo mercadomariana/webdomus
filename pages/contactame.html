@@ -3,19 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portafolio | Mariana Mercado</title>
+    <meta name="description" content="Página de contacto para poder charlar y solicitar algún proyecto de diseño y/o desarrollo web">
+    <meta name="keywords" content="PROYECTOS, PORTAFOLIO, TRABAJO, FREELANCE, CONTACTAME, CONOCEME, MARIANA MERCADO, ESTUDIANTE, DISEÑO UX/UI, DESARROLLO WEB, FRONT-END, TRABAJADORA, DISEÑADORA, DESARROLLADOR, DESARROLLADORA, CORREO, MAIL, PEDIDO, CONVERSACIÓN, PERSONA">
+    <title>Contáctame | Mariana Mercado</title>
     <link rel="icon" href="../favicon.ico" type="image/png">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/hover-min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
             <!-- Logo del header -->
-            <a class="navbar-brand ms-4" href="#"><img src="../assets/img/logo.png" alt="Logo MMVI"></a>
+            <a class="navbar-brand ms-4" href="../index.html"><img src="../assets/img/logo.png" alt="Logo MMVI"></a>
             <!-- Botón de menú de hamburguesa -->
             <button class="navbar-toggler me-5 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -35,7 +39,7 @@
                     <a class="nav-link " href="../pages/conoceme.html">Conóceme</a>
                   </li>
                   <li class="nav-item ms-4 me-5 py-3 d-block d-lg-none">
-                    <a class="nav-link " id="contactameBoton" href="../pages/contactame.html">Contáctame</a>
+                    <a class="nav-link hvr-grow" id="contactameBoton" href="../pages/contactame.html">Contáctame</a>
                   </li>
                 </div>
                 
@@ -52,7 +56,7 @@
                     <a class="nav-link colorMorado" href="../pages/conoceme.html">Conóceme</a>
                   </li>
                   <li class="nav-item ms-4 me-5 py-3 d-none d-lg-block">
-                    <a class="nav-link colorMorado" id="contactameBoton" href="../pages/contactame.html">Contáctame</a>
+                    <a class="nav-link colorMorado hvr-grow" id="contactameBoton" href="../pages/contactame.html">Contáctame</a>
                   </li>
                 </div>
                 
@@ -65,30 +69,30 @@
     <main>
       
       <!--TITULO DE SECCIÓN CONTÁCTAME-->
-      <div class="tituloProyectos">
-        <h1>CONTÁCTAME</h1>
+      <div  class="tituloProyectos text-center">
+        <h1 data-aos="zoom-in-up">CONTÁCTAME</h1>
     </div>
 
 
         <!--FORM Y DESCRIPCION PARA PANTALLAS GRANDES-->
         <div class="container formYdescripciongrande d-flex align-items-center" style="margin-bottom: 10vh;">
           <!--DESCRIPCION DEL FORMULARIO JUNTO CON REDES Y CONTACTO-->
-          <section class="descripcionFormulario d-flex flex-column">
+          <section  class="descripcionFormulario d-flex flex-column">
             <p>Aunque estoy en formación académica, tengo una pasión y compromiso por el desarrollo web (frontend) y el diseño UX/UI. Busco crecer profesionalmente y aprender continuamente. Mi objetivo es crear diseños intuitivos y atractivos que superen expectativas y mejoren la experiencia del usuario, ofreciendo soluciones estéticas y funcionales.</p>
             <div class="numero-Correo d-flex flex-column">
                 <a class="fw-bold" href="">marivillabona2@gmail.com</a>
                 <a class="fw-bold" href="">+54 9 1168735084</a>
             </div>
             <div class="redesContactame d-flex align-items-end">
-                <div class="redYNombre d-flex flex-column justify-content-center align-items-center">
+                <div class="redYNombre d-flex flex-column justify-content-center align-items-center hvr-grow">
                     <img class="img-fluid" src="../assets/img/contactameImg/linkedin.svg" alt="">
                     <p>LinkedIn</p>
                 </div>
-                <div class="redYNombre d-flex flex-column justify-content-center align-items-center">
+                <div class="redYNombre d-flex flex-column justify-content-center align-items-center hvr-grow">
                     <img class="img-fluid w-100" src="../assets/img/contactameImg/gmail.svg" alt="">
                     <p>E-mail</p>
                 </div>
-                <div class="redYNombre d-flex flex-column justify-content-center align-items-center">
+                <div class="redYNombre d-flex flex-column justify-content-center align-items-center hvr-grow">
                     <img class="img-fluid w-80" src="../assets/img/contactameImg/whatsapp.svg" alt="">
                     <p>whatsapp</p>
                 </div>
@@ -102,7 +106,7 @@
                     <input type="text" class="nombreYmail" placeholder="Tu nombre" name="name" required>
                     <input type="email" class="nombreYmail" placeholder="Tu correo electrónico" name="email" required>
                     <textarea class="form_input--message" placeholder="¿Qué quieres decirme?" name="message" cols="30" rows="5"></textarea required>
-                    <button type="submit" class="form_cta">Hablemos</button>
+                    <button type="submit" class="form_cta hvr-wobble-horizontal">Hablemos</button>
                 </div>
             </form>
         </div>
@@ -177,7 +181,7 @@
             <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="font-weight-bold">
-                <a class="nav-link" aria-current="page" href="../index.html">Conóceme</a>
+                <a class="nav-link" aria-current="page" href="../pages/conoceme.html">Conóceme</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -185,7 +189,7 @@
             <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="font-weight-bold">
-                <a class="nav-link" aria-current="page" href="../index.html">Contáctame</a>
+                <a class="nav-link" aria-current="page" href="../pages/contactame.html">Contáctame</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -226,5 +230,9 @@
 
 
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

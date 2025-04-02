@@ -18,10 +18,10 @@ hr{
     width: fit-content;
     padding-left: map-get($viewHeight, tres ); padding-right: map-get($viewHeight, tres ); padding-top: map-get($viewHeight, dos ); padding-bottom: map-get($viewHeight, dos );
     margin: 0 auto;
-    cursor: pointer;
+    cursor: url(../assets/img/cursorMano.png), auto;
     a{
         color: #f9f9f9;
-        cursor: pointer;
+        cursor: url(../assets/img/cursorMano.png), auto;
     }
 }
 .botonPrototipo:hover{
@@ -29,6 +29,10 @@ hr{
     a{
         color: #f9f9f9;
     }
+}
+
+.redYNombre{
+    cursor: url(../assets/img/cursorMano.png), auto;
 }
 
 /*BOTONES ------------------------------------*/

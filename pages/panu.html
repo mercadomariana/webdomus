@@ -3,10 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portafolio | Mariana Mercado</title>
+    <meta name="description" content="Proyecto denominado Panu, el cual consiste en el diseño de una aplicación desde cero que permite a los usuarios solicitar un transporte en compañía de sus mascotas para que puedan viajar cómodos y seguros">
+    <meta name="keywords" content="PROYECTOS, PORTAFOLIO, TRABAJO, FREELANCE, DISEÑO, DISEÑO UX, DISEÑO UI, UX, UI, DISEÑO DE PRODUCTO, DISEÑO DE MARCA, IDENTIDAD, APLICACIÓN">
+    <title>Panu | Mariana Mercado</title>
     <link rel="icon" href="../favicon.ico" type="image/png">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/hover-min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <header id="inicio">
@@ -32,8 +36,8 @@
                   <li class="nav-item ms-4 me-5 py-3 d-block d-lg-none border-bottom">
                     <a class="nav-link " href="../pages/conoceme.html">Conóceme</a>
                   </li>
-                  <li class="nav-item ms-4 me-5 py-3 d-block d-lg-none">
-                    <a class="nav-link " id="contactameBoton" href="../pages/contactame.html">Contáctame</a>
+                  <li class="nav-item ms-4 me-5 py-3 d-block d-lg-none ">
+                    <a class="nav-link hvr-grow" id="contactameBoton" href="../pages/contactame.html">Contáctame</a>
                   </li>
                 </div>
                 
@@ -50,7 +54,7 @@
                     <a class="nav-link colorMorado" href="../pages/conoceme.html">Conóceme</a>
                   </li>
                   <li class="nav-item ms-4 me-5 py-3 d-none d-lg-block">
-                    <a class="nav-link colorMorado" id="contactameBoton" href="../pages/contactame.html">Contáctame</a>
+                    <a class="nav-link colorMorado hvr-grow" id="contactameBoton" href="../pages/contactame.html">Contáctame</a>
                   </li>
                 </div>
                 
@@ -72,8 +76,8 @@
             </div>
           </div>
             <div class="col-12">
-              <div>
-                <span class="subrayado"><h1 class="titulosProyectos">Panu</h1><img src="../assets/img/subrayado.svg" alt=""></span>
+              <div data-aos="zoom-in-up">
+                <span class="subrayado "><h1 class="titulosProyectos">Panu</h1><img src="../assets/img/subrayado.svg" alt=""></span>
               </div>
             </div>
         </div>
@@ -88,8 +92,8 @@
                 <p id="rol"><span>Rol:</span> Diseño de producto (UX/UI)</p>
                 <p id="herramientas"><span>Herramientas utilizadas:</span> Figma, Adobe Illustrator</p>
               </div>
-              <div class="botonSolo">
-                  <a class="text-decoration-none" href="https://www.figma.com/proto/QoTF3zQEZCZfwCmhYTKJz8/re-dise%C3%B1o-final?page-id=0%3A1&node-id=112-851&viewport=1580%2C1609%2C0.23&t=a9oTtpa5FDtMrohA-1&scaling=min-zoom&content-scaling=fixed" target="_blank">Ver prototipo en baja fidelidad</a>
+              <div class="botonSolo ">
+                  <a class="text-decoration-none" href="https://www.figma.com/proto/hsqg8J5oIttXu8f9lRr2zK/TAREA%3A-TRACKEO%2C-COMPARTIR-UBICACION-Y-VALORACION?page-id=0%3A1&node-id=1-3&viewport=114%2C142%2C0.16&t=vjp2PQCJu3lPD0cr-1&scaling=scale-down&content-scaling=fixed" target="_blank">Ver prototipo en baja fidelidad</a>
               </div>
               <div id="nota"><p class="nota">*Nota: Investigación UX realizada en compañía de mis compañeras: Romina Miccono y Maria Sol Paloma</p></div>
             </div>
@@ -114,25 +118,25 @@
 <section class="d-flex flex-column container " style="margin-top: 8vh;">
   <h2 style="font-weight: 600;">El proceso</h2>
   <div class="d-flex flex-wrap justify-content-between elProceso">
-      <div class="imgProceso" id="empatizar-img">
+      <div class="imgProceso hvr-bounce-in" id="empatizar-img">
         <a href="#empatizar"></a>
     </div>
-    <div class="imgProceso" id="definir-img">
+    <div class="imgProceso hvr-bounce-in" id="definir-img">
         <a href="#definir"></a>
     </div>
-    <div class="imgProceso" id="idear-img">
+    <div class="imgProceso hvr-bounce-in" id="idear-img">
         <a href="#idear"></a>
     </div>
-    <div class="imgProceso" id="prototipar-img">
+    <div class="imgProceso hvr-bounce-in" id="prototipar-img">
         <a href="#prototipar"></a>
     </div> 
   </div>
 </section>
 
-<hr>
+<hr data-aos="fade-right"> 
 
-<section class="container empatizar d-flex flex-column" id="empatizar">
-  <h2 class="fw-bold">1. Empatizar</h2>
+<section data-aos="fade-right" class="container empatizar d-flex flex-column" id="empatizar">
+  <h2 class="fw-bold " >1. Empatizar</h2>
   <p>Para entender mejor las necesidades y molestias de los usuarios, se realizaron entrevistas a 6 personas. Durante estas entrevistas, se incluyeron preguntas para conocer el sentimiento de cada usuario hacia sus mascotas, así como para que compartieran sus experiencias pasadas viajando con ellas. <span class="text-decoration-underline">El objetivo era identificar aspectos que pudieran resultarles molestos y, al mismo tiempo, descubrir elementos que pudieran contribuir a una experiencia más agradable durante el viaje.</span></p>
 
   <!--MAPA DE EMPATIA-->
@@ -206,10 +210,10 @@
   <p><span class="fw-bold">Conclusión:</span> Los usuarios buscan un servicio inclusivo que acepte mascotas sin restricciones ni penalizaciones injustas, brindando confianza a través de normas claras y un trato empático hacia ellos y sus animales. La experiencia actual implica un esfuerzo excesivo, como usar varias apps o redes sociales, lo que resalta la necesidad de simplificar y optimizar el proceso. Además, personalizar y humanizar el servicio mediante conductores capacitados, herramientas específicas para mascotas y costos transparentes podría mejorar significativamente la experiencia del usuario. </p>
 </section>
 
-<hr>
+<hr data-aos="fade-right">
 
 <!--SECCIÓN DE DEFINIR-->
-<section class="container empatizar d-flex flex-column " id="definir">
+<section data-aos="fade-right" class="container empatizar d-flex flex-column " id="definir">
   <h2 class="fw-bold">2. Definir</h2>
   <p>A partir de los insights encontrados a partir de las entrevistas, se definieron las <span class="fw-bold">necesidades y áreas de oportunidad</span> para implementar en la aplicación</p>
 
@@ -280,23 +284,54 @@
   <p>El <span class="fw-bold">análisis de competencia</span> realizado se focalizó en las funcionalidades de seguimiento de viaje, valoración de conductor y compartir ubicación en tiempo real. Para esto se analizaron 3 aplicaciones directas y 6 aplicaciones indirectas.
     A partir del análisis estas fueron las conclusiones por tarea: </p>
 
-  <div class="d-flex">
-    <div class="botonPrototipo" id="botonPrototipo">
-      <a href="https://www.figma.com/proto/QoTF3zQEZCZfwCmhYTKJz8/re-dise%C3%B1o-final?page-id=0%3A1&node-id=112-851&viewport=1580%2C1609%2C0.23&t=a9oTtpa5FDtMrohA-1&scaling=min-zoom&content-scaling=fixed" target="_blank">Seguimiento de viaje</a>
-    </div>
-    <div class="botonPrototipo" id="botonPrototipo">
-      <a href="https://www.figma.com/proto/QoTF3zQEZCZfwCmhYTKJz8/re-dise%C3%B1o-final?page-id=0%3A1&node-id=112-851&viewport=1580%2C1609%2C0.23&t=a9oTtpa5FDtMrohA-1&scaling=min-zoom&content-scaling=fixed" target="_blank">Valoración de conductor</a>
-    </div>
-    <div class="botonPrototipo" id="botonPrototipo">
-      <a href="https://www.figma.com/proto/QoTF3zQEZCZfwCmhYTKJz8/re-dise%C3%B1o-final?page-id=0%3A1&node-id=112-851&viewport=1580%2C1609%2C0.23&t=a9oTtpa5FDtMrohA-1&scaling=min-zoom&content-scaling=fixed" target="_blank">Compartir ubicación</a>
+  <div >
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Seguimiento de viaje
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>El relevamiento concluyó que el trackeo debe ser sencillo y permitir al usuario visualizar siempre su vehículo y su recorrido. Los procesos deben realizarse en un solo lugar, evitando ventanas adicionales para mantener la practicidad. Mientras se espera al conductor, es mejor priorizar información en la pantalla en lugar de interacciones, y una vez dentro del vehículo, la pantalla debe ser completamente visible, utilizando un Bottom Sheet para acciones adicionales, como lo hacen otras apps similares.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Valoración de conductor
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>El usuario podrá calificar con estrellas y agregar comentarios o problemas predeterminados. Según la cantidad de estrellas, se mostrarán opciones específicas, como no ofrecer propina en viajes negativos. Si no desea calificar de inmediato, podrá hacerlo después desde un botón de actividad en la Home Page.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Compartir ubicación
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>El Bottom Sheet mostrará opciones básicas, pero al seleccionar "compartir ubicación", llevará al usuario a otra pantalla para elegir contactos, copiar un enlace o compartir en otras apps como WhatsApp. La ventana debe ser cerrable en cualquier momento y diseñada con pocas interacciones para agilizar el proceso. Esta función estará disponible mientras se espera al conductor o durante el viaje.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
 </section>
 
-<hr>
+<hr data-aos="fade-right">
 
 <!--SECCIÓN DE IDEAR-->
-<section class="container empatizar d-flex flex-column" id="idear">
+<section data-aos="fade-right" class="container empatizar d-flex flex-column" id="idear">
   <h2 class="fw-bold">3. Idear</h2>
   <p>Una vez se analizaron las funcionalidades que la aplicación debe tener según los insights, se comenzó a idear la navegación. Comenzando a idear el Task Flow y User Flow para posteriormente poder comenzar a diseñar la interfaz visual.</p>
   <p>El Task Flow y User Flow se realizó a partir de la instancia en la que el usuario está esperando la llegada del conductor, para que de esta manera, se puedan abarcar a detalle las funcionalidades de seguimiento, calificación y compartir ubicación.</p>
@@ -314,14 +349,14 @@
 
 </section>
 
-<hr>
+<hr data-aos="fade-right">
 
 <!--SECCION DE PROTOTIPAR-->
-<section class="container empatizar d-flex flex-column" id="prototipar">
+<section data-aos="fade-right" class="container empatizar d-flex flex-column" id="prototipar">
   <h2 class="fw-bold">4. Prototipar</h2>
   <p>A partir del Task Flow y User Flow se diseñaron los wireframes interactivos de cómo sería el funcionamiento de Panu. </p>
   <div class="botonPrototipo">
-    <a class="nav-link"  href="../pages/contactame.html">Ver prototipo en baja fidelidad</a>
+    <a class="nav-link"  href="https://www.figma.com/proto/hsqg8J5oIttXu8f9lRr2zK/TAREA%3A-TRACKEO%2C-COMPARTIR-UBICACION-Y-VALORACION?page-id=0%3A1&node-id=1-3&viewport=114%2C142%2C0.16&t=vjp2PQCJu3lPD0cr-1&scaling=scale-down&content-scaling=fixed" target="_blank">Ver prototipo en baja fidelidad</a>
   </div>
   <p class="mt-5">Una vez realizados los wireframes se tomaron las 3 pantallas principales para realizar los mockups a partir del style tile y moodboard, los cuales se basaron en 3 palabras claves que definen a Panu: <span class="fw-bold">Kawaii, compañero incondicional y viaje confortable.</span></p>
 
@@ -352,7 +387,7 @@
 </section>
 
 <!--CONCLUSION-->
-<section class="conclusion container" id="conclusion" style="margin-top: 8vh;">
+<section data-aos="zoom-in" class="conclusion container" id="conclusion" style="margin-top: 8vh;">
   <h2 class="container">Para finalizar</h2>
   <div class="textoConclusion">
     <p>Diseñar esta app desde cero me enseñó la importancia de equilibrar las necesidades del usuario y del cliente. La investigación UX fue clave para crear una navegación acorde al usuario, mientras que la estética kawaii y amigable destacó en lo visual. Aún hay espacio para mejorar, especialmente en UX y UI, incorporando ideas innovadoras para aumentar su valor.</p>
@@ -362,12 +397,12 @@
 <!--PROYECTO ANTERIOR, SIGUIENTE PROYECTO-->
 <section class="container d-flex justify-content-between siguienteYAnterior flex-wrap">
   <div class="d-flex gap-3">
-    <a href=""><img src="../assets/img/flechaAnterior.svg" alt=""></a>
-    <a href="">Proyecto anterior</a>
+    <a href="../pages/alma.html"><img src="../assets/img/flechaAnterior.svg" alt=""></a>
+    <a href="../pages/alma.html">Proyecto anterior</a>
   </div>
   <div class="d-flex gap-3">
-    <a href="">Siguiente proyecto</a>
-    <a href=""><img src="../assets/img/flechasiguiente.svg" alt=""></a>
+    <a href="../pages/lacosacine.html">Siguiente proyecto</a>
+    <a href="../pages/lacosacine.html"><img src="../assets/img/flechasiguiente.svg" alt=""></a>
   </div>
 </section>
 
@@ -420,7 +455,7 @@
             <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="font-weight-bold">
-                <a class="nav-link" aria-current="page" href="../index.html">Conóceme</a>
+                <a class="nav-link" aria-current="page" href="../pages/conoceme.html">Conóceme</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -428,7 +463,7 @@
             <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="font-weight-bold">
-                <a class="nav-link" aria-current="page" href="../index.html">Contáctame</a>
+                <a class="nav-link" aria-current="page" href="../pages/contactame.html">Contáctame</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -469,5 +504,9 @@
 
 
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

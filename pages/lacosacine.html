@@ -3,17 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portafolio | Mariana Mercado</title>
+    <meta name="description" content="Proyecto de re diseño de la página web argentina: La Cosa Cine. Enfatizando en la buena navegabilidad para una mayor accesibilidad. Es un proyecto realizado en grupo y una vez se definió el diseño de la interfaz, se programó una sola página de toda la web, permitiendo un primer acercamiento">
+    <meta name="keywords" content="PROYECTOS, PORTAFOLIO, TRABAJO, FREELANCE, LA COSA CINE, ARGENTINA, TRABAJO EN GRUPO, DISEÑO, WEB, DESARROLLO WEB, UX, UI, ACCESIBILIDAD, USUARIOS, INVESTIGACIÓN">
+    <title>La Cosa Cine | Mariana Mercado</title>
     <link rel="icon" href="../favicon.ico" type="image/png">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/hover-min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <header id="inicio">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
             <!-- Logo del header -->
-            <a class="navbar-brand ms-4" href="#"><img src="../assets/img/logo.png" alt="Logo MMVI"></a>
+            <a class="navbar-brand ms-4" href="../index.html"><img src="../assets/img/logo.png" alt="Logo MMVI"></a>
             <!-- Botón de menú de hamburguesa -->
             <button class="navbar-toggler me-5 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -33,7 +37,7 @@
                     <a class="nav-link " href="../pages/conoceme.html">Conóceme</a>
                   </li>
                   <li class="nav-item ms-4 me-5 py-3 d-block d-lg-none">
-                    <a class="nav-link " id="contactameBoton" href="../pages/contactame.html">Contáctame</a>
+                    <a class="nav-link hvr-grow " id="contactameBoton" href="../pages/contactame.html">Contáctame</a>
                   </li>
                 </div>
                 
@@ -50,7 +54,7 @@
                     <a class="nav-link colorMorado" href="../pages/conoceme.html">Conóceme</a>
                   </li>
                   <li class="nav-item ms-4 me-5 py-3 d-none d-lg-block">
-                    <a class="nav-link colorMorado" id="contactameBoton" href="../pages/contactame.html">Contáctame</a>
+                    <a class="nav-link colorMorado hvr-grow" id="contactameBoton" href="../pages/contactame.html">Contáctame</a>
                   </li>
                 </div>
                 
@@ -72,7 +76,7 @@
             </div>
           </div>
             <div class="col-12">
-              <div>
+              <div data-aos="zoom-in-up">
                 <span class="subrayado"><h1 class="titulosProyectos">La Cosa Cine</h1><img src="../assets/img/subrayado.svg" alt=""></span>
               </div>
             </div>
@@ -88,9 +92,11 @@
                 <p id="rol"><span>Rol:</span> Rediseño de producto (UX/UI), Desarrollo web.</p>
                 <p id="herramientas"><span>Herramientas utilizadas:</span> Figma, Adobe Illustrator, VS Code, Google Chrome.</p>
               </div>
-              <div class="botonSolo" id="botonSolo">
-                <a class="text-decoration-none" href="https://www.figma.com/proto/QoTF3zQEZCZfwCmhYTKJz8/re-dise%C3%B1o-final?page-id=0%3A1&node-id=112-851&viewport=1580%2C1609%2C0.23&t=a9oTtpa5FDtMrohA-1&scaling=min-zoom&content-scaling=fixed" target="_blank">Ver prototipo en alta fidelidad</a>
-              </div>
+              <div class="botonDobleEnInicio align-items-center d-flex flex-wrap">
+                <a class="text-decoration-none" href="https://www.figma.com/proto/vNPf2nviCJtiXmGZAuoXFZ/LA-COSA-CINEE?page-id=6%3A2&node-id=268-1364&viewport=437%2C-918%2C0.13&t=EQlD4TGUlE5WqKae-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=8%3A753" target="_blank">Ver prototipo en alta fidelidad</a>
+            
+                <a class="text-decoration-none" href="https://mercadomariana.github.io/LaCosaCine/" target="_blank">Ver desarrollo web</a>
+            </div>
               <div id="nota"><p class="nota">*Nota: Esto es un proyecto conceptual y no está afiliado con La Cosa Cine y fue realizado junto a Romina Miccono, Micaela Nishizawa y Bianca Marino</p></div>
             </div>
           </div>
@@ -117,25 +123,25 @@
   <section class="d-flex flex-column container " style="margin-top: 8vh;">
     <h2 style="font-weight: 600;">El proceso</h2>
     <div class="d-flex flex-wrap justify-content-between elProceso">
-        <div class="imgProceso" id="empatizar-img">
+        <div class="imgProceso hvr-bounce-in" id="empatizar-img">
           <a href="#empatizar"></a>
       </div>
-      <div class="imgProceso" id="definir-img">
+      <div class="imgProceso hvr-bounce-in" id="definir-img">
           <a href="#definir"></a>
       </div>
-      <div class="imgProceso" id="idear-img">
+      <div class="imgProceso hvr-bounce-in" id="idear-img">
           <a href="#idear"></a>
       </div>
-      <div class="imgProceso" id="prototipar-img">
+      <div class="imgProceso hvr-bounce-in" id="prototipar-img">
           <a href="#prototipar"></a>
       </div> 
     </div>
 </section>
 
-<hr>
+<hr data-aos="fade-right">
 
 <!--SECCIÓN DE EMPATIZAR-->
-<section class="container empatizar d-flex flex-column" id="empatizar">
+<section data-aos="fade-right" class="container empatizar d-flex flex-column" id="empatizar">
   <h2 class="fw-bold">1. Empatizar</h2>
   <p>A partir de una investigación del medio La Cosa Cine y de sus seguidores y oyentes, se determinaron las temáticas que se discuten, la manera de comunicar y cómo recibe el público esa información. Esta información permitió la creación dos <span class="fw-bold">user persona</span> para poder entender y saber qué cambios serían positivos para los usuarios en el rediseño.</p>
   <!--USER PERSONA EN PANTALLAS GRANDES-->
@@ -210,10 +216,10 @@
   <p style="margin-top: 5vh;">Gracias a esta investigación, se logró definir el elemento extra dentro del rediseño de La Cosa Cine el cual sería: Posibilidad de comentar y ganar puntos comentando, gamificación con insignias y la separación y realce de la sección de entrevistas.</p>
 </section>
 
-<hr>
+<hr data-aos="fade-right">
 
  <!--SECCIÓN DE DEFINIR-->
- <section class="container empatizar d-flex flex-column" id="definir">
+ <section data-aos="fade-right" class="container empatizar d-flex flex-column" id="definir">
   <h2 class="fw-bold">2. Definir</h2>
   <p>Tomando en cuenta el estilo de la página principal de La Cosa Cine, se creo un <span class="fw-bold">moodboard</span>, el cual permitiría tener las bases de diseño de la página web. En este caso el diseño sería cyberpunk con los colores morado y verde como principales.</p>
   <!--IMAGEN DE MOODBOARD-->
@@ -295,10 +301,10 @@
 </section>
 
 <!--SEPARADOR-->
-<hr>
+<hr data-aos="fade-right">
 
 <!--SECCIÓN DE IDEAR-->
-<section class="container empatizar d-flex flex-column" id="idear">
+<section data-aos="fade-right" class="container empatizar d-flex flex-column" id="idear">
   <h2 class="fw-bold">3. Idear</h2>
   <!--CARD SORTING-->
   <p>Para lograr una mejor navegación, se realizó un <span class="fw-bold">card sorting</span> y así entender cómo esperaba el usuario que estuvieran jerarquizadas las secciones dentro de la web.</p>
@@ -361,22 +367,22 @@
    
 </section>
 
-<hr>
+<hr data-aos="fade-right">
 
 <!--SECCION DE PROTOTIPAR-->
-<section class="container empatizar d-flex flex-column" id="prototipar">
+<section data-aos="fade-right" class="container empatizar d-flex flex-column" id="prototipar">
   <h2 class="fw-bold">4. Prototipar</h2>
   <!--GIF DE MOCKUPS LA COSA CINE-->
   <p>Una vez definidas las ubicaciones se realizaron los wireframes para terminar de jerarquizar la información y posterior a eso se diseñó el <span class="fw-bold">prototipo final,</span> del cual se tomaría la pantalla más importante para implementar en el desarrollo:</p>
   <img src="../assets/img/gif_lacosacine_desktop.gif" alt="">
   <p>Se seleccionó para <span class="fw-bold">implementar en el desarrollo web,</span> la pantalla de comentarios y visualización de una publicación, ya que esta es la que más abarca la propuesta de valor (comentarios, gamificación)</p>
   <div class="botonPrototipo">
-    <a class="nav-link"  href="../pages/contactame.html">Acceder a página web</a>
+    <a class="nav-link"  href="https://mercadomariana.github.io/LaCosaCine/" target="_blank">Acceder a página web</a>
   </div>
 </section>
 
  <!--CONCLUSION-->
- <section class="conclusion container" id="conclusion" style="margin-top: 8vh;">
+ <section data-aos="zoom-in" class="conclusion container" id="conclusion" style="margin-top: 8vh;">
   <h2 class="container">Para finalizar</h2>
   <div class="textoConclusion">
     <p >JetSMART es una aerolínea en crecimiento, llegando a nuevos países como Colombia lo que significa que requiere una experiencia apta para todo el público, con el objetivo de brindarle a sus usuarios la tranquilidad y comodidad de entrar a su página y comprar en la aerolínea que les brindará la oportunidad de realizar su próximo viaje.
@@ -387,12 +393,12 @@
 <!--PROYECTO ANTERIOR, SIGUIENTE PROYECTO-->
 <section class="container d-flex justify-content-between siguienteYAnterior flex-wrap">
   <div class="d-flex gap-3">
-    <a href=""><img src="../assets/img/flechaAnterior.svg" alt=""></a>
-    <a href="">Proyecto anterior</a>
+    <a href="../pages/panu.html"><img src="../assets/img/flechaAnterior.svg" alt=""></a>
+    <a href="../pages/panu.html">Proyecto anterior</a>
   </div>
   <div class="d-flex gap-3">
-    <a href="">Siguiente proyecto</a>
-    <a href=""><img src="../assets/img/flechasiguiente.svg" alt=""></a>
+    <a href="../pages/gelatina.html">Siguiente proyecto</a>
+    <a href="../pages/gelatina.html"><img src="../assets/img/flechasiguiente.svg" alt=""></a>
   </div>
 </section>
 
@@ -449,7 +455,7 @@
             <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="font-weight-bold">
-                <a class="nav-link" aria-current="page" href="../index.html">Conóceme</a>
+                <a class="nav-link" aria-current="page" href="../pages/conoceme.html">Conóceme</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -457,7 +463,7 @@
             <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="font-weight-bold">
-                <a class="nav-link" aria-current="page" href="../index.html">Contáctame</a>
+                <a class="nav-link" aria-current="page" href="../pages/contactame.html">Contáctame</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -498,5 +504,9 @@
 
 
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
