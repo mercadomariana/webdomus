@@ -119,6 +119,11 @@ font-size: 11rem;
         padding-top: map-get($viewHeight, cinco );
     }
 }
+.wrap-reverse{
+    @media screen and (max-width: 1025px) {
+        flex-wrap: wrap-reverse;
+    }
+}
 /*BOTON QUE ESTÁ EN EL RESUMEN DE CADA PROYECTO Y LLEVA A LOS PROTOTIPOS---------------------------*/
 .botonSolo {
     a {

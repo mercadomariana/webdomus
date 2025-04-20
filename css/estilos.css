@@ -289,6 +289,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 1025px) {
+  .wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+}
+
 /*BOTON QUE ESTÁ EN EL RESUMEN DE CADA PROYECTO Y LLEVA A LOS PROTOTIPOS---------------------------*/
 .botonSolo a {
   white-space: nowrap;
