@@ -1,4 +1,13 @@
-/*-------------------- SEPARADOR----------------------------*/
+html {
+    font-size: 1rem; 
+  }
+
+  @media (max-width: 500px) { 
+    html {
+      font-size: 1rem * 0.7; 
+    }
+  }
+  /*-------------------- SEPARADOR----------------------------*/
 
 hr{
     margin-top: 10%; margin-bottom: 10%;
