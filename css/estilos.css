@@ -172,7 +172,7 @@ footer {
     padding-bottom: 5vh;
   }
   .elProceso {
-    justify-content: center !important;
+    justify-content: space-around !important;
     align-items: center !important;
   }
   .siguienteYAnterior {
@@ -422,6 +422,12 @@ footer {
   height: 100%;
   background-color: transparent;
   pointer-events: none;
+}
+
+@media screen and (max-width: 481px) {
+  .imgProceso {
+      width: 43%;
+  }
 }
 
 /*SECCIONES DE EMPATIZAR, DEFINIR, IDEAR Y PROTOTIPAR -------------------------*/
@@ -686,6 +692,12 @@ input[type=checkbox] {
   padding: 5vh;
   box-sizing: border-box;
   margin: 0;
+}
+@media screen and (max-width: 850px) {
+  .textoConclusion{
+    p{font-size: 1.2rem;}
+    
+  }
 }
 
 /*SIGUIENTE Y ANTERIOR PROYECTO ESTILOS --------------------------------------------------- */
@@ -1069,6 +1081,7 @@ button[type=submit] {
   .formYdescripcionpeque {
     display: flex;
     flex-direction: column;
+    gap: 1vh;
   }
 }
 @media (max-width: 954px) {
@@ -1078,12 +1091,15 @@ button[type=submit] {
 }
 @media (max-width: 492px) {
   input[type=text], input[type=email], .form_input--message, button[type=submit] {
-    width: 20rem;
+    width: 100%;
   }
   form {
     justify-content: center;
     align-items: center;
   }
+  .descripcionFormulario {
+  margin-top: 5vh;
+}
 }
 /*CONTENEDOR DE IMAGEN Y DESCRIPCION EN LA SECCION DE CONOCEME-----------------------------*/
 .imagenYdescripcion {
@@ -1150,6 +1166,9 @@ button[type=submit] {
     flex-direction: column !important;
     gap: 5vh;
   }
+  .numero-Correo {
+  gap: 3vh;
+}
 }
 /*MI TRAYECTORIA ---------------------------------------------------*/
 .containerTarjetas {
@@ -1226,4 +1245,15 @@ button[type=submit] {
     flex-wrap: wrap;
     gap: 5vh;
   }
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+@media screen and (max-width: 850px) {
+    p{font-size: 1.5rem !important;}
+    .logommvi{
+      img{
+        width: 70%; height: 70%;
+      }
+    }
+    header{padding-top: 1vh; padding-bottom: 1vh;}
+    h1{font-size: 6rem !important;}
+}
